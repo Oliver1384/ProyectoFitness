@@ -1,2 +1,2 @@
-# EntrenamientoPersonal
+# ProyectoFitness
 Web de entrenamiento personal
