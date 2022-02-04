@@ -1,4 +1,6 @@
 # ProyectoFitness
+
+## Descripción
 Proyecto Fitness será una página web desarrollada por los alumnos de DAW ‘IES EL RINCÓN’ para el instituto ‘IES ARUCAS DOMINGO RIVERO’.
 
 En la página web se podrá visualizar artículos escritos por los alumnos y/o profesores del centro, escuchar podcast o visualizar videos, se ofrecerán programas fitness personalizados descargables en formato PDF tras rellenar un formulario solicitando el email donde recibirán dicho archivo,  y una tienda online donde se pueden realizar compras de los productos ofertados por el centro. Esta última parte solo será visual y no funcional hasta que sepamos con certeza que puede ser implementada
