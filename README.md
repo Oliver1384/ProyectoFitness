@@ -20,4 +20,38 @@ Para los artículos se utilizarán imágenes más largas, de 720px de ancho y 30
 - Formato de iconos: Se emplea el formato SVG para facilitar su escalabilidad en móvil.
 - Tamaño de iconos: 50px de ancho por 50px de alto para los iconos, cuando la pantalla sea muy reducida se escalará de manera proporcional a un tamaño menor. En móvil se subirá su resolución a 80px de ancho por 80px de alto.
 
+### 2. Tipografías.
+- Fuente:  La fuente predominante en la página web será “Noto Sans” utilizada para el contenido de la página. Para los títulos y la barra de navegación se utilizará la fuente “Oswald”.
+En caso de que una de las fuentes anteriores no se encuentre disponible por el usuario, la página web tendrá una fuente alternativa “Open Sans”.
+-- Logo: Open Sans ExtraBold Italic
+-- Para los títulos y la barra de navegación: Oswald.
+-- Para el contenido de la página: Noto Sans.
+-- Fuente alternativa: Open Sans.
+
+- Estilo o tipo de la fuente.
+-- Negrita:  
+--- Los títulos de las secciones y artículos serán en negrita.
+--- Destacar información dentro de los artículos.
+
+-- Subrayado:
+--- Los enlaces encontrados en la página web estarán diferenciados utilizando un subrayado. 
+--- En la barra de navegación, la sección actual en la que se encuentra el usuario estará subrayada y de color amarillo, facilitando la navegación dentro de la propia página.
+--- Al pasar el ratón por encima de una sección, en la barra de navegación, la sección elegida estará subrayada de color blanco.
+
+
+
+
+-- Tamaño de la fuente:
+
+
+--- Navbar:
+---- Logo: 40px.
+---- Enlaces: 24px.
+-- Índice:
+---- Primera palabra de ‘Planes personalizados’: 90px. 
+---- Segunda palabra de ‘Planes personalizados’: 72px.
+
+
+
+
 
