@@ -1,0 +1,38 @@
+:root {
+    --main-orange:  #FFB20F;
+    --main-black:   #2A2B2A;
+    --main-white:   #F9F7F3;
+    --basic-white:  #FFFFFF;
+}
+
+.bg-main-orange {
+    background: var(--main-orange);
+}
+
+.bg-main-black {
+    background: var(--main-black);
+}
+
+.bg-main-white {
+    background: var(--main-white);
+}
+
+.bg-basic-white {
+    background: var(--basic-white);
+}
+
+.text-main-orange {
+    background: var(--main-orange);
+}
+
+.text-main-black {
+    background: var(--main-black);
+}
+
+.text-main-white {
+    background: var(--main-white);
+}
+
+.text-basic-white {
+    background: var(--basic-white);
+}
