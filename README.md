@@ -1,4 +1,7 @@
 # ProyectoFitness
+[![Laravel](8.75)
+[![Php](7.3|8.0)
+[![Boostrap](5.1.3)]
 
 Proyecto Fitness será una página web desarrollada por los alumnos de DAW ‘IES EL RINCÓN’ para el instituto ‘IES ARUCAS DOMINGO RIVERO’.
 
