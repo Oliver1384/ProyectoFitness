@@ -36,3 +36,5 @@ Route::get('/Planes', function () {
 Route::get('/Contacto', function () {
     return view('contact');
 });
+
+
