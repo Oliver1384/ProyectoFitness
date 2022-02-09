@@ -36,3 +36,25 @@
 .text-basic-white {
     background: var(--basic-white);
 }
+
+
+#navbarSupportedContent{
+   
+   
+}
+
+#navbarSupportedContent ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2.5em;
+    
+}
+
+#navbarSupportedContent ul li{
+    margin: 0 .5em;
+}
+
+#navbarSupportedContent ul li a{
+    font-size: 1.3em;
+}
