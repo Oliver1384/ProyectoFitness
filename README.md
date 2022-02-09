@@ -1,8 +1,9 @@
 # ProyectoFitness
-[![Laravel 8.75v](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/50px-Laravel.svg.png)]
 
-[![Php][7.3|8.0v](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/800px-PHP-logo.svg.png)]
-[![Boostrap][5.1.3v](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png)]
+
+[Laravel 8.75v](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/50px-Laravel.svg.png)
+Php 7.3|8.0v
+Boostrap 5.1.3v
 
 Proyecto Fitness será una página web desarrollada por los alumnos de DAW ‘IES EL RINCÓN’ para el instituto ‘IES ARUCAS DOMINGO RIVERO’.
 
