@@ -7,3 +7,9 @@ En la página web se podrá visualizar artículos escritos por los alumnos y/o p
 La página será gestionada por una cuenta administradora utilizada por el profesorado y/o persona de confianza que permitan o no la introducción de nuevos artículos, sus ediciones y eliminaciones. Teniendo la potestad de elegir el artículo destacado en la vista principal.
 
 La intencionalidad de la página es que su diseño sea atractivo y funcional, facilitando la accesibilidad de los usuarios, y siendo fácil de gestionar por la cuenta administradora.
+
+# Versiones
+
+- Laravel 8.75v
+- Php 7.3|8.0v
+- Boostrap 5.1.3v
