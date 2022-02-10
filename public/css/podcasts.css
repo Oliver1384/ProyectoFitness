@@ -1,6 +1,6 @@
 img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 h1{
@@ -34,6 +34,7 @@ body {
 
 .podcast div div {
     flex-direction: column;
+    min-height: 70%;
 }
 
 .podcast div div div {
@@ -41,7 +42,8 @@ body {
 }
 
 audio {
-    min-width: 97%;
+    width: 85%;
+    height: 100%;
 }
 
 .podcast {
