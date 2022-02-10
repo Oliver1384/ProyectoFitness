@@ -1,3 +1,9 @@
+
+
+
+
+
+
 :root {
     --main-orange:  #FFB20F;
     --main-black:   #2A2B2A;
@@ -36,21 +42,29 @@
 .text-basic-white {
     background: var(--basic-white);
 }
+
+
+.navbar-brand.logo-name img{
+    width: 110px;
+}
+
+
 #navbarSupportedContent{
-   
-   
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: flex-end !important;
 }
 
 #navbarSupportedContent ul{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
     padding-right: 2.5em;
+    outline: .1em solid #000;
     
 }
 
 #navbarSupportedContent ul li{
-    margin: 0 .5em;
+  margin: 0 2em;
 }
 
 #navbarSupportedContent ul li a{
@@ -58,7 +72,7 @@
 }
 
 footer {
-    min-width: 100%;
+    width: 100%;
     background-color: var(--main-white);
     border-top: 8px solid var(--main-orange);
     text-align: center;
