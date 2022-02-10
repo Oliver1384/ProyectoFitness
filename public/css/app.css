@@ -36,8 +36,6 @@
 .text-basic-white {
     background: var(--basic-white);
 }
-
-
 #navbarSupportedContent{
    
    
@@ -57,4 +55,15 @@
 
 #navbarSupportedContent ul li a{
     font-size: 1.3em;
+}
+
+footer {
+    min-width: 100%;
+    background-color: var(--main-white);
+    border-top: 8px solid var(--main-orange);
+    text-align: center;
+}
+
+footer div img {
+    max-width: 60px;
 }
