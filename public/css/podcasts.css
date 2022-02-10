@@ -9,6 +9,58 @@ h1{
     padding: 2rem;
     margin-top: 1rem;
     size: 60px;
-    font-family: var(--title-nav);
+    font-family: var(--title-nav-font);
     font-weight: bolder;
+}
+
+h2 {
+    color: var(--main-orange);
+    margin: 1rem
+}
+
+h3 {
+    color:var(--main-black);
+    margin: 1rem;
+}
+
+body {
+    background-color: var(--main-black);
+}
+
+.podcast  div {
+    display: flex;
+    min-width: 80%;
+}
+
+.podcast div div {
+    flex-direction: column;
+}
+
+.podcast div div div {
+    flex-direction: row;
+}
+
+audio {
+    min-width: 97%;
+}
+
+.podcast {
+    margin: 1rem;
+    padding: 0.2rem;
+    background-color: var(--main-white);
+    border-radius: 6px 6px;
+}
+
+.controls > *{
+    background-color: var(--main-orange);
+    padding: 2rem 4rem 2rem 4rem;
+    font-size: 120px;
+    color:var(--main-white);
+    margin: 1rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
 }
