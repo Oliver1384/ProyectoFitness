@@ -8,4 +8,7 @@ h1{
     color: var(--main-white);
     padding: 2rem;
     margin-top: 1rem;
+    size: 60px;
+    font-family: var(--title-nav);
+    font-weight: bolder;
 }
