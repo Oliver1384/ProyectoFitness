@@ -1,10 +1,12 @@
 @extends('layouts.template')
 
 @section('content')
+    <link rel="stylesheet" href="{{ URL::asset('css/podcasts.css') }}">
+
     <div>
-        <h1>PODCOSTS</h1>
+        <h1>PODCASTS</h1>
         <div>
-            <img src="{{ asset('images/logo/navbar-logo_110x50.png') }}" alt="">
+            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
             <div>
                 <h2>PODCAST 1</h2>
                 <h3>TEMA PODCAST</h3>

@@ -1,0 +1,11 @@
+img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+h1{
+    background-color: var(--main-orange);
+    color: var(--main-white);
+    padding: 2rem;
+    margin-top: 1rem;
+}
