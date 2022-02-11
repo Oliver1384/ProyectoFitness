@@ -1,6 +1,6 @@
 img {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 h1{
@@ -8,6 +8,7 @@ h1{
     color: var(--main-white);
     padding: 2rem;
     margin-top: 1rem;
+    margin-bottom: 0;
     size: 60px;
     font-family: var(--title-nav-font);
     font-weight: bolder;
@@ -18,7 +19,7 @@ h2 {
     margin: 1rem
 }
 
-h3 {
+span {
     color:var(--main-black);
     margin: 1rem;
 }
@@ -27,23 +28,22 @@ body {
     background-color: var(--main-black);
 }
 
-.podcast  div {
+.podcast   {
     display: flex;
     min-width: 80%;
 }
 
-.podcast div div {
-    flex-direction: column;
-    min-height: 70%;
+.podcast > div  {
+    display:flex;
+    flex-flow: column nowrap;
+    flex:1;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
-.podcast div div div {
-    flex-direction: row;
-}
-
-audio {
-    width: 85%;
-    height: 100%;
+.podcasts {
+    display:flex;
+    flex-flow: column nowrap;
 }
 
 .podcast {
@@ -52,6 +52,11 @@ audio {
     background-color: var(--main-white);
     border-radius: 6px 6px;
 }
+
+audio {
+    width: 100%;
+}
+
 
 .controls > *{
     background-color: var(--main-orange);
@@ -65,4 +70,14 @@ audio {
     display: flex;
     justify-content: space-between;
     min-width: 100%;
+}
+
+.separadorBlanco {
+    display: flex;
+    min-height: 1.2rem;
+    background-color: white;
+}
+
+.ocultarMovil{
+    display:none
 }
