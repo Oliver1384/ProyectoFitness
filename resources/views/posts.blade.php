@@ -8,7 +8,7 @@
                     <div class="article-effect" style="background:url('images/articles/Article_Main.png');"></div>
                     <div class="article-content">
                         <h1 class="article-title">
-                            <span class="text-main-black">Artículo</span> <span class="text-main-white">principal</span>
+                            <span class="text-black">Artículo</span> <span class="text-white">principal</span>
                         </h1>
                         <div class="article-body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
@@ -21,12 +21,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 article">
+            <div class="col-12 col-lg-6 col-xl-4 article">
                 <div class="text-main-white bg-main-black">
                     <div class="article-effect" style="background:url('images/articles/Article_01.png');"></div>
                     <div class="article-content">
                         <h1 class="article-title">
-                            <span class="text-main-white">Artículo 1</span>
+                            <span>Artículo 1</span>
                         </h1>
                         <div class="article-body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
@@ -39,12 +39,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 article">
+            <div class="col-12 col-lg-6 col-xl-4 article">
                 <div class="text-main-white bg-main-white">
                     <div class="article-effect" style="background:url('images/articles/Article_02.png');"></div>
                     <div class="article-content">
                         <h1 class="article-title">
-                            <span class="text-main-black">Artículo 2</span>
+                            <span>Artículo 2</span>
                         </h1>
                         <div class="article-body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
@@ -57,12 +57,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 article">
+            <div class="col-12 col-lg-6 col-xl-4 article">
                 <div class="text-main-white bg-main-white">
                     <div class="article-effect" style="background:url('images/articles/Article_03.png');"></div>
                     <div class="article-content">
                         <h1 class="article-title">
-                            <span class="text-main-black">Artículo 3</span>
+                            <span>Artículo 3</span>
                         </h1>
                         <div class="article-body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
@@ -75,12 +75,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 article">
+            <div class="col-12 col-lg-6 col-xl-4 article">
                 <div class="text-main-white bg-main-black">
                     <div class="article-effect" style="background:url('images/articles/Article_04.png');"></div>
                     <div class="article-content">
                         <h1 class="article-title">
-                            <span class="text-main-white">Artículo 4</span>
+                            <span>Artículo 4</span>
                         </h1>
                         <div class="article-body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
@@ -93,12 +93,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 article">
+            <div class="col-12 col-lg-6 col-xl-4 article">
                 <div class="text-main-white bg-main-black">
                     <div class="article-effect" style="background:url('images/articles/Article_05.png');"></div>
                     <div class="article-content">
                         <h1 class="article-title">
-                            <span class="text-main-white">Artículo 5</span>
+                            <span>Artículo 5</span>
                         </h1>
                         <div class="article-body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
@@ -111,12 +111,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 article">
+            <div class="col-12 col-lg-6 col-xl-4 article">
                 <div class="text-main-white bg-main-white">
                     <div class="article-effect" style="background:url('images/articles/Article_06.png');"></div>
                     <div class="article-content">
                         <h1 class="article-title">
-                            <span class="text-main-black">Artículo 6</span>
+                            <span>Artículo 6</span>
                         </h1>
                         <div class="article-body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
