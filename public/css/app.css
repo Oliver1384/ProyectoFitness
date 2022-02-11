@@ -186,3 +186,38 @@ footer div img {
     margin-top: 10px;
     cursor: pointer;
 }
+
+#paginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 220px;
+    background-color: var(--main-black);
+}
+
+.page-link {
+    margin: 0 8px;
+    width: 35px;
+    border: 1px solid var(--main-orange);
+    background-color: var(--main-black);
+    border-radius: 0 !important;
+    color: var(--main-orange) !important;
+    text-align: center;
+}
+
+.page-link:hover {
+    border: 1px solid var(--main-orange);
+    background-color: var(--main-orange) !important;
+    color: var(--main-white) !important;
+}
+
+.page-link.active {
+    margin: 0 8px;
+    border: 1px solid var(--main-orange);
+    background-color: var(--main-orange) !important;
+    color: var(--main-white) !important;
+    font-weight: bold;
+}
