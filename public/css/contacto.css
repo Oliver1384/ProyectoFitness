@@ -1,10 +1,18 @@
+:root{
+    -main-font = 
+}
 
 .contacto-container{
     margin-top: 1.2em;
     background-color: var(--main-orange);
 
+
 }
 
 h1{
     text-align: center;
+}
+
+.nosotros{
+    color: white;
 }
