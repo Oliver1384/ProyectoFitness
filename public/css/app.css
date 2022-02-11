@@ -85,19 +85,21 @@ footer div img {
 
 @media (min-width: 1200px) {
     .article {
-        border-right: 6px solid var(--main-white) !important;
+        border-right: 6px solid var(--main-white);
+    }
+    .article:nth-child(3n+1) {
+        border-right: 0px !important;
     }
     .article:nth-child(even) h1.article-title {
         color: var(--basic-white) !important;
     }
-    
     .article:nth-child(odd) h1.article-title {
         color: var(--main-black) !important;
     }
 }
 
 @media (min-width: 992px) {
-    .article:nth-child(even) {
+    .article:nth-child(2n) {
         border-right: 6px solid var(--main-white);
     }
 }
@@ -111,16 +113,6 @@ footer div img {
 #articles-page .col-md-6 {
     padding: 0;
 }
-
-/*
-#main-article:hover, .article:hover {
-    transition: .7s;
-}
-
-#main-article, .article {
-    transition: .7s;
-}
-*/
 
 .article-effect {
     position: absolute;
@@ -193,9 +185,13 @@ footer div img {
     justify-content: center;
     flex-wrap: nowrap;
     flex-direction: row;
-    width: 100%;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
     height: 220px;
     background-color: var(--main-black);
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
 }
 
 .page-link {
