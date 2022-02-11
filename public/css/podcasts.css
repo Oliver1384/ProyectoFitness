@@ -1,0 +1,83 @@
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+h1{
+    background-color: var(--main-orange);
+    color: var(--main-white);
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    size: 60px;
+    font-family: var(--title-nav-font);
+    font-weight: bolder;
+}
+
+h2 {
+    color: var(--main-orange);
+    margin: 1rem
+}
+
+span {
+    color:var(--main-black);
+    margin: 1rem;
+}
+
+body {
+    background-color: var(--main-black);
+}
+
+.podcast   {
+    display: flex;
+    min-width: 80%;
+}
+
+.podcast > div  {
+    display:flex;
+    flex-flow: column nowrap;
+    flex:1;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.podcasts {
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+.podcast {
+    margin: 1rem;
+    padding: 0.2rem;
+    background-color: var(--main-white);
+    border-radius: 6px 6px;
+}
+
+audio {
+    width: 100%;
+}
+
+
+.controls > *{
+    background-color: var(--main-orange);
+    padding: 2rem 4rem 2rem 4rem;
+    font-size: 120px;
+    color:var(--main-white);
+    margin: 1rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.separadorBlanco {
+    display: flex;
+    min-height: 1.2rem;
+    background-color: white;
+}
+
+.ocultarMovil{
+    display:none
+}
