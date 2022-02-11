@@ -7,8 +7,6 @@ h1{
     background-color: var(--main-orange);
     color: var(--main-white);
     padding: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
     size: 60px;
     font-family: var(--title-nav-font);
     font-weight: bolder;
@@ -81,3 +79,29 @@ audio {
 .ocultarMovil{
     display:none
 }
+
+@media(min-width:991px){
+    body {
+        background-color: red;
+    }
+
+    .seccionEscritorio {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2 {
+        color: var(--main-white);
+        margin: 1rem
+    }
+    span {
+        color: var(--main-orange);
+    }
+}
+
+.seccionEscritorio > * {
+    border: 2px solid white;
+    padding: 1.3rem;
+}
+
+

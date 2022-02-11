@@ -2,9 +2,17 @@
 
 @section('content')
     <link rel="stylesheet" href="{{ URL::asset('css/podcasts.css') }}">
+    <div class="separadorBlanco"></div>
+    <div class="seccionEscritorio ocultarMovil">
+        <div>
+            <h2>PODCAST <span>MÁS RECIENTE</span></h2>
+        </div>
+        <div>
+            <h2>PODCAST <span>PATROCINADOS</span></h2>
+        </div>
+    </div>
     <div class="podcasts">
         <h1>PODCASTS</h1>
-        <div class="separadorBlanco"></div>
         <div class="podcast">
                 <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
                 <div>
