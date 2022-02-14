@@ -8,10 +8,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet"/>
     <link href="{{ asset('css/nav.css') }}" rel="stylesheet"/>
+    <script src="{{ asset('js/nav.js') }}"></script>
 
 </head>
 <body>
+    <div class="nav-movil">
+        <div class="header">
+            <p class="close-nav">X</p>
+        </div>
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">TIENDA</a></li>
+            <li><a href="#">PODCASTS</a></li>
+            <li><a href="#">POSTS</a></li>
+            <li><a href="#">PLANES</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+    </div>
     <nav>
+            <div class="burger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <figure>
                 <img src="{{ asset('images/logo/navbar-logo_110x50.png') }}" alt="logo de proyecto fitness"/>
             </figure>
