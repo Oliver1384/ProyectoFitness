@@ -9,6 +9,18 @@
     --main-black:   #2A2B2A;
     --main-white:   #F9F7F3;
     --basic-white:  #FFFFFF;
+    --title-nav-font: oswald;
+    --alternative-font: sans-serif;
+    --content-font: notosans;
+}
+
+@font-face {
+    font-family: oswald;
+    src: url(./public/fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: notosans;
+    src: url(./public/fonts/NotoSans-Regular.ttf);
 }
 
 .bg-main-orange {

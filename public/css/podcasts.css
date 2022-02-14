@@ -1,0 +1,170 @@
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+h1{
+    background-color: var(--main-orange);
+    color: var(--main-white);
+    padding: 2rem;
+    size: 60px;
+    font-family: var(--title-nav-font);
+    font-weight: bolder;
+}
+
+h2 {
+    color: var(--main-orange);
+    margin: 1rem
+}
+
+span {
+    color:var(--main-black);
+    margin: 1rem;
+}
+
+body {
+    background-color: var(--main-black);
+}
+
+.podcast   {
+    display: flex;
+}
+
+.podcast > div  {
+    display:flex;
+    flex-flow: column nowrap;
+    flex:1;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.podcasts {
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+.podcast {
+    margin: 1rem;
+    padding: 0.2rem;
+    background-color: var(--main-white);
+    border-radius: 6px 6px;
+}
+
+audio {
+    width: 100%;
+}
+
+
+.controls > *{
+    background-color: var(--main-orange);
+    padding: 2rem 4rem 2rem 4rem;
+    font-size: 120px;
+    color:var(--main-white);
+    margin: 1rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.separadorBlanco {
+    display: flex;
+    min-height: 1.2rem;
+    background-color: white;
+}
+
+.ocultarMovil{
+    display:none
+}
+
+
+@media(min-width:991px){
+
+    .seccionEscritorio {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nuestrosPodcasts{
+        display: grid;
+    }
+
+    h2 {
+        color: var(--main-white);
+        margin: 0.2rem;
+        font-size: 20px;
+    }
+    span {
+        color: var(--main-orange);
+    }
+
+    .ocultarEscritorio{
+        display: none;
+    }
+
+    img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    h2 {
+        margin-left: 2rem;
+    }
+    span {
+        margin: 0;
+    }
+}
+
+.seccionEscritorio > * {
+    border: 2px solid white;
+    padding: 0.2rem;
+}
+
+.podcastCategoria > div, .nuestrosPodcasts > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.podcastCategoria div.podcast {
+    max-width: 340px;
+
+}
+
+.podcastCategoria div h2 {
+    color:var(--main-orange);
+}
+
+.podcastCategoria div span {
+    color:var(--main-black);
+}
+
+.podcastCategoria img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.podcastCategoria .podcast h2 {
+    text-align: center;
+}
+
+.podcastCategoria .podcast div {
+    padding: 0;
+}
+
+.podcastCategoria > h2 {
+    text-align: end;
+    font-size: 44px;
+    margin-right: 2rem;
+}
+
+.podcastCategoria:last-child > h2 {
+    text-align: start;
+}
+
+.nuestrosPodcasts > h1 {
+    text-align: center;
+}
+
