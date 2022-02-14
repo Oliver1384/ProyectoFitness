@@ -25,7 +25,7 @@
             <li><a href="{{ url('/Contacto') }}">CONTACTO</a></li>
         </ul>
     </div>
-    <nav>
+    <nav class="nav-principal">
             <div class="burger">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -35,7 +35,7 @@
                 <img src="{{ asset('images/logo/navbar-logo_110x50.png') }}" alt="logo de proyecto fitness"/>
             </figure>
             
-               <ul>
+               <ul class="nav-escritorio">
                     <li class="nav-item ">
                         <a class="nav-link {{ Request::is('Inicio') ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Inicio</a>
                     </li>

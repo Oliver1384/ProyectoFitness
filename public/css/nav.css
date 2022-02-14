@@ -24,7 +24,7 @@ box-sizing: border-box;
 
 
 
-nav{
+.nav-principal{
     display: flex;
     height: 80px;
     flex-flow: row wrap;
@@ -35,7 +35,7 @@ nav{
 
 }
 
-nav figure{
+.nav-principal figure{
     display: flex;
     height: 100%;
     align-items: center;
@@ -45,11 +45,11 @@ nav figure{
 
 
 
-nav figure img{
+.nav-principal figure img{
     width: 110px;
 }
 
-nav ul{
+.nav-escritorio{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -58,13 +58,18 @@ nav ul{
     
 }
 
-ul li{
+.nav-escritorio li{
     list-style-type: none;    
-    margin: 0 1.5em;
+    margin: 0 .2em;
 }
 
-nav ul li a{
-    font-size: 1.5em;
+.nav-escritorio li a{
+    font-size: 1.2rem;
+    color: var(--basic-white);
+    font-weight: 700;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+
 }
 
 
@@ -114,6 +119,7 @@ nav ul li a{
     margin: 0;
     text-align: center;
     padding: .8em;
+    list-style-type: none;
 }
 
 .nav-movil ul li a{
@@ -152,4 +158,18 @@ nav ul li a{
     width: 100%;
     background-color: var(--main-orange);
     
+}
+
+
+@media (min-width:750px){
+
+    .burger{
+        display: none;
+    }
+    
+    .nav-escritorio{
+        display: inherit;
+    }
+
+
 }
