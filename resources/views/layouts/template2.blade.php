@@ -17,12 +17,12 @@
             <p class="close-nav">X</p>
         </div>
         <ul>
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">TIENDA</a></li>
-            <li><a href="#">PODCASTS</a></li>
-            <li><a href="#">POSTS</a></li>
-            <li><a href="#">PLANES</a></li>
-            <li><a href="#">CONTACTO</a></li>
+            <li><a href="{{ url('/') }}">INICIO</a></li>
+            <li><a href="{{ url('/Tienda') }}">TIENDA</a></li>
+            <li><a href="{{ url('/Podcasts') }}">PODCASTS</a></li>
+            <li><a href="{{ url('/Posts') }}">POSTS</a></li>
+            <li><a href="{{ url('/Planes') }}">PLANES</a></li>
+            <li><a href="{{ url('/Contacto') }}">CONTACTO</a></li>
         </ul>
     </div>
     <nav>

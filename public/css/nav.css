@@ -26,18 +26,20 @@ box-sizing: border-box;
 
 nav{
     display: flex;
-    padding: 0;
+    height: 80px;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-
     background-color: var(--main-black);
-    padding: .5em;
-    background-color: #252725;
+    background-color: #252725; /* El fondo es diferente*/
 
 }
 
-
+nav figure{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
 
 
 
@@ -52,6 +54,7 @@ nav ul{
     flex-flow: row nowrap;
     align-items: center;
     display: none;
+    padding: 0;
     
 }
 
