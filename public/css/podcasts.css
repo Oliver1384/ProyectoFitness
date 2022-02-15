@@ -89,6 +89,11 @@ audio {
         grid-template-columns: 1fr 1fr;
     }
 
+    .paginadorEscritorio {
+        display:flex;
+        justify-content: center;
+    }
+
     .nuestrosPodcasts{
         display: grid;
     }
