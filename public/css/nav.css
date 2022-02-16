@@ -161,6 +161,8 @@ box-sizing: border-box;
 
 }
 
+
+
 .footer-movil img {
    margin: 2rem;
 }
@@ -169,9 +171,32 @@ box-sizing: border-box;
     padding: 1.5rem;
 }
 
+
+
 .iconosEscritorio {
     position: absolute;
-    right: 0;
+    right: .4em;
+    top: .4em;
+
+}
+
+.iconosEscritorio a, .footer-movil a{
+    text-decoration: none;
+}
+
+
+
+.footer-movil a{
+    margin: 0 1em;
+}
+
+.footer-movil p{
+    margin:  1em 0;
+}
+
+.footer-movil a svg{
+    width: 100px;
+    height: 100px;
 }
 
 .iconosEscritorio img {
@@ -193,12 +218,15 @@ box-sizing: border-box;
 
 .footer-escritorio {
     display: none;
+    position: relative;
+
 }
 
 .enlacesFooterEscritorio > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 5rem;
+    margin-top: 2em;
+
 }
 
 .enlacesFooterEscritorio > div > div {
