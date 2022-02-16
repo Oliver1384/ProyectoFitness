@@ -34,7 +34,7 @@
             <figure>
                 <img src="{{ asset('images/logo/navbar-logo_110x50.png') }}" alt="logo de proyecto fitness"/>
             </figure>
-            
+
                <ul class="nav-escritorio">
                     <li class="nav-item ">
                         <a class="nav-link {{ Request::is('Inicio') ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Inicio</a>
@@ -60,13 +60,45 @@
 
     @yield('content')
 
-    <footer>
+    <footer class="footer-movil">
         <div>
             <img src="{{ asset('images/iconos/instagram.svg') }}" alt="">
             <img src="{{ asset('images/iconos/facebook.svg') }}" alt="">
             <img src="{{ asset('images/iconos/youtube.svg') }}" alt="">
         </div>
         <p>Copyright © 2022 proyectofitness. Todos los derechos reservados</p>
+    </footer>
+
+    <footer class="footer-escritorio">
+        <div class="iconosEscritorio">
+            <img src="{{ asset('images/iconos/instagram.svg') }}" alt="">
+            <img src="{{ asset('images/iconos/facebook.svg') }}" alt="">
+            <img src="{{ asset('images/iconos/youtube.svg') }}" alt="">
+        </div>
+        <div class="enlacesFooterEscritorio">
+            <img src="" alt="">
+            <div>
+                <div>
+                    <b>Artículos</b>
+                    <p>Artículos destacados</p>
+                    <p>Ver nuestro artículos</p>
+                </div>
+                <div>
+                    <b>Podcast</b>
+                    <p>Escuchar nuestro podcast</p>
+                </div>
+                <div>
+                    <b>Programas</b>
+                    <p>Nuestros programas destacados</p>
+                    <p>¡Personaliza tu programa!</p>
+                </div>
+                <div>
+                    <b>Contacto</b>
+                    <p>Nuestra ubicación</p>
+                </div>
+                <p class="copyright">Copyright © 2022 proyectofitness. Todos los derechos reservados</p>
+            </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
