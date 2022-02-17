@@ -1,8 +1,26 @@
+
+
+
+
+
+
 :root {
     --main-orange:  #FFB20F;
     --main-black:   #2A2B2A;
     --main-white:   #F9F7F3;
     --basic-white:  #FFFFFF;
+    --title-nav-font: oswald;
+    --alternative-font: sans-serif;
+    --content-font: notosans;
+}
+
+@font-face {
+    font-family: oswald;
+    src: url(./public/fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: notosans;
+    src: url(./public/fonts/NotoSans-Regular.ttf);
 }
 
 .bg-main-orange {
@@ -37,8 +55,35 @@
     background: var(--basic-white);
 }
 
+/*
+.navbar-brand.logo-name img{
+    width: 110px;
+}
+
+
+#navbarSupportedContent{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: flex-end !important;
+}
+
+#navbarSupportedContent ul{
+    width: 100%;
+    display: flex;
+    padding-right: 2.5em;
+    
+}
+
+#navbarSupportedContent ul li{
+  margin: 0 2em;
+}
+
+#navbarSupportedContent ul li a{
+    font-size: 1.3em;
+}*/
+
 footer {
-    min-width: 100%;
+    width: 100%;
     background-color: var(--main-white);
     border-top: 8px solid var(--main-orange);
     text-align: center;
