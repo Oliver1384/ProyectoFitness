@@ -1,0 +1,25 @@
+:root {
+    --main-orange:  #FFB20F;
+    --main-black:   #2A2B2A;
+    --main-white:   #F9F7F3;
+    --basic-white:  #FFFFFF;
+    --title-font : 'Oswald', sans-serif;
+    --content-font : 'Noto Sans', sans-serif;
+    --aux-font : 'Open Sans', sans-serif;
+}
+
+
+
+
+
+h2{
+    color: var(--basic-white);
+    
+   
+
+}
+
+h2 span{
+    color:var(--main-orange) ;
+    background-color: red;
+}

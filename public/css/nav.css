@@ -24,6 +24,7 @@ box-sizing: border-box;
 
 
 
+
 .nav-principal{
     display: flex;
     height: 80px;
@@ -162,6 +163,24 @@ box-sizing: border-box;
 }
 
 
+.podcast-index{
+    padding: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.podcast-index > div{
+    max-width: 1024px;
+    align-self: center;
+}
+
+.podcast-index > div > div{
+    flex: 1 1 300px;
+}
+
+
+
+
 
 .footer-movil img {
    margin: 2rem;
@@ -235,7 +254,7 @@ box-sizing: border-box;
 }
 
 .copyright {
-   margin-top: 3rem;
+    margin-top: 3rem;
     grid-area: 3 / 1 / span 1 / span 2;
 }
 
