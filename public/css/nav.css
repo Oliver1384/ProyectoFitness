@@ -181,11 +181,13 @@ box-sizing: border-box;
     grid-template-columns: 1fr 2fr;
 }
 
-.enlacesFooterEscritorio img {
-    background-color: red;
+.enlacesFooterEscritorio .imagenFooter {
+    background-image: url('../images/footer.jpg');
+    background-size: cover;
     min-width: 100%;
     min-height: 100%;
     border-right: 4px solid var(--main-orange);
+    margin: 0;
 }
 
 .footer-escritorio {
@@ -205,7 +207,9 @@ box-sizing: border-box;
 
 .enlacesFooterEscritorio > div > div {
     border-bottom: 3px solid var(--main-black);
+    max-width: 70%;
     margin: 1rem;
+    justify-self: center;
 }
 
 .copyright {

@@ -199,7 +199,7 @@
 
         </div>
         <div class="enlacesFooterEscritorio">
-            <img src="{{ asset('images/footer.jpg') }}" alt="">
+            <div class="imagenFooter"></div>
             <div>
                 <div>
                     <b>Artículos</b>
