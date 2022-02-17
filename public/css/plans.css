@@ -1,0 +1,34 @@
+.planContenido1 {
+    background: var(--main-orange);
+}
+
+.pContenido1{
+    color: var(--main-black);
+}
+
+span {
+    color:var(--main-black);
+}
+
+.planContenido2{
+    background: var(--main-white);
+}
+
+.span2Contenido1 {
+    color:var(--main-white);
+}
+
+.span2Contenido2 {
+    color:var(--main-orange);
+}
+
+.carousel button:first-child {
+    background-color:var(--main-orange);
+}
+
+
+.active div:nth-child(2) > div {
+    color: var(--main-white); background-color: var(--main-black)
+}
+
+
