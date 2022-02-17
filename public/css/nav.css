@@ -72,10 +72,6 @@ box-sizing: border-box;
 
 }
 
-
-
-
-
 .nav-movil{
     background-color: red;
     position: fixed;
@@ -85,7 +81,7 @@ box-sizing: border-box;
     left: 0;
     display: none;
     overflow: hidden;
-
+    z-index: 20;
 }
 
 .nav-movil .header{
@@ -198,7 +194,12 @@ box-sizing: border-box;
 .enlacesFooterEscritorio > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 5rem;
+    margin: 1rem;
+    margin-top: 4rem;
+}
+
+.enlacesFooterEscritorio > div > div > p {
+    margin-bottom: 0;
 }
 
 .enlacesFooterEscritorio > div > div {

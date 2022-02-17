@@ -71,7 +71,7 @@
     width: 100%;
     display: flex;
     padding-right: 2.5em;
-    
+
 }
 
 #navbarSupportedContent ul li{
@@ -85,7 +85,7 @@
 footer {
     width: 100%;
     background-color: var(--main-white);
-    border-top: 8px solid var(--main-orange);
+    border-top: 3px solid var(--main-orange);
     text-align: center;
 }
 
