@@ -4,17 +4,39 @@
     margin-top: 1.2em;
     background-color: var(--main-orange);
     text-align: center;
+    padding: 1.5em;
 
 }
 
 h1{
     text-align: center;
     font-family: var(--title-nav-font);
-    size: 60px;
+   
+}
 
+h1 > span{
+    font-size: 30px;
 }
 
 .nosotros{
     color: white;
     
+}
+
+p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+.info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+img{
+    width: 40%;
 }
