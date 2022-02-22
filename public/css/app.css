@@ -71,7 +71,7 @@
     width: 100%;
     display: flex;
     padding-right: 2.5em;
-    
+
 }
 
 #navbarSupportedContent ul li{
@@ -168,7 +168,7 @@ footer div img {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;   
+    bottom: 0;
     left: 0;
     opacity: .5;
     background-size: cover !important;
@@ -185,7 +185,7 @@ footer div img {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;   
+    bottom: 0;
     left: 0;
 }
 
@@ -206,7 +206,7 @@ footer div img {
 
 .article .article-button {
     margin-top: 10px;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 .article .article-title {
