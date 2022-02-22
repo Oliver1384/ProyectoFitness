@@ -95,4 +95,10 @@
         </div>
     </div>
 </div>
+<div class="planes">
+    <h2>PLANES<span> PERSONALIZADOS</span></h2>
+</div>
+<div class="productos">
+    <h2>PRODUCTOS<span> ESTRELLA</span></h2>
+</div>
 @endsection
