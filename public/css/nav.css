@@ -185,11 +185,19 @@ box-sizing: border-box;
 .footer-movil {
     padding: 1.5rem;
 }
+.footer-movil a{
+    text-decoration: none;
+}
 
+/*
 .iconosEscritorio {
     position: absolute;
     right: 0;
     padding: 0.5rem;
+}
+
+.iconosEscritorio a{
+    text-decoration: none;
 }
 
 .iconosEscritorio img {
@@ -209,12 +217,89 @@ box-sizing: border-box;
     min-height: 100%;
     border-right: 4px solid var(--main-orange);
     margin: 0;
-}
+}*/
 
 .footer-escritorio {
     display: none;
+    height: 400px;
+
 }
 
+.footer-escritorio .imagenFooter{
+    display: flex;
+    background-color: red;
+    flex: 1 1 300px;
+    max-width: 400px;
+    height: 100%;
+    background-image: url('../images/footer.jpg');
+    background-size: cover;
+}
+
+
+
+.contenido-footer{
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 2 1 400px;
+    justify-content: space-between;
+    border-left: 8px solid var(--main-orange);
+}
+
+.enlacesFooterEscritorio  {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlacesFooterEscritorio section{
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: .2em;
+    justify-content: center;
+}
+
+section.footer-izquierdo{
+    justify-content: flex-end;
+}
+
+
+.enlacesFooterEscritorio  div{
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+}
+
+.enlacesFooterEscritorio div p{
+    margin: .1em 1em;
+    font-size: .9em;
+}
+.enlacesFooterEscritorio div p:last-of-type{
+    border-bottom: .2em solid var(--main-black);
+    padding-bottom: .2em;
+
+    text-align: left;
+}
+
+.contenido-footer   p.copyright{
+    align-self: center;
+    font-size: .9em ;
+}
+
+.contenido-footer .iconosEscritorio{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-escritorio .iconosEscritorio a{
+   text-decoration: none;
+   margin: .5em;
+}
+
+/*
 .enlacesFooterEscritorio > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -237,15 +322,21 @@ box-sizing: border-box;
     margin-top: 3rem;
     grid-area: 3 / 1 / span 1 / span 2;
 }
-
+*/
 
 @media (min-width:750px){
+    .footer-escritorio{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+
 
     .burger{
         display: none;
     }
 
-    .nav-escritorio, .footer-escritorio{
+    .nav-escritorio{
         display: inherit;
     }
 
