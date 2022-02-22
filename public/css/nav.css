@@ -73,6 +73,10 @@ box-sizing: border-box;
 
 }
 
+.nav-escritorio li a:hover{
+    color: var(--main-orange);
+}
+
 .nav-movil{
     background-color: red;
     position: fixed;
@@ -190,6 +194,10 @@ box-sizing: border-box;
     position: absolute;
     right: 0;
     padding: 0.5rem;
+}
+
+.iconosEscritorio a{
+    text-decoration: none;
 }
 
 .iconosEscritorio img {
