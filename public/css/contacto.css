@@ -11,7 +11,7 @@
 h1{
     text-align: center;
     font-family: var(--title-nav-font);
-   
+
 }
 
 h1 > span{
@@ -20,7 +20,7 @@ h1 > span{
 
 .nosotros{
     color: white;
-    
+
 }
 
 p{
@@ -37,6 +37,34 @@ p{
 
 }
 
-img{
-    width: 40%;
+
+
+.info-container{
+    margin:1em;
 }
+
+
+.email, .telefono, .ubicacion{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+}
+
+
+.email > *, .telefono > *, .ubicacion > *{
+
+    margin: 0 .2em;
+}
+
+
+.mapa{
+    margin:1em;
+    border: 2px solid var(--main-orange);
+
+}
+
+iframe{
+    width: 100%;
+}
+
