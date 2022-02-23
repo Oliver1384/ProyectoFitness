@@ -77,6 +77,61 @@ h2 span{
 
 }
 
+.entrenadores{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: var(--main-orange);
+
+}
+
+.entrenador{
+    padding: .5em 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-orange);
+    height: 50vh;
+}
+
+.entrenador article{
+    display: flex;
+    background-color: var(--main-white);
+    align-items: center;
+    padding: 1em;
+    border-radius: .4em;
+}
+
+.entrenador a{
+    text-decoration: none;
+}
+
+.entrenador .entrenador-nombre{
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.entrenador figure{
+    margin: 0 .5em;
+
+}
+
+.datos-entrenador{
+
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+/* color botones carrousel
+.carousel-control-prev, .carousel-control-next{
+    border-radius: .5em;
+    padding: .5em;
+}
+*/
+
 
 
 
