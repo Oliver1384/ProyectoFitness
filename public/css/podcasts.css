@@ -30,6 +30,9 @@ body {
 
 .podcast   {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .podcast > div  {
@@ -130,9 +133,10 @@ audio {
 }
 
 .podcastCategoria > div, .nuestrosPodcasts > div {
-    display: flex;
-    flex-wrap: wrap;
+
+    display:flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .podcastCategoria div.podcast {
@@ -149,8 +153,8 @@ audio {
 }
 
 .podcastCategoria img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 261px;
+    max-height: 95%;
 }
 
 .podcastCategoria .podcast h2 {
