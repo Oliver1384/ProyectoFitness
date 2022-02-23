@@ -28,13 +28,14 @@
             <!--Carousel Wrapper-->
             <div id="multi-item-example" class="carousel slide  carousel-multi-item mb-3 d-flex justify-content-center"  data-bs-interval="false"  data-interval="false" data-bs-ride="carousel">
 
-
-                <a class="d-flex align-items-center" href="#multi-item-example" data-slide="prev">
-                <button class="rounded-circle border border-dark" type="button"   data-bs-slide="prev" >
+                <div class="d-flex align-items-center">
+                <a  href="#multi-item-example" data-slide="prev">
+                <button class="rounded-circle border border-dark btn-lg mx-3" type="button"   data-bs-slide="prev" >
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 </a>
+                </div>
 
                 <!--Slides-->
                 <div class="carousel-inner" role="">
@@ -42,7 +43,7 @@
                     <!--First slide-->
                     <div class="carousel-item active">
                         <div class="row d-flex justify-content-center">
-                            <div class="col-xl-3 col-md-6 ">
+                            <div class="col-xl-4 col-md-6 ">
                                 <div class="card mb-2 border border-dark">
                                     <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
                                          alt="Card image cap">
@@ -51,12 +52,12 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3">Leer más</button>
+                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end">Leer más</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 clearfix col-md-6 d-md-block clearfix d-none d-xl-block">
+                            <div class="col-xl-4 clearfix col-md-6 d-md-block clearfix d-none d-xl-block">
                                 <div class="card mb-2 border border-dark">
                                     <img class="card-img-top" style="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
                                          alt="Card image cap">
@@ -65,12 +66,12 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3">Leer más</button>
+                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end">Leer más</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 clearfix d-none col-md-6 d-md-block clearfix d-none d-xl-block">
+                            <div class="col-xl-4 clearfix d-none col-md-6 d-md-none clearfix d-none d-xl-block">
                                 <div class="card mb-2 border border-dark">
                                     <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
                                          alt="Card image cap">
@@ -79,7 +80,7 @@
                                         <p class="card-text  fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3">Leer más</button>
+                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end">Leer más</button>
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +92,7 @@
                     <div class="carousel-item ">
 
                         <div class="row d-flex justify-content-center">
-                            <div class="col-md-3 ">
+                            <div class="col-xl-4 col-md-6 ">
                                 <div class="card mb-2 border border-dark">
                                     <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
                                          alt="Card image cap">
@@ -100,12 +101,12 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3">Leer más</button>
+                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end">Leer más</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-3 clearfix d-none d-md-block">
+                            <div class="col-xl-4 clearfix col-md-6 d-md-block clearfix d-none d-xl-block">
                                 <div class="card mb-2 border border-dark" >
                                     <img class="card-img-top" style="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
                                          alt="Card image cap">
@@ -114,12 +115,12 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3">Leer más</button>
+                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end">Leer más</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-3 clearfix d-none d-md-block">
+                            <div class="col-xl-4 clearfix d-none col-md-6 d-md-none clearfix d-none d-xl-block">
                                 <div class="card mb-2 border border-dark">
                                     <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
                                          alt="Card image cap">
@@ -128,7 +129,7 @@
                                         <p class="card-text  fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3">Leer más</button>
+                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end">Leer más</button>
                                     </div>
                                 </div>
                             </div>
@@ -139,7 +140,7 @@
                     <div class="carousel-item ">
 
                         <div class="row d-flex justify-content-center">
-                            <div class="col-md-3 ">
+                            <div class="col-xl-4 col-md-6 ">
                                 <div class="card mb-2 border border-dark">
                                     <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
                                          alt="Card image cap">
@@ -148,12 +149,12 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3">Leer más</button>
+                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end">Leer más</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-3 clearfix d-none d-md-block">
+                            <div class="col-xl-4 clearfix d-none col-md-6 d-md-none clearfix d-none d-xl-block">
                                 <div class="card mb-2 border border-dark" >
                                     <img class="card-img-top" style="" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
                                          alt="Card image cap">
@@ -162,12 +163,12 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3">Leer más</button>
+                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end">Leer más</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-3 clearfix d-none d-md-block">
+                            <div class="col-xl-4 clearfix d-none col-md-6 d-md-none clearfix d-none d-xl-block">
                                 <div class="card mb-2 border border-dark">
                                     <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
                                          alt="Card image cap">
@@ -176,7 +177,7 @@
                                         <p class="card-text  fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3">Leer más</button>
+                                        <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end">Leer más</button>
                                     </div>
                                 </div>
                             </div>
@@ -188,12 +189,14 @@
 
                 </div>
                 <!--/.Slides-->
-                <a class="btn-floating d-flex align-items-center" href="#multi-item-example" data-slide="next">
-                <button class="rounded-circle border border-dark" type="button"  data-bs-slide="next" >
+                <div class="d-flex align-items-center">
+                <a  href="#multi-item-example" data-slide="next">
+                <button class="rounded-circle border border-dark btn-lg mx-3" type="button"  data-bs-slide="next" >
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
                 </a>
+                </div>
 
             </div>
             <!--/.Carousel Wrapper-->
