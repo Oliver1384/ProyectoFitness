@@ -1,70 +1,161 @@
-
-
-.contacto-container{
-    margin-top: 1.2em;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contacto-container {
+    margin: 1.2em 0;
     background-color: var(--main-orange);
     text-align: center;
     padding: 1.5em;
-
 }
 
-h1{
+h1 {
     text-align: center;
     font-family: var(--title-nav-font);
-
 }
 
-h1 > span{
+h1 > span {
     font-size: 30px;
 }
 
-.nosotros{
+.nosotros {
     color: white;
-
 }
 
-p{
+p {
     font-size: 14px;
     text-align: justify;
 }
 
-
-.info-container{
+.info-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
 }
 
-
-
-.info-container{
-    margin:1em;
+.barra-redes {
+    display: none;
 }
 
+.imagen-container {
+    display: none;
+}
 
-.email, .telefono, .ubicacion{
+.logo {
+    display: none;
+}
+
+.email,
+.telefono,
+.ubicacion {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-
 }
 
-
-.email > *, .telefono > *, .ubicacion > *{
-
-    margin: 0 .2em;
+.email > *,
+.telefono > *,
+.ubicacion > * {
+    margin: 0 0.2em;
 }
 
-
-.mapa{
-    margin:1em;
+.mapa {
+    margin: 1em;
     border: 2px solid var(--main-orange);
-
 }
 
-iframe{
+iframe {
     width: 100%;
 }
 
+@media (min-width: 750px) {
+
+    .contacto-container {
+        margin: 1.2em 0 0 0;
+        flex: 2;
+    }
+    .contacto-container > h1 > span {
+        font-size: 85px;
+    }
+
+    .contacto-container > p {
+        margin: 1em 10em;
+
+    }
+
+    .barra-redes {
+        display: flex;
+        justify-content: center;
+        background-color: var(--main-black);
+        padding: 0.8em;
+    }
+
+
+    .info-container{
+
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .ig {
+        margin: 0 1em;
+    }
+
+    .imagen-container {
+        display: initial;
+        flex:1;
+
+    }
+
+    .datos-informacion{
+        flex:1;
+
+    }
+
+    .imagen-container > img {
+        width: 70%;
+
+    }
+    .logo {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+    }
+
+    .logo > img {
+        width: 300px;
+    }
+
+    .mapa{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+
+    }
+
+    iframe{
+        width: 700px;
+        height: 400px;
+    }
+
+    .telefono, .ubicacion, .email{
+        margin: .3em 0 0 1em;
+
+    }
+
+    .telefono > svg, .ubicacion > svg, .email > svg {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .telefono > p, .ubicacion > p, .email >p{
+        font-size: 16px;
+    }
+
+
+
+}
