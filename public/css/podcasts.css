@@ -187,3 +187,7 @@ audio {
     text-align: center;
 }
 
+.carousel-item {
+    display: flex;
+}
+
