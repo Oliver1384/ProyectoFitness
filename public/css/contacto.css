@@ -41,6 +41,9 @@ p {
 
 .imagen-container {
     display: none;
+    position: relative;
+    height: 730px;
+    overflow: hidden;
 }
 
 .logo {
@@ -68,6 +71,12 @@ p {
 
 iframe {
     width: 100%;
+}
+
+@media (max-width: 1265px) {
+    .imagen-container > img {
+        display: none;
+    }
 }
 
 @media (min-width: 750px) {
@@ -115,8 +124,10 @@ iframe {
     }
 
     .imagen-container > img {
-        width: 70%;
-
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
     }
     .logo {
         display: flex;
