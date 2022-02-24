@@ -70,8 +70,7 @@
         </div>
 
         <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.8150659728444!2d-15.523223085226956!3d28.121665613769323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40936c672bb2a7%3A0x2acd25e282651713!2sIES%20Arucas-Domingo%20Rivero!5e0!3m2!1ses!2ses!4v1645555589532!5m2!1ses!2ses" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.8150659728444!2d-15.523223085226956!3d28.121665613769323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40936c672bb2a7%3A0x2acd25e282651713!2sIES%20Arucas-Domingo%20Rivero!5e0!3m2!1ses!2ses!4v1645555589532!5m2!1ses!2ses" width="300" height="200" style="min-height: 375px; border:2px solid var(--main-orange);" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 
