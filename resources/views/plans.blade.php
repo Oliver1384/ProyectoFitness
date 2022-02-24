@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{{ URL::asset('css/plans.css') }}">
     <div class="container-fluid mt-4 planContenido1" >
         <div class="row d-flex justify-content-center">
-            <h1 class="text-center fw-bold fs-1 mt-3">  <span>Elige </span> <span class="span2Contenido1">tu plan </span> </h1>
+            <h1 class="text-center fw-bold fs-1 mt-3 titulo">  <span class="span1Contenido1">Elige </span> <span class="span2Contenido1 ">tu plan </span> </h1>
             <div class="col-6">
                 <p class="fst-italic pContenido1" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis corporis deleniti ea eos et fugit in,
                     iure neque nulla numquam odio officiis perspiciatis quas quis sed sint sunt voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, illum ipsa magni necessitatibus neque pariatur quidem!
@@ -14,7 +14,7 @@
                     explicabo hic incidunt ipsum laborum minus non quidem quo sequi soluta? </p>
             </div>
             <div class="col-12 text-center">
-                <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3"> Crea tu plan</button>
+                <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3 btn-lg"> Crea tu plan</button>
             </div>
 
         </div>
@@ -22,7 +22,7 @@
 
     <div class="container-fluid planContenido2">
         <div class="row d-flex justify-content-center">
-            <h1 class="text-center fw-bold fs-1 mt-3">  <span>Nuestros </span> <span class="span2Contenido2">planes </span> </h1>
+            <h1 class="text-center fw-bold fs-1 mt-3 titulo">  <span class="span1Contenido2">Nuestros </span> <span class="span2Contenido2">planes </span> </h1>
 
 
             <!--Carousel Wrapper-->
@@ -43,7 +43,7 @@
                     <!--First slide-->
                     <div class="carousel-item active">
                         <div class="row d-flex justify-content-center">
-                            <div class="col-xl-4 col-md-6 ">
+                            <div class="col-xl-4 col-md-6 col-12 ">
                                 <div class="card mb-2 border border-dark">
                                     <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
                                          alt="Card image cap">
