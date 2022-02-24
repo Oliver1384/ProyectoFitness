@@ -98,10 +98,14 @@ h2 span{
 
 .entrenador article{
     display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
     background-color: var(--main-white);
     align-items: center;
     padding: 1em;
     border-radius: .4em;
+    margin: 0 .5em;
 }
 
 .entrenador a{
@@ -122,6 +126,7 @@ h2 span{
 
     display: flex;
     flex-flow: column nowrap;
+    margin-top: .5em;
 
 }
 
