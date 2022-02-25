@@ -40,7 +40,6 @@ body {
     flex-flow: column nowrap;
     flex:1;
     justify-content: space-between;
-    padding: 1rem;
 }
 
 .podcasts {
@@ -53,11 +52,6 @@ body {
     padding:0.2rem;
     background-color:var(--main-white);
     border-radius: 6px 6px;
-}
-
-.nuestrosPodcasts > div > .podcast {
-    display: flex;
-    flex-direction: row;
 }
 
 audio {
@@ -97,17 +91,12 @@ audio {
         grid-template-columns: 1fr 1fr;
     }
 
-    .paginadorEscritorio {
-        display:flex;
-        justify-content: center;
-    }
-
     .nuestrosPodcasts{
-        display: grid;
+        display: flex;
     }
 
     h2 {
-        color: var(--main-white);
+        color: var(--main-black);
         margin: 0.2rem;
         font-size: 20px;
     }
@@ -137,8 +126,7 @@ audio {
     padding: 0.2rem;
 }
 
-.podcastCategoria > div, .nuestrosPodcasts > div {
-
+.podcastCategoria > div {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -183,11 +171,19 @@ audio {
     text-align: start;
 }
 
-.nuestrosPodcasts > h1 {
-    text-align: center;
-}
 
-.carousel-item {
+.carousel-item > div {
+    margin:0 auto;
+    max-width: 92%;
     display: flex;
+    overflow: hidden;
 }
 
+.carousel-item > div .podcast {
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
