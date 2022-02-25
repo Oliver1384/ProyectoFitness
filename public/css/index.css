@@ -81,9 +81,16 @@ h2 span{
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    min-height: 50vh;
     background-color: var(--main-orange);
 
+}
+
+.entrenadores h3{
+    text-align: center;
+    padding: 1em 0;
+    font-family: var(--title-font);
+    font-size: 2.5em;
 }
 
 .entrenador{
@@ -94,6 +101,10 @@ h2 span{
     align-items: center;
     background-color: var(--main-orange);
     height: 50vh;
+}
+
+.entrenador article:first-of-type, .entrenador article:last-of-type{
+    display: none;
 }
 
 .entrenador article{
@@ -145,6 +156,10 @@ h2 span{
     .planes, .productos{
         height: 90vh;
 
+    }
+
+    .entrenador article:first-of-type, .entrenador article:last-of-type{
+        display: initial;
     }
 
     .planes h2, .productos h2{

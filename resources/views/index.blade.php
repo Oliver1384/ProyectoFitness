@@ -102,7 +102,8 @@
     <h2>PRODUCTOS<span> ESTRELLA</span></h2>
 </div> 
 <div class="entrenadores">
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <h3>Nuestros entrenadores</h3>
   
     <div class="carousel-inner">
         <div class="carousel-item active">
