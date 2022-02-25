@@ -92,7 +92,10 @@ main h1{
 
     #paginator{
         display: flex !important;
+    }
 
+    .controls.ocultarEscritorio{
+        display: none;
     }
 
 }
