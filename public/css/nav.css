@@ -73,6 +73,10 @@ box-sizing: border-box;
 
 }
 
+.nav-escritorio li a:hover{
+    color: var(--main-orange);
+}
+
 .nav-movil{
     background-color: red;
     position: fixed;
