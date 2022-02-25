@@ -27,6 +27,10 @@ span {
     font-size: 4rem;
 }
 
+.masInformacion{
+    display: none;
+}
+
 .span1Contenido2 {
     font-size: 4rem;
 }
