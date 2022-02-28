@@ -65,15 +65,6 @@ h2 span {
     color: var(--basic-white);
 }
 
-@media (min-width:750px) {
-    .planes, .productos {
-        height: 90vh;
-    }
-
-    .planes h2, .productos h2 {
-        font-size: 44px;
-    }
-}
 
 
 
@@ -83,6 +74,15 @@ h2 span {
     align-items: center;
     min-height: 50vh;
     background-color: var(--main-orange);
+
+
+}
+
+.entrenadores h3{
+    padding: .5em 0;
+    text-align: center;
+    font-family: var(--title-font);
+    text-transform: uppercase;
 }
 
 .entrenador {
@@ -107,6 +107,10 @@ h2 span {
     margin: 0 .5em;
 }
 
+.entrenador article:nth-last-of-type(1),.entrenador article:nth-last-of-type(2), .entrenador article:nth-last-of-type(4), .entrenador article:nth-last-of-type(5){
+    display: none;
+}
+
 .entrenador a {
     text-decoration: none;
 }
@@ -124,4 +128,26 @@ h2 span {
 .datos-entrenador {
     display: flex;
     flex-flow: column nowrap;
+}
+
+@media (min-width:750px) {
+    .planes, .productos {
+        height: 90vh;
+    }
+
+    .planes h2, .productos h2 {
+        font-size: 44px;
+    }
+
+    .entrenador article:nth-last-of-type(4), .entrenador article:nth-last-of-type(5){
+        display: flex;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .entrenador article:nth-last-of-type(1), .entrenador article:nth-last-of-type(2){
+        display: flex;
+    }
+
 }
