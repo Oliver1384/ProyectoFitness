@@ -1,9 +1,3 @@
-
-
-
-
-
-
 :root {
     --main-orange:  #FFB20F;
     --main-black:   #2A2B2A;
@@ -124,7 +118,7 @@ footer div img {
 .article:nth-child(5) h1.article-title,
 .article:nth-child(6) h1.article-title {
     color: var(--basic-white) !important;
-    
+
 }
 
 .article:nth-child(3) h1.article-title,

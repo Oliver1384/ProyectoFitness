@@ -10,7 +10,7 @@
                 <div class="podcast">
                     <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
                     <div>
-                        <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
+                        <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
                     <audio controls="controls">
                         <source src="#" type="audio/mpeg" />
@@ -20,26 +20,22 @@
                 <div class="podcast">
                     <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
                     <div>
-                        <div>
-                            <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
-                        </div>
-                        <audio controls="controls">
-                            <source src="#" type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
+                        <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
+                    <audio controls="controls">
+                        <source src="#" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
                 <div class="podcast">
                     <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
                     <div>
-                        <div>
-                            <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
-                        </div>
-                        <audio controls="controls">
-                            <source src="#" type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
+                        <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
+                    <audio controls="controls">
+                        <source src="#" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
             </div>
         </div>
@@ -49,45 +45,39 @@
                 <div class="podcast">
                     <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
                     <div>
-                        <div>
-                            <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
-                        </div>
-                        <audio controls="controls">
-                            <source src="#" type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
+                        <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
+                    <audio controls="controls">
+                        <source src="#" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
                 <div class="podcast">
                     <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
                     <div>
-                        <div>
-                            <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
-                        </div>
-                        <audio controls="controls">
-                            <source src="#" type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
+                        <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
+                    <audio controls="controls">
+                        <source src="#" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
                 <div class="podcast">
                     <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
                     <div>
-                        <div>
-                            <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
-                        </div>
-                        <audio controls="controls">
-                            <source src="#" type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
+                        <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
+                    <audio controls="controls">
+                        <source src="#" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
             </div>
         </div>
     </div>
 
-    <h1>NUESTROS PODCASTS</h1>
     <div id="carouselExampleControls" class="carousel slide nuestrosPodcasts ocultarMovil" data-ride="carousel">
+        <h1>NUESTROS PODCASTS</h1>    
         <div class="carousel-inner">
                 <div  class="carousel-item  active">
                     <div>
