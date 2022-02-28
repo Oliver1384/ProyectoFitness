@@ -9,6 +9,24 @@
 }
 
 
+.productoEstrella{
+    background-color: var(--main-black);
+    color: var(--basic-white);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.productoEstrella div{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.productoEstrella h1{
+    background-color: transparent;
+}
+
 main{
     display: flex;
     flex-flow: column nowrap;
