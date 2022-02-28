@@ -42,7 +42,7 @@
 
                <ul class="nav-escritorio">
                     <li class="nav-item ">
-                        <a class="nav-link {{ Request::is('Inicio') ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Inicio</a>
+                        <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Request::is('Tienda') ? 'active' : '' }}" aria-current="page" href="{{ url('/Tienda') }}">Tienda</a>

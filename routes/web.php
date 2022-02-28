@@ -15,26 +15,30 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('Inicio');
 
 Route::get('/Tienda', function () {
     return view('shop');
-});
+})->name('Tienda');
 
 Route::get('/Podcasts', function () {
     return view('podcasts');
-});
+})->name('Podcasts');
 
 Route::get('/Posts', function () {
     return view('posts');
-});
+})->name('Posts');
 
 Route::get('/Planes', function () {
     return view('plans');
-});
+})->name('Planes');
 
 Route::get('/Contacto', function () {
     return view('contact');
-});
+})->name('Contacto');
+
+Route::get('/Post', function () {
+    return view('post');
+})->name('Post');
 
 

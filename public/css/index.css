@@ -1,41 +1,32 @@
 :root {
-    --main-orange:  #FFB20F;
-    --main-black:   #2A2B2A;
-    --main-white:   #F9F7F3;
-    --basic-white:  #FFFFFF;
-    --title-font : 'Oswald', sans-serif;
-    --content-font : 'Noto Sans', sans-serif;
-    --aux-font : 'Open Sans', sans-serif;
+    --main-orange: #FFB20F;
+    --main-black: #2A2B2A;
+    --main-white: #F9F7F3;
+    --basic-white: #FFFFFF;
+    --title-font: 'Oswald', sans-serif;
+    --content-font: 'Noto Sans', sans-serif;
+    --aux-font: 'Open Sans', sans-serif;
 }
 
-
-h1.article-title{
+h1.article-title {
     text-align: center;
-
 }
 
-
-h2{
+h2 {
     color: var(--basic-white);
-
-
-
 }
 
-h2 span{
-    color:var(--main-orange) ;
-
+h2 span {
     margin: 0;
+    color: var(--main-orange);
 }
 
-
-.podcast h2{
+.podcast h2 {
     display: flex;
     flex-flow: row wrap;
 }
 
-
-.planes{
+.planes {
     min-height: 50vh;
     background-color: var(--main-orange);
     padding: .5em;
@@ -46,54 +37,55 @@ h2 span{
     margin: 1em 0;
 }
 
-
-.planes h2{
+.planes h2 {
     display: flex;
     flex-flow: column nowrap;
     font-size: 2em;
 
 }
 
-.productos{
+.productos {
     min-height: 50vh;
-    background-color: var(--main-black);
     padding: 1em;
+    background-color: var(--main-black);
     background-image: url('../images/provisional-desarrollo/productos.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-
-.productos h2{
+.productos h2 {
     display: flex;
     flex-flow: column nowrap;
     font-size: 2em;
     text-align: end;
 }
 
-.planes h2 span{
+.planes h2 span {
     color: var(--basic-white);
-
 }
 
-.entrenadores{
+@media (min-width:750px) {
+    .planes, .productos {
+        height: 90vh;
+    }
+
+    .planes h2, .productos h2 {
+        font-size: 44px;
+    }
+}
+
+
+
+.entrenadores {
     width: 100%;
     justify-content: center;
     align-items: center;
     min-height: 50vh;
     background-color: var(--main-orange);
-
 }
 
-.entrenadores h3{
-    text-align: center;
-    padding: 1em 0;
-    font-family: var(--title-font);
-    font-size: 2.5em;
-}
-
-.entrenador{
+.entrenador {
     padding: .5em 0;
     display: flex;
     flex-flow: row nowrap;
@@ -103,11 +95,7 @@ h2 span{
     height: 50vh;
 }
 
-.entrenador article:first-of-type, .entrenador article:last-of-type{
-    display: none;
-}
-
-.entrenador article{
+.entrenador article {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -119,53 +107,21 @@ h2 span{
     margin: 0 .5em;
 }
 
-.entrenador a{
+.entrenador a {
     text-decoration: none;
 }
 
-.entrenador .entrenador-nombre{
+.entrenador .entrenador-nombre {
     font-weight: bolder;
     font-size: 1.2em;
 }
 
-.entrenador figure{
+.entrenador figure {
     margin: 0 .5em;
 
 }
 
-.datos-entrenador{
-
+.datos-entrenador {
     display: flex;
     flex-flow: column nowrap;
-    margin-top: .5em;
-
-}
-
-/* color botones carrousel
-.carousel-control-prev, .carousel-control-next{
-    border-radius: .5em;
-    padding: .5em;
-}
-*/
-
-
-
-
-@media (min-width:750px){
-
-    .planes, .productos{
-        height: 90vh;
-
-    }
-
-    .entrenador article:first-of-type, .entrenador article:last-of-type{
-        display: initial;
-    }
-
-    .planes h2, .productos h2{
-        font-size: 44px;
-    }
-
-
-
 }

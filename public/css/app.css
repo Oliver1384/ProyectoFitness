@@ -1,9 +1,3 @@
-
-
-
-
-
-
 :root {
     --main-orange:  #FFB20F;
     --main-black:   #2A2B2A;
@@ -18,6 +12,7 @@
     font-family: oswald;
     src: url(./public/fonts/Oswald-VariableFont_wght.ttf);
 }
+
 @font-face {
     font-family: notosans;
     src: url(./public/fonts/NotoSans-Regular.ttf);
