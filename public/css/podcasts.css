@@ -30,6 +30,8 @@ body {
 
 .podcast   {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .podcast > div  {
@@ -38,6 +40,10 @@ body {
     flex:1;
     justify-content: space-between;
     padding: 1rem;
+}
+
+.podcast h2{
+    text-align: center;
 }
 
 .podcasts {
@@ -59,7 +65,8 @@ audio {
 
 .controls > *{
     background-color: var(--main-orange);
-    padding: 2rem 4rem 2rem 4rem;
+    padding:0;
+    flex:1;
     font-size: 120px;
     color:var(--main-white);
     margin: 1rem;
@@ -70,6 +77,7 @@ audio {
     justify-content: space-between;
     min-width: 100%;
 }
+
 
 .separadorBlanco {
     display: flex;

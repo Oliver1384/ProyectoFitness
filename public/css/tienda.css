@@ -39,6 +39,7 @@ main h1{
     flex: 1;
     border-radius: .3em;
     background-color: var(--basic-white);
+
 }
 
 
@@ -50,18 +51,24 @@ main h1{
 .producto .info-producto{
     flex: 2;
     padding-left: .5em;
- 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: .5em;
 }
 
 
 .producto .info-producto .info{
     font-weight: bold;
     font-family: var(--content-font);
+    font-size: 1.2em;
 }
 
 .info-producto .descripcion{
     font-weight: 600;
     font-family: var(--content-font);
+    font-size: .9em;
+
 }
 
 .producto figure img{
@@ -97,5 +104,27 @@ main h1{
     .controls.ocultarEscritorio{
         display: none;
     }
+
+    .productos{
+        flex-flow: row wrap;
+    }
+
+    .producto{
+        flex:1 1 300px;
+        height: 300px;
+    }
+    .producto figure{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 100px;
+        height: 100%;
+    }
+
+    .producto figure img{
+        transform: scale(1.5);
+    }
+
 
 }
