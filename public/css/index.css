@@ -151,3 +151,30 @@ h2 span {
     }
 
 }
+
+
+.podcastIndex > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.podcastIndex h2 {
+    color: var(--main-black);
+    margin: 0.2rem;
+    font-size: 25px;
+    margin-left: 2rem;
+    flex-direction: column;
+
+}
+
+.podcastIndex span {
+    color: var(--main-orange);
+    margin: 0;
+}
+
+.podcastIndex img {
+    max-width: 250px;
+    max-height: 200px;
+}
+
