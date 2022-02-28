@@ -1,0 +1,130 @@
+:root {
+    --main-orange:  #FFB20F;
+    --main-black:   #2A2B2A;
+    --main-white:   #F9F7F3;
+    --basic-white:  #FFFFFF;
+    --title-font : 'Oswald', sans-serif;
+    --content-font : 'Noto Sans', sans-serif;
+    --aux-font : 'Open Sans', sans-serif;
+}
+
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--main-orange);
+}
+
+main h1{
+    margin: .5em 0;
+    padding: .5em 0;
+    text-align: center;
+    font-family: var(--title-font);
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+
+.productos{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.producto{
+    margin: .5em ;
+    background-color: red;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex: 1;
+    border-radius: .3em;
+    background-color: var(--basic-white);
+
+}
+
+
+.producto figure{
+    flex: 1;
+    margin-top: 1em;
+}
+
+.producto .info-producto{
+    flex: 2;
+    padding-left: .5em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: .5em;
+}
+
+
+.producto .info-producto .info{
+    font-weight: bold;
+    font-family: var(--content-font);
+    font-size: 1.2em;
+}
+
+.info-producto .descripcion{
+    font-weight: 600;
+    font-family: var(--content-font);
+    font-size: .9em;
+
+}
+
+.producto figure img{
+    max-width: 100%;
+}
+
+.controls.ocultarEscritorio{
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.controls.ocultarEscritorio > *{
+    padding: 0;
+    flex: 1;
+}
+
+
+
+#paginator{
+    margin: 0 !important;
+    display: none !important;
+}
+
+
+
+@media(min-width:750px){
+
+    #paginator{
+        display: flex !important;
+    }
+
+    .controls.ocultarEscritorio{
+        display: none;
+    }
+
+    .productos{
+        flex-flow: row wrap;
+    }
+
+    .producto{
+        flex:1 1 300px;
+        height: 300px;
+    }
+    .producto figure{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 100px;
+        height: 100%;
+    }
+
+    .producto figure img{
+        transform: scale(1.5);
+    }
+
+
+}

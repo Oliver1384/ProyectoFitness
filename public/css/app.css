@@ -12,6 +12,7 @@
     font-family: oswald;
     src: url(./public/fonts/Oswald-VariableFont_wght.ttf);
 }
+
 @font-face {
     font-family: notosans;
     src: url(./public/fonts/NotoSans-Regular.ttf);
