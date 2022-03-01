@@ -13,34 +13,64 @@
                     mollitia nisi non officia pariatur quidem reiciendis sit sunt velit voluptatum. Dignissimos, vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque autem culpa cum cupiditate distinctio dolores enim et,
                     explicabo hic incidunt ipsum laborum minus non quidem quo sequi soluta? </p>
             </div>
-            <div class="col-12 text-center">
-                <button class="btn btn-light border border-dark rounded-pill fst-italic mb-3 btn-lg"> Crea tu plan</button>
+            <div class="col-12 text-center ">
+                <button class="btn btn-light mb-3 "> Crea tu plan</button>
             </div>
 
         </div>
     </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title card-title text-center"  id="exampleModalLabel">Programa 1</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-xl-6 col-md-6 col-12 mb-3 ">
+                                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
+                            </div>
+                            <div class="mb-3">
+                                <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
+                                    ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
+                                    Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequatur dolorem dolorum fugit itaque molestiae molestias mollitia
+                                    nam nostrum numquam odit officia omnis quae quia repellendus, suscipit tempore. Consequuntur, quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque dignissimos doloribus expedita numquam quisquam, vitae. Animi beatae doloribus
+                                    illo illum incidunt magnam nam perspiciatis, possimus praesentium repellendus repudiandae suscipit.</p>
+                                <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
+                                    ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
+                                    Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequatur dolorem dolorum fugit itaque molestiae molestias mollitia
+                                    nam nostrum numquam odit officia omnis quae quia repellendus, suscipit tempore. Consequuntur, quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque dignissimos doloribus expedita numquam quisquam, vitae. Animi beatae doloribus
+                                    illo illum incidunt magnam nam perspiciatis, possimus praesentium repellendus repudiandae suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <div class="container-fluid planContenido2">
         <div class="row d-flex justify-content-center">
             <h1 class="text-center fw-bold fs-1 mt-3 titulo">  <span class="span1Contenido2">Nuestros </span> <span class="span2Contenido2">planes </span> </h1>
 
 
-            <!--Carousel Wrapper-->
             <div id="multi-item-example" class="carousel slide  carousel-multi-item mb-3 d-flex justify-content-center"  data-bs-interval="false"  data-interval="false" data-bs-ride="carousel">
 
                 <div class="d-flex align-items-center">
                 <a  href="#multi-item-example" data-slide="prev">
-                <button onclick="cerrarMasInformacion()" class="rounded-circle border border-dark btn-lg mx-3" type="button"   data-bs-slide="prev" >
+                <button onclick="" class="rounded-circle border border-dark btn-lg mx-3" type="button"   data-bs-slide="prev" >
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 </a>
                 </div>
 
-                <!--Slides-->
-                <div class="carousel-inner" role="">
 
-                    <!--First slide-->
+                <div class="carousel-inner" role="">
                     <div class="carousel-item active">
                         <div class="row d-flex justify-content-center">
                             <div class="col-xl-4 col-md-6 col-12 ">
@@ -52,9 +82,7 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button onclick="masInformacion(this)" class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end" >Leer más</button>
-                                        <p class="masInformacion card-text fst-italic p-3 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dignissimos dolorem dolores doloribus est id magni
-                                                minima molestiae obcaecati officiis, perferendis possimus praesentium recusandae sapiente similique tenetur vel vero?</p>
+                                        <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" >Leer más</button>
                                     </div>
                                 </div>
                             </div>
@@ -68,9 +96,7 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button onclick="masInformacion(this)" class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end" >Leer más</button>
-                                        <p class="masInformacion card-text fst-italic p-3 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dignissimos dolorem dolores doloribus est id magni
-                                            minima molestiae obcaecati officiis, perferendis possimus praesentium recusandae sapiente similique tenetur vel vero?</p>
+                                        <button onclick="" class="btn btn-light  mb-3 float-end" >Leer más</button>
                                     </div>
                                 </div>
                             </div>
@@ -84,19 +110,16 @@
                                         <p class="card-text  fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button onclick="masInformacion(this)" class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end" >Leer más</button>
-                                        <p class="masInformacion card-text fst-italic p-3 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dignissimos dolorem dolores doloribus est id magni
-                                            minima molestiae obcaecati officiis, perferendis possimus praesentium recusandae sapiente similique tenetur vel vero?</p>
+                                        <button onclick="" class="btn btn-dark mb-3 float-end" >Leer más</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <!--/.First slide-->
+
 
                     <div class="carousel-item ">
-
                         <div class="row d-flex justify-content-center">
                             <div class="col-xl-4 col-md-6 ">
                                 <div class="card mb-2 border border-dark">
@@ -107,9 +130,7 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button onclick="masInformacion(this)" class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end" >Leer más</button>
-                                        <p class="masInformacion card-text fst-italic p-3 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dignissimos dolorem dolores doloribus est id magni
-                                            minima molestiae obcaecati officiis, perferendis possimus praesentium recusandae sapiente similique tenetur vel vero?</p>
+                                        <button onclick="" class="btn btn-dark mb-3 float-end" >Leer más</button>
                                     </div>
                                 </div>
                             </div>
@@ -123,9 +144,7 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button onclick="masInformacion(this)" class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end" >Leer más</button>
-                                        <p class="masInformacion card-text fst-italic p-3 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dignissimos dolorem dolores doloribus est id magni
-                                            minima molestiae obcaecati officiis, perferendis possimus praesentium recusandae sapiente similique tenetur vel vero?</p>
+                                        <button onclick="" class="btn btn-light mb-3 float-end" >Leer más</button>
                                     </div>
                                 </div>
                             </div>
@@ -139,18 +158,14 @@
                                         <p class="card-text  fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button onclick="masInformacion(this)" class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end" >Leer más</button>
-                                        <p class="masInformacion card-text fst-italic p-3 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dignissimos dolorem dolores doloribus est id magni
-                                            minima molestiae obcaecati officiis, perferendis possimus praesentium recusandae sapiente similique tenetur vel vero?</p>
+                                        <button onclick="" class="btn btn-dark mb-3 float-end" >Leer más</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="carousel-item ">
-
                         <div class="row d-flex justify-content-center">
                             <div class="col-xl-4 col-md-6 ">
                                 <div class="card mb-2 border border-dark">
@@ -161,9 +176,7 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button onclick="masInformacion(this)" class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end" >Leer más</button>
-                                        <p class="masInformacion card-text fst-italic p-3 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dignissimos dolorem dolores doloribus est id magni
-                                            minima molestiae obcaecati officiis, perferendis possimus praesentium recusandae sapiente similique tenetur vel vero?</p>
+                                        <button onclick="" class="btn btn-dark mb-3 float-end" >Leer más</button>
                                     </div>
                                 </div>
                             </div>
@@ -177,9 +190,7 @@
                                         <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button onclick="masInformacion(this)" class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end" >Leer más</button>
-                                        <p class="masInformacion card-text fst-italic p-3 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dignissimos dolorem dolores doloribus est id magni
-                                            minima molestiae obcaecati officiis, perferendis possimus praesentium recusandae sapiente similique tenetur vel vero?</p>
+                                        <button onclick="" class="btn btn-light mb-3 float-end" >Leer más</button>
                                     </div>
                                 </div>
                             </div>
@@ -193,37 +204,38 @@
                                         <p class="card-text  fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex
                                             ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis voluptas?
                                             Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat?</p>
-                                        <button onclick="masInformacion(this)" class="btn btn-light border border-dark rounded-pill fst-italic mb-3 float-end" >Leer más</button>
-                                        <p class="masInformacion card-text fst-italic p-3 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dignissimos dolorem dolores doloribus est id magni
-                                            minima molestiae obcaecati officiis, perferendis possimus praesentium recusandae sapiente similique tenetur vel vero?</p>
+                                        <button onclick="" class="btn btn-dark mb-3 float-end" >Leer más</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
-                    <script>
-                        function masInformacion(btn) {
-                            let span = btn.nextSibling.nextSibling;
-                            //console.log(btn.nextSibling.nextSibling);
-                            //btn.nextSibling.nextSibling.style.display = "block";
-                            span.style.display === "none" ? span.style.display = "block" : span.style.display = "none";
-                        }
-                        function cerrarMasInformacion (){
-                            let data = document.querySelectorAll(".masInformacion");
-                           
-                            for (var i = 0; i < data.length; i++) {
-                                data[i].style.display = "none";
-                            }
-                        }
-                    </script>
-
                 </div>
-                <!--/.Slides-->
+
+                <script>
+                    /*
+                    var exampleModal = document.getElementById('exampleModal')
+                    exampleModal.addEventListener('show.bs.modal', function (event) {
+                        // Button that triggered the modal
+                        var button = event.relatedTarget
+                        // Extract info from data-bs-* attributes
+                        var recipient = button.getAttribute('data-bs-whatever')
+                        // If necessary, you could initiate an AJAX request here
+                        // and then do the updating in a callback.
+                        //
+                        // Update the modal's content.
+                        var modalTitle = exampleModal.querySelector('.modal-title')
+                        var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+                        modalTitle.textContent = 'New message to ' + recipient
+                        modalBodyInput.value = recipient
+                    })
+                    */
+                </script>
+
                 <div class="d-flex align-items-center">
                 <a  href="#multi-item-example" data-slide="next">
-                <button onclick="cerrarMasInformacion()" class="rounded-circle border border-dark btn-lg mx-3" type="button"  data-bs-slide="next" >
+                <button onclick="" class="rounded-circle border border-dark btn-lg mx-3" type="button"  data-bs-slide="next" >
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -231,9 +243,6 @@
                 </div>
 
             </div>
-            <!--/.Carousel Wrapper-->
-
-
         </div>
     </div>
 
