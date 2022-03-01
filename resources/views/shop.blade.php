@@ -9,12 +9,93 @@
         <p class="precio">25€</p>
     </div>
     <figure>
-        <img src="{{ asset('images/provisional-desarrollo/productoEstrella.png') }}" alt="">
+        <img src="{{ asset('images/provisional-desarrollo/producto.png') }}" alt="">
     </figure>
 </section>
     <main>
         <h1>Nuestros productos</h1>
         <div class="productos">
+            <article class="producto">
+                <figure>
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                </figure>
+                <div class="info-producto">
+                    <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
+                    <p class="descripcion">Lorem ipsum. Dolore, ipsum reprehenderit. Reprehenderit laborum doloremque sint qui omnis aut neque!</p>
+                </div>
+            </article>
+            <article class="producto">
+                <figure>
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                </figure>
+                <div class="info-producto">
+                    <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
+                    <p class="descripcion">Lorem ipsum. Dolore, ipsum reprehenderit. Reprehenderit laborum doloremque sint qui omnis aut neque!</p>
+                </div>
+            </article>
+            <article class="producto">
+                <figure>
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                </figure>
+                <div class="info-producto">
+                    <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
+                    <p class="descripcion">Lorem ipsum. Dolore, ipsum reprehenderit. Reprehenderit laborum doloremque sint qui omnis aut neque!</p>
+                </div>
+            </article>
+            <article class="producto">
+                <figure>
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                </figure>
+                <div class="info-producto">
+                    <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
+                    <p class="descripcion">Lorem ipsum. Dolore, ipsum reprehenderit. Reprehenderit laborum doloremque sint qui omnis aut neque!</p>
+                </div>
+            </article>
+            <article class="producto">
+                <figure>
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                </figure>
+                <div class="info-producto">
+                    <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
+                    <p class="descripcion">Lorem ipsum. Dolore, ipsum reprehenderit. Reprehenderit laborum doloremque sint qui omnis aut neque!</p>
+                </div>
+            </article>
+            <article class="producto">
+                <figure>
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                </figure>
+                <div class="info-producto">
+                    <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
+                    <p class="descripcion">Lorem ipsum. Dolore, ipsum reprehenderit. Reprehenderit laborum doloremque sint qui omnis aut neque!</p>
+                </div>
+            </article>
+            <article class="producto">
+                <figure>
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                </figure>
+                <div class="info-producto">
+                    <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
+                    <p class="descripcion">Lorem ipsum. Dolore, ipsum reprehenderit. Reprehenderit laborum doloremque sint qui omnis aut neque!</p>
+                </div>
+            </article>
+            <article class="producto">
+                <figure>
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                </figure>
+                <div class="info-producto">
+                    <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
+                    <p class="descripcion">Lorem ipsum. Dolore, ipsum reprehenderit. Reprehenderit laborum doloremque sint qui omnis aut neque!</p>
+                </div>
+            </article>
+            <article class="producto">
+                <figure>
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                </figure>
+                <div class="info-producto">
+                    <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
+                    <p class="descripcion">Lorem ipsum. Dolore, ipsum reprehenderit. Reprehenderit laborum doloremque sint qui omnis aut neque!</p>
+                </div>
+            </article>
             <article class="producto">
                 <figure>
                     <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">

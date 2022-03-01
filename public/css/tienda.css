@@ -12,19 +12,56 @@
 .productoEstrella{
     background-color: var(--main-black);
     color: var(--basic-white);
-    display: flex;
+    display: none;
     flex-flow: row nowrap;
     justify-content: center;
+    height: 80vh;
+
+}
+
+.productoEstrella figure{
+
+    flex:1 1 200px;
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.productoEstrella figure img{
+    transform: scale(5);
 }
 
 .productoEstrella div{
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
+    flex: 4 1 500px;
+    margin-right: 2em;
 }
+
+
 
 .productoEstrella h1{
     background-color: transparent;
+    font-size: 60px;
+    text-align: right;
+
+}
+
+.productoEstrella p{
+    max-width: 80%;
+    font-size: 1.2em;
+    text-align: center;
+    padding-right: 2em;
+}
+
+.productoEstrella .precio{
+    margin-right: 1em;
+    font-size: 60px;
+    font-weight: bolder;
 }
 
 main{
@@ -46,11 +83,12 @@ main h1{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .producto{
     margin: .5em ;
-    background-color: red;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -89,6 +127,10 @@ main h1{
 
 }
 
+.info-producto .precio{
+    color: var(--main-orange);
+}
+
 .producto figure img{
     max-width: 100%;
 }
@@ -114,6 +156,10 @@ main h1{
 
 
 @media(min-width:750px){
+
+    .productoEstrella{
+        display: flex;
+    }
 
     #paginator{
         display: flex !important;
