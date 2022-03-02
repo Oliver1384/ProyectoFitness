@@ -66,30 +66,28 @@ h2 span {
 }
 
 
+
+
 .entrenadores {
-    position: relative;
     width: 100%;
     justify-content: center;
     align-items: center;
     min-height: 50vh;
     background-color: var(--main-orange);
-}
 
-.carousel-control-prev, .carousel-control-next {
-    max-height: none !important;
-    max-width: none !important;
+
 }
 
 .entrenadores h3{
-    font-size: 3em;
-    padding: 2em 0 0;
+    padding: .5em 0;
     text-align: center;
     font-family: var(--title-font);
     text-transform: uppercase;
 }
 
 .entrenador {
-    padding: 0;
+    padding: .5em 0;
+    display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
@@ -109,6 +107,10 @@ h2 span {
     margin: 0 .5em;
 }
 
+.entrenador article:nth-last-of-type(1),.entrenador article:nth-last-of-type(2), .entrenador article:nth-last-of-type(4), .entrenador article:nth-last-of-type(5){
+    display: none;
+}
+
 .entrenador a {
     text-decoration: none;
 }
@@ -118,17 +120,9 @@ h2 span {
     font-size: 1.2em;
 }
 
-.redes {
-    display: flex;
-    flex-flow: nowrap;
-}
-
-.redes a {
-    margin: 0 1px;
-}
-
 .entrenador figure {
     margin: 0 .5em;
+
 }
 
 .datos-entrenador {

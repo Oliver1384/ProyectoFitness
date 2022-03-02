@@ -208,8 +208,45 @@ audio {
     align-self: center;
 }
 
+
+
+
+
 .carouselExampleControls {
     flex-direction: column;
+}
+
+.carouselInnerFive,.carouselInnerFour,.carouselInnerThree,.carouselInnerTwo {
+    display: none;
+}
+
+/*2*/
+@media (min-width: 750px) and (max-width: 1044px){
+    .carouselInnerTwo {
+        display:flex;
+    }
+
+}
+
+/*3*/
+@media (min-width: 1044px) and (max-width: 1300px){
+    .carouselInnerThree {
+        display:flex;
+    }
+}
+
+/*4*/
+@media (min-width: 1300px)  and (max-width: 1850px) {
+    .carouselInnerFour {
+        display:flex;
+    }
+}
+
+/*5*/
+@media (min-width: 1850px) {
+    .carouselInnerFive {
+        display:flex;
+    }
 }
 
 @media (min-width: 1044px) and (max-width: 1548px){

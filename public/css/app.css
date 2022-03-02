@@ -3,19 +3,6 @@
     --main-black:   #2A2B2A;
     --main-white:   #F9F7F3;
     --basic-white:  #FFFFFF;
-    --title-nav-font: oswald;
-    --alternative-font: sans-serif;
-    --content-font: notosans;
-}
-
-@font-face {
-    font-family: oswald;
-    src: url(./public/fonts/Oswald-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: notosans;
-    src: url(./public/fonts/NotoSans-Regular.ttf);
 }
 
 .bg-main-orange {
@@ -50,35 +37,8 @@
     color: var(--basic-white);
 }
 
-/*
-.navbar-brand.logo-name img{
-    width: 110px;
-}
-
-
-#navbarSupportedContent{
-   display: flex;
-   flex-flow: row nowrap;
-   justify-content: flex-end !important;
-}
-
-#navbarSupportedContent ul{
-    width: 100%;
-    display: flex;
-    padding-right: 2.5em;
-
-}
-
-#navbarSupportedContent ul li{
-  margin: 0 2em;
-}
-
-#navbarSupportedContent ul li a{
-    font-size: 1.3em;
-}*/
-
 footer {
-    width: 100%;
+    min-width: 100%;
     background-color: var(--main-white);
     border-top: 8px solid var(--main-orange);
     text-align: center;
@@ -89,7 +49,139 @@ footer div img {
 }
 
 
+/*
+* ||| POSTS |||
+*/
 
+#articles-page {
+    margin: 20px auto 0;
+    max-width: 1650px;
+}
+
+#main-article {
+    position: relative;
+    width: 100%;
+    height: 425px;
+    border-bottom: 6px solid var(--main-white);
+}
+
+.article {
+    position: relative;
+    height: 315px;
+    border-bottom: 6px solid var(--main-white);
+}
+
+.article:nth-child(2) h1.article-title,
+.article:nth-child(5) h1.article-title,
+.article:nth-child(6) h1.article-title {
+    color: var(--basic-white) !important;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+}
+
+.article:nth-child(3) h1.article-title,
+.article:nth-child(4) h1.article-title,
+.article:nth-child(7) h1.article-title {
+    color: var(--main-black) !important;
+}
+
+@media (min-width: 1200px) {
+    .article {
+        border-right: 6px solid var(--main-white);
+    }
+    .article:nth-child(3n+1) {
+        border-right: 0px !important;
+    }
+    .article:nth-child(even) h1.article-title {
+        color: var(--basic-white) !important;
+    }
+    .article:nth-child(odd) h1.article-title {
+        color: var(--main-black) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .article:nth-child(2n) {
+        border-right: 6px solid var(--main-white);
+    }
+}
+
+.article > div {
+    width: 100%;
+    height: 100%;
+}
+
+#articles-page .col-12,
+#articles-page .col-md-6 {
+    padding: 0;
+}
+
+.article-effect {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;   
+    left: 0;
+    opacity: .5;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;   
+    left: 0;
+}
+
+#main-article .article-title {
+    font-size: 3.5em !important;
+    font-weight: bold;
+}
+
+#main-article .article-body {
+    padding: 6px 12px;
+    max-width: 400px;
+    font-size: .85em;
+    line-height: 1.2em;
+    text-align: justify;
+    background-color: rgba(249, 247, 243, 0.5);
+    border: 1px solid var( --main-black);
+}
+
+.article .article-button {
+    margin-top: 10px;
+    cursor: pointer;   
+}
+
+.article .article-title {
+    font-size: 3.5em !important;
+    font-weight: bold;
+}
+
+.article .article-body {
+    padding: 6px 12px;
+    max-width: calc(100% - 32px);
+    font-size: .85em;
+    line-height: 1.2em;
+    text-align: justify;
+    background-color: rgba(42, 43, 42, 0.5);
+    border: 1px solid var( --main-black);
+}
+
+#main-article .article-button {
+    margin-top: 10px;
+    cursor: pointer;
+}
 
 #paginator {
     display: flex;
