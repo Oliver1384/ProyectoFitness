@@ -1,6 +1,9 @@
-@extends('layouts.template2')
+@extends('layouts.template')
 
 @section('content')
+<<<<<<< Updated upstream
+Podcasts
+=======
     <link rel="stylesheet" href="{{ URL::asset('css/podcasts.css') }}">
     <div class="separadorBlanco"></div>
     <div class="seccionEscritorio ocultarMovil">
@@ -725,4 +728,5 @@
         <button><</button>
         <button>></button>
     </div>
+>>>>>>> Stashed changes
 @endsection
