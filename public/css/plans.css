@@ -44,9 +44,8 @@ span {
     background-color:var(--main-orange);
 }
 
-
-.active div:nth-child(2) > div {
-    color: var(--main-white); background-color: var(--main-black)
+.carousel-item:nth-of-type(even) .card-body {
+    background-color: var(--main-black);
+    color: var(--main-white);
 }
-
 
