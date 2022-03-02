@@ -75,6 +75,10 @@ footer div img {
 .article:nth-child(5) h1.article-title,
 .article:nth-child(6) h1.article-title {
     color: var(--basic-white) !important;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }
 
 .article:nth-child(3) h1.article-title,
