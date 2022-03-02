@@ -1,7 +1,7 @@
 
 img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 120px;
+    max-height: 120px;
 }
 
 h1{
@@ -61,7 +61,7 @@ audio {
 
 .controls > *{
     background-color: var(--main-orange);
-    padding: 2rem 4rem 2rem 4rem;
+    padding: 10%;
     font-size: 120px;
     color:var(--main-white);
     margin: 1rem;
