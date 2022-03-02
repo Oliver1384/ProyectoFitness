@@ -118,9 +118,17 @@ h2 span {
     font-size: 1.2em;
 }
 
+.redes {
+    display: flex;
+    flex-flow: nowrap;
+}
+
+.redes a {
+    margin: 0 1px;
+}
+
 .entrenador figure {
     margin: 0 .5em;
-
 }
 
 .datos-entrenador {

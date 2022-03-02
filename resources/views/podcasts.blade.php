@@ -78,7 +78,7 @@
 
     <div class="carouselExampleControls carousel carousel-4 nuestrosPodcasts ocultarMovil" data-ride="carousel">
         <h1>NUESTROS PODCASTS</h1>
-        <div class="position-relative">
+        <div class="position-relative w-100 h-100">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div>

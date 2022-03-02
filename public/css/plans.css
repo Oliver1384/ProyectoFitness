@@ -1,0 +1,51 @@
+.planContenido1 {
+    background: var(--main-orange);
+}
+
+.pContenido1{
+    color: var(--main-black);
+}
+
+.titulo{
+    margin: 1rem;
+    font-family: var(--title-font);
+}
+
+span {
+    color:var(--main-black);
+}
+
+.planContenido2{
+    background: var(--main-white);
+}
+
+.span1Contenido1 {
+    font-size: 4rem;
+}
+.span2Contenido1 {
+    color:var(--main-white);
+    font-size: 4rem;
+}
+
+.masInformacion{
+    display: none;
+}
+
+.span1Contenido2 {
+    font-size: 4rem;
+}
+
+.span2Contenido2 {
+    color:var(--main-orange);
+    font-size: 4rem;
+}
+
+.carousel button:first-child {
+    background-color:var(--main-orange);
+}
+
+.carousel-item:nth-of-type(even) .card-body {
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
+
