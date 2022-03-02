@@ -2,6 +2,7 @@
 
 @section('content')
     <link rel="stylesheet" href="{{ URL::asset('css/podcasts.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/posts.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}">
 
     <div class="col-12">
