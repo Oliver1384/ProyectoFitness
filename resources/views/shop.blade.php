@@ -1,17 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-@extends('layouts.template')
-
-=======
 @extends('layouts.template2')
 <link href="{{ asset('css/tienda.css') }}" rel="stylesheet"/>
 <link href="{{ asset('css/podcasts.css') }}" rel="stylesheet"/>
->>>>>>> Stashed changes
-=======
-@extends('layouts.template2')
-<link href="{{ asset('css/tienda.css') }}" rel="stylesheet"/>
-<link href="{{ asset('css/podcasts.css') }}" rel="stylesheet"/>
->>>>>>> 69331267338f65d59e38b3ab9ce1b1f191ef4363
 @section('content')
 <section class="productoEstrella">
     <div>

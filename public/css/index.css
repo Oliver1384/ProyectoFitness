@@ -66,28 +66,30 @@ h2 span {
 }
 
 
-
-
 .entrenadores {
+    position: relative;
     width: 100%;
     justify-content: center;
     align-items: center;
     min-height: 50vh;
     background-color: var(--main-orange);
+}
 
-
+.carousel-control-prev, .carousel-control-next {
+    max-height: none !important;
+    max-width: none !important;
 }
 
 .entrenadores h3{
-    padding: .5em 0;
+    font-size: 3em;
+    padding: 2em 0 0;
     text-align: center;
     font-family: var(--title-font);
     text-transform: uppercase;
 }
 
 .entrenador {
-    padding: .5em 0;
-    display: flex;
+    padding: 0;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
@@ -105,10 +107,6 @@ h2 span {
     padding: 1em;
     border-radius: .4em;
     margin: 0 .5em;
-}
-
-.entrenador article:nth-last-of-type(1),.entrenador article:nth-last-of-type(2), .entrenador article:nth-last-of-type(4), .entrenador article:nth-last-of-type(5){
-    display: none;
 }
 
 .entrenador a {

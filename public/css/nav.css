@@ -173,6 +173,10 @@
     padding: 1.5rem;
 }
 
+.footer-movil p {
+    text-align: center;
+}
+
 .footer-movil a {
     text-decoration: none;
 }
