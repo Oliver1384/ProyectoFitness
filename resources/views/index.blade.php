@@ -1,9 +1,12 @@
-@extends('layouts.template')
+@extends('layouts.template2')
 
 @section('content')
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Inicio
 =======
+=======
+>>>>>>> 69331267338f65d59e38b3ab9ce1b1f191ef4363
 <link rel="stylesheet" href="{{ URL::asset('css/podcasts.css') }}">
 <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}">
 
@@ -636,5 +639,8 @@ Inicio
   </a>
 </div>
 </div>
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> 69331267338f65d59e38b3ab9ce1b1f191ef4363
 @endsection

@@ -1,4 +1,4 @@
-@extends('layouts.template')
+@extends('layouts.template2')
 
 @section('content')
     <div id="articles-page">
@@ -10,14 +10,11 @@
                         <h1 class="article-title">
                             <span class="text-black">Artículo</span> <span class="text-white">principal</span>
                         </h1>
-                        <div class="article-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
-                            porta ac cursus a, tempor et leo. Vivamus mattis leo non eros iaculis, nec posuere tellus
-                            mattis. Cras placerat est in ante luctus, ut commodo ex egestas.
-                        </div>
-                        <div class="article-button">
-                            <button class="btn btn-light">Leer más</button>
-                        </div>
+                        <a href="{{ url('Post') }}">
+                            <div class="article-button">
+                                <button class="btn btn-light">Leer más</button>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -28,11 +25,6 @@
                         <h1 class="article-title">
                             <span>Artículo 1</span>
                         </h1>
-                        <div class="article-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
-                            porta ac cursus a, tempor et leo. Vivamus mattis leo non eros iaculis, nec posuere tellus
-                            mattis. Cras placerat est in ante luctus, ut commodo ex egestas.
-                        </div>
                         <div class="article-button">
                             <button class="btn btn-light">Leer más</button>
                         </div>
@@ -46,11 +38,6 @@
                         <h1 class="article-title">
                             <span>Artículo 2</span>
                         </h1>
-                        <div class="article-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
-                            porta ac cursus a, tempor et leo. Vivamus mattis leo non eros iaculis, nec posuere tellus
-                            mattis. Cras placerat est in ante luctus, ut commodo ex egestas.
-                        </div>
                         <div class="article-button">
                             <button class="btn btn-light">Leer más</button>
                         </div>
@@ -64,11 +51,6 @@
                         <h1 class="article-title">
                             <span>Artículo 3</span>
                         </h1>
-                        <div class="article-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
-                            porta ac cursus a, tempor et leo. Vivamus mattis leo non eros iaculis, nec posuere tellus
-                            mattis. Cras placerat est in ante luctus, ut commodo ex egestas.
-                        </div>
                         <div class="article-button">
                             <button class="btn btn-light">Leer más</button>
                         </div>
@@ -82,11 +64,6 @@
                         <h1 class="article-title">
                             <span>Artículo 4</span>
                         </h1>
-                        <div class="article-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
-                            porta ac cursus a, tempor et leo. Vivamus mattis leo non eros iaculis, nec posuere tellus
-                            mattis. Cras placerat est in ante luctus, ut commodo ex egestas.
-                        </div>
                         <div class="article-button">
                             <button class="btn btn-light">Leer más</button>
                         </div>
@@ -100,11 +77,6 @@
                         <h1 class="article-title">
                             <span>Artículo 5</span>
                         </h1>
-                        <div class="article-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
-                            porta ac cursus a, tempor et leo. Vivamus mattis leo non eros iaculis, nec posuere tellus
-                            mattis. Cras placerat est in ante luctus, ut commodo ex egestas.
-                        </div>
                         <div class="article-button">
                             <button class="btn btn-light">Leer más</button>
                         </div>
@@ -118,11 +90,6 @@
                         <h1 class="article-title">
                             <span>Artículo 6</span>
                         </h1>
-                        <div class="article-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec arcu orci. In turpis ante,
-                            porta ac cursus a, tempor et leo. Vivamus mattis leo non eros iaculis, nec posuere tellus
-                            mattis. Cras placerat est in ante luctus, ut commodo ex egestas.
-                        </div>
                         <div class="article-button">
                             <button class="btn btn-light">Leer más</button>
                         </div>

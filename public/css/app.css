@@ -3,6 +3,19 @@
     --main-black:   #2A2B2A;
     --main-white:   #F9F7F3;
     --basic-white:  #FFFFFF;
+    --title-nav-font: oswald;
+    --alternative-font: sans-serif;
+    --content-font: notosans;
+}
+
+@font-face {
+    font-family: oswald;
+    src: url(./public/fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: notosans;
+    src: url(./public/fonts/NotoSans-Regular.ttf);
 }
 
 .bg-main-orange {
@@ -37,8 +50,35 @@
     color: var(--basic-white);
 }
 
+/*
+.navbar-brand.logo-name img{
+    width: 110px;
+}
+
+
+#navbarSupportedContent{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: flex-end !important;
+}
+
+#navbarSupportedContent ul{
+    width: 100%;
+    display: flex;
+    padding-right: 2.5em;
+
+}
+
+#navbarSupportedContent ul li{
+  margin: 0 2em;
+}
+
+#navbarSupportedContent ul li a{
+    font-size: 1.3em;
+}*/
+
 footer {
-    min-width: 100%;
+    width: 100%;
     background-color: var(--main-white);
     border-top: 8px solid var(--main-orange);
     text-align: center;
@@ -71,14 +111,22 @@ footer div img {
     border-bottom: 6px solid var(--main-white);
 }
 
+.article-title{
+    background-color: transparent !important;
+}
+
 .article:nth-child(2) h1.article-title,
 .article:nth-child(5) h1.article-title,
 .article:nth-child(6) h1.article-title {
     color: var(--basic-white) !important;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 
 >>>>>>> Stashed changes
+=======
+
+>>>>>>> 69331267338f65d59e38b3ab9ce1b1f191ef4363
 }
 
 .article:nth-child(3) h1.article-title,
@@ -122,7 +170,7 @@ footer div img {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;   
+    bottom: 0;
     left: 0;
     opacity: .5;
     background-size: cover !important;
@@ -139,7 +187,7 @@ footer div img {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;   
+    bottom: 0;
     left: 0;
 }
 
@@ -160,7 +208,7 @@ footer div img {
 
 .article .article-button {
     margin-top: 10px;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 .article .article-title {
