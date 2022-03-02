@@ -195,6 +195,8 @@ audio {
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon{
+    margin: 0;
+    padding: 0;
     width: 50px;
     height: 50px;
 }
