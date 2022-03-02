@@ -11,6 +11,7 @@
 #articles-page {
     margin: 20px auto 0;
     max-width: 1650px;
+    overflow: hidden;
 }
 
 #main-article {
