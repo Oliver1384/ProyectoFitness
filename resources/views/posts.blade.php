@@ -1,6 +1,7 @@
 @extends('layouts.template2')
 
 @section('content')
+    <link href="{{ asset('css/posts.css') }}" rel="stylesheet"/>
     <div id="articles-page">
         <div class="row">
             <div class="col-12">
@@ -97,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div id="paginator">
+        <div id="paginator" class="ocultarMovil">
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                     <li class="page-item"><a class="page-link active" href="#">«</a></li>
@@ -112,6 +113,15 @@
                     <li class="page-item"><a class="page-link active" href="#">»</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="controls ocultarEscritorio">
+            <button>
+                &lt;
+            </button>
+            
+            <button>
+                &gt;
+            </button>
         </div>
     </div>
     @endsection

@@ -1,71 +1,110 @@
-
-/*
- * Carousel by items:
- */
-
-.carousel-3 {
-
+.carousel {
+    position: relative;
 }
 
-.carousel-4 {
-
+.carousel-item {
+    display: block;
+    margin-right: 0;
 }
 
-.carousel-5 {
-
+.carousel-1 .carousel-item {
+    flex: 0 0 100%;
 }
 
-.carousel-6 {
-
+.carousel-2 .carousel-item {
+    flex: 0 0 50%;
 }
 
-.carousel-7 {
-
+.carousel-3 .carousel-item {
+    flex: 0 0 33.333333%;
 }
 
-/*
- * Common Carousel:
- */
+.carousel-4 .carousel-item {
+    flex: 0 0 25%;
+}
+
+.carousel-5 .carousel-item {
+    flex: 0 0 20%;
+}
+
+.carousel-6 .carousel-item {
+    flex: 0 0 16.666666%;
+}
+
+.carousel-7 .carousel-item {
+    flex: 0 0 14.285714%;
+}
 
 .carousel-inner {
-    padding: 1em;
+    display: flex;
+    margin-left: 10%;
+    width: 80%;
 }
 
 .carousel .card {
-    margin: 0 0.5em;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
 }
 
-@media (min-width: 768px) {
-    .carousel-item {
-        display: block;
-        margin-right: 0;
+@media (max-width: 1600px) {
+
+    .carousel-7 .carousel-item {
+        flex: 0 0 16.666666%;
     }
-    
-    .carousel-3 .carousel-item {
+
+}
+
+@media (max-width: 1400px) {
+
+    .carousel-6 .carousel-item, .carousel-7 .carousel-item {
+        flex: 0 0 20%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .carousel-5 .carousel-item,
+    .carousel-6 .carousel-item,
+    .carousel-7 .carousel-item {
+        flex: 0 0 25%;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .carousel-5 .carousel-item,
+    .carousel-6 .carousel-item,
+    .carousel-7 .carousel-item {
         flex: 0 0 33.333333%;
     }
     
-    .carousel-4 .carousel-item {
-        flex: 0 0 25%;
-    }
-    
-    .carousel-5 .carousel-item {
-        flex: 0 0 20%;
-    }
-    
-    .carousel-6 .carousel-item {
-        flex: 0 0 16.666666%;
-    }
-    
+}
+
+@media (max-width: 768px) {
+
+    .carousel-3 .carousel-item,
+    .carousel-4 .carousel-item,
+    .carousel-5 .carousel-item,
+    .carousel-6 .carousel-item,
     .carousel-7 .carousel-item {
-        flex: 0 0 14.285714%;
+        flex: 0 0 50%;
     }
 
-    .carousel-inner {
-        display: flex;
+}
+
+@media (max-width: 576px) {
+
+    .carousel-2 .carousel-item,
+    .carousel-3 .carousel-item,
+    .carousel-4 .carousel-item,
+    .carousel-5 .carousel-item,
+    .carousel-6 .carousel-item,
+    .carousel-7 .carousel-item {
+        flex: 0 0 100%;
     }
+
 }
 
 .carousel .card .img-wrapper {
