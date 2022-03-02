@@ -6,9 +6,9 @@
         <div class="row d-flex justify-content-center">
             <h1 class="text-center fw-bold fs-1 mt-3 titulo">
                 <span class="span1Contenido1">Elige </span>
-                <span class="span2Contenido1 ">tu plan </span>
+                <span class="span2Contenido1">tu plan </span>
             </h1>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-8 col-sm-10">
                 <p class="fst-italic pContenido1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis
                     corporis deleniti ea eos et fugit in,
                     iure neque nulla numquam odio officiis perspiciatis quas quis sed sint sunt voluptates. Lorem ipsum
