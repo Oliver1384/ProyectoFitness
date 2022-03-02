@@ -16,6 +16,7 @@ span {
 }
 
 .planContenido2{
+    margin-bottom: 10px;
     background: var(--main-white);
 }
 
@@ -25,6 +26,10 @@ span {
 .span2Contenido1 {
     color:var(--main-white);
     font-size: 4rem;
+}
+
+#multi-item-example {
+    margin-bottom: 30px;
 }
 
 .masInformacion{
