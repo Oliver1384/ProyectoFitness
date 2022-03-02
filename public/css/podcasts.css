@@ -79,7 +79,7 @@ audio {
     background-color: white;
 }
 
-.ocultarMovil{
+.ocultarMovil {
     display:none
 }
 
@@ -221,7 +221,7 @@ audio {
 }
 
 /*2*/
-@media (max-width: 1044px){
+@media (min-width: 750px) and (max-width: 1044px){
     .carouselInnerTwo {
         display:flex;
     }
