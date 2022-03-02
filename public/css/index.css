@@ -8,6 +8,11 @@
     --aux-font: 'Open Sans', sans-serif;
 }
 
+.carousel-control-prev, .carousel-control-next {
+    max-height: none !important;
+    max-width: none !important;
+}
+
 h1.article-title {
     text-align: center;
 }
@@ -79,7 +84,8 @@ h2 span {
 }
 
 .entrenadores h3{
-    padding: .5em 0;
+    font-size: 2.5em;
+    padding: 1em 0 0;
     text-align: center;
     font-family: var(--title-font);
     text-transform: uppercase;
