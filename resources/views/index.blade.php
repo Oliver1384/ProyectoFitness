@@ -1,4 +1,4 @@
-@extends('layouts.template2')
+@extends('layouts.template')
 
 @section('content')
     <link rel="stylesheet" href="{{ URL::asset('css/podcasts.css') }}">
@@ -24,7 +24,7 @@
         <div class=" podcastIndex">
             <div>
                 <div class="podcast ">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="Imagen relacionada con la temática del podcast">
                     <div>
                         <div>
                             <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="Imagen relacionada con la temática del podcast">
                     <div>
                         <div>
                             <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="Imagen relacionada con la temática del podcast">
                     <div>
                         <div>
                             <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="Imagen relacionada con la temática del podcast">
                     <div>
                         <div>
                             <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
@@ -90,7 +90,7 @@
                     <div class="entrenador">
                         <article>
                             <figure>
-                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="">
+                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="Imagen de perfil del entrenador">
                             </figure>
                             <div class="datos-entrenador">
                                 <p class="entrenador-nombre">Luis Morote</p>
@@ -115,7 +115,7 @@
                     <div class="entrenador">
                         <article>
                             <figure>
-                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="">
+                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="Imagen de perfil del entrenador">
                             </figure>
                             <div class="datos-entrenador">
                                 <p class="entrenador-nombre">Luis Morote</p>
@@ -140,7 +140,7 @@
                     <div class="entrenador">
                         <article>
                             <figure>
-                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="">
+                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="Imagen de perfil del entrenador">
                             </figure>
                             <div class="datos-entrenador">
                                 <p class="entrenador-nombre">Luis Morote</p>
@@ -165,7 +165,7 @@
                     <div class="entrenador">
                         <article>
                             <figure>
-                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="">
+                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="Imagen de perfil del entrenador">
                             </figure>
                             <div class="datos-entrenador">
                                 <p class="entrenador-nombre">Luis Morote</p>
@@ -190,7 +190,7 @@
                     <div class="entrenador">
                         <article>
                             <figure>
-                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="">
+                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="Imagen de perfil del entrenador">
                             </figure>
                             <div class="datos-entrenador">
                                 <p class="entrenador-nombre">Luis Morote</p>
@@ -215,7 +215,7 @@
                     <div class="entrenador">
                         <article>
                             <figure>
-                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="">
+                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="Imagen de perfil del entrenador">
                             </figure>
                             <div class="datos-entrenador">
                                 <p class="entrenador-nombre">Luis Morote</p>
@@ -240,7 +240,7 @@
                     <div class="entrenador">
                         <article>
                             <figure>
-                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="">
+                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="Imagen de perfil del entrenador">
                             </figure>
                             <div class="datos-entrenador">
                                 <p class="entrenador-nombre">Luis Morote</p>
@@ -265,7 +265,7 @@
                     <div class="entrenador">
                         <article>
                             <figure>
-                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="">
+                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="Imagen de perfil del entrenador">
                             </figure>
                             <div class="datos-entrenador">
                                 <p class="entrenador-nombre">Luis Morote</p>
@@ -290,7 +290,7 @@
                     <div class="entrenador">
                         <article>
                             <figure>
-                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="">
+                                <img src="{{ asset('images/provisional-desarrollo/avatar.png') }}" alt="Imagen de perfil del entrenador">
                             </figure>
                             <div class="datos-entrenador">
                                 <p class="entrenador-nombre">Luis Morote</p>

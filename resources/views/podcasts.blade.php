@@ -1,4 +1,4 @@
-@extends('layouts.template2')
+@extends('layouts.template')
 
 @section('content')
     <link rel="stylesheet" href="{{ URL::asset('css/podcasts.css') }}">
@@ -8,7 +8,7 @@
             <h2>PODCASTS <br><span>MÁS RECIENTES</span></h2>
             <div>
                 <div class="card podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                     <div>
                         <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
@@ -18,7 +18,7 @@
                     </audio>
                 </div>
                 <div class="card podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                     <div>
                         <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
@@ -28,7 +28,7 @@
                     </audio>
                 </div>
                 <div class="card podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                     <div>
                         <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
@@ -43,7 +43,7 @@
             <h2>PODCASTS <br><span>DESTACADOS</span></h2>
             <div>
                 <div class="card podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                     <div>
                         <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
@@ -53,7 +53,7 @@
                     </audio>
                 </div>
                 <div class="card podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                     <div>
                         <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
@@ -63,7 +63,7 @@
                     </audio>
                 </div>
                 <div class="card podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                     <div>
                         <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
                     </div>
@@ -83,7 +83,7 @@
                 <div class="carousel-item active">
                     <div>
                         <div class="card podcast">
-                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                             <div>
                                 <div>
                                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -100,7 +100,7 @@
                 <div class="carousel-item">
                     <div>
                         <div class="card podcast">
-                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                             <div>
                                 <div>
                                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -117,7 +117,7 @@
                 <div class="carousel-item">
                     <div>
                         <div class="card podcast">
-                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                             <div>
                                 <div>
                                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -134,7 +134,7 @@
                 <div class="carousel-item">
                     <div>
                         <div class="card podcast">
-                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                             <div>
                                 <div>
                                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -151,7 +151,7 @@
                 <div class="carousel-item">
                     <div>
                         <div class="card podcast">
-                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                             <div>
                                 <div>
                                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -168,7 +168,7 @@
                 <div class="carousel-item">
                     <div>
                         <div class="card podcast">
-                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                             <div>
                                 <div>
                                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -185,7 +185,7 @@
                 <div class="carousel-item">
                     <div>
                         <div class="card podcast">
-                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                             <div>
                                 <div>
                                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -202,7 +202,7 @@
                 <div class="carousel-item">
                     <div>
                         <div class="card podcast">
-                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                             <div>
                                 <div>
                                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -219,7 +219,7 @@
                 <div class="carousel-item">
                     <div>
                         <div class="card podcast">
-                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                             <div>
                                 <div>
                                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -236,7 +236,7 @@
                 <div class="carousel-item">
                     <div>
                         <div class="card podcast">
-                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                             <div>
                                 <div>
                                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -253,7 +253,7 @@
                 <div class="carousel-item">
                     <div>
                         <div class="card podcast">
-                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+                            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
                             <div>
                                 <div>
                                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -287,7 +287,7 @@
     <div class="podcasts ocultarEscritorio">
         <h1>PODCASTS</h1>
         <div class="card podcast">
-            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
             <div>
                 <div>
                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -299,7 +299,7 @@
             </div>
         </div>
         <div class="card podcast">
-            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
             <div>
                 <div>
                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -311,7 +311,7 @@
             </div>
         </div>
         <div class="card podcast">
-            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
             <div>
                 <div>
                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
@@ -323,7 +323,7 @@
             </div>
         </div>
         <div class="card podcast">
-            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="">
+            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
             <div>
                 <div>
                     <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>

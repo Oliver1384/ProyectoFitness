@@ -1,4 +1,4 @@
-@extends('layouts.template2')
+@extends('layouts.template')
 
 @section('content')
     <link rel="stylesheet" href="{{ URL::asset('css/plans.css') }}">
@@ -41,7 +41,7 @@
                         <div class="col-xl-6 col-md-6 col-12 mb-3 ">
                             <img class="card-img-top"
                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Card image cap">
+                                alt="Imagen representativa del programa">
                         </div>
                         <div class="mb-3">
                             <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -93,7 +93,7 @@
                         <div class="card mr-1 border border-dark">
                             <img class="card-img-top"
                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Card image cap">
+                                alt="Imagen representativa del programa">
                             <div class="card-body ">
                                 <h1 class="card-title text-center">Programa 1</h1>
                                 <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
@@ -112,7 +112,7 @@
                         <div class="card mr-1 border border-dark">
                             <img class="card-img-top"
                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Card image cap">
+                                alt="Imagen representativa del programa">
                             <div class="card-body ">
                                 <h1 class="card-title text-center">Programa 2</h1>
                                 <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
@@ -131,7 +131,7 @@
                         <div class="card mr-1 border border-dark">
                             <img class="card-img-top"
                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Card image cap">
+                                alt="Imagen representativa del programa">
                             <div class="card-body ">
                                 <h1 class="card-title text-center">Programa 3</h1>
                                 <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
@@ -150,7 +150,7 @@
                         <div class="card mr-1 border border-dark">
                             <img class="card-img-top"
                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Card image cap">
+                                alt="Imagen representativa del programa">
                             <div class="card-body ">
                                 <h1 class="card-title text-center">Programa 4</h1>
                                 <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
@@ -169,7 +169,7 @@
                         <div class="card mr-1 border border-dark">
                             <img class="card-img-top"
                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Card image cap">
+                                alt="Imagen representativa del programa">
                             <div class="card-body ">
                                 <h1 class="card-title text-center">Programa 5</h1>
                                 <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
@@ -188,7 +188,7 @@
                         <div class="card mr-1 border border-dark">
                             <img class="card-img-top"
                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Card image cap">
+                                alt="Imagen representativa del programa">
                             <div class="card-body ">
                                 <h1 class="card-title text-center">Programa 6</h1>
                                 <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
@@ -207,7 +207,7 @@
                         <div class="card mr-1 border border-dark">
                             <img class="card-img-top"
                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Card image cap">
+                                alt="Imagen representativa del programa">
                             <div class="card-body ">
                                 <h1 class="card-title text-center">Programa 7</h1>
                                 <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
@@ -226,7 +226,7 @@
                         <div class="card mr-1 border border-dark">
                             <img class="card-img-top"
                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Card image cap">
+                                alt="Imagen representativa del programa">
                             <div class="card-body ">
                                 <h1 class="card-title text-center">Programa 8</h1>
                                 <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
