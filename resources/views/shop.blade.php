@@ -1,4 +1,4 @@
-@extends('layouts.template2')
+@extends('layouts.template')
 <link href="{{ asset('css/tienda.css') }}" rel="stylesheet"/>
 <link href="{{ asset('css/podcasts.css') }}" rel="stylesheet"/>
 @section('content')
@@ -9,7 +9,7 @@
         <p class="precio">25€</p>
     </div>
     <figure>
-        <img src="{{ asset('images/provisional-desarrollo/producto.png') }}" alt="">
+        <img src="{{ asset('images/provisional-desarrollo/producto.png') }}" alt="Bote de bebida de proteinas en polvo">
     </figure>
 </section>
     <main>
@@ -17,7 +17,7 @@
         <div class="productos">
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
@@ -26,7 +26,7 @@
             </article>
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
@@ -35,7 +35,7 @@
             </article>
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
@@ -44,7 +44,7 @@
             </article>
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
@@ -53,7 +53,7 @@
             </article>
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
@@ -62,7 +62,7 @@
             </article>
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
@@ -71,7 +71,7 @@
             </article>
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
@@ -80,7 +80,7 @@
             </article>
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
@@ -89,7 +89,7 @@
             </article>
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
@@ -98,7 +98,7 @@
             </article>
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
@@ -107,7 +107,7 @@
             </article>
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>
@@ -116,7 +116,7 @@
             </article>
             <article class="producto">
                 <figure>
-                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="">
+                    <img src="{{asset('images/provisional-desarrollo/producto.png')}}" alt="Bote de bebida de proteinas en polvo">
                 </figure>
                 <div class="info-producto">
                     <p class="info">NOMBRE PRODUCTO <span class="precio">25€</span></p>

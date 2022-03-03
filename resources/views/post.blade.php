@@ -1,4 +1,4 @@
-@extends('layouts.template2')
+@extends('layouts.template')
 
 <link rel="stylesheet" href="{{ asset('/css/post_body.css') }}" />
 
@@ -66,7 +66,7 @@
                     <div class="profile">
                         <div class="profile_avatar">
                             <img src="http://127.0.0.1:8000/images/provisional-desarrollo/avatar.png"
-                                alt="Nombre del entrenador">
+                                alt="Imagen de perfil del entrenador">
                         </div>
                         <div class="profile_info">
                             <p class="profile_name">

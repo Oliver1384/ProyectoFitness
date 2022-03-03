@@ -1,8 +1,8 @@
-@extends('layouts.template2')
+@extends('layouts.template')
 
 
 @section('content')
-<link href="{{ asset('css/contacto.css') }}" rel="stylesheet" />
+<link href="{{ asset('css/contacto.css') }}" rel="stylesheet"/>
 
 
 <div class="contacto-container">
@@ -37,7 +37,7 @@
 <div class="info-container">
 
     <div class="imagen-container">
-        <img src="{{asset('/images/contactos/chicaFit.png')}}" alt="" >
+        <img src="{{asset('/images/contactos/chicaFit.png')}}" alt="Dibujo de una mujer levantando pesas" >
 
     </div>
 
@@ -45,7 +45,7 @@
 
         <div class="datos-container">
             <div class="logo">
-                <img src="{{asset('/images/contactos/fitness.png')}}" alt="">
+                <img src="{{asset('/images/contactos/fitness.png')}}" alt="Logo de proyecto fitness">
             </div>
             <div class="telefono">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFB20F" class="bi bi-telephone-fill" viewBox="0 0 16 16">
