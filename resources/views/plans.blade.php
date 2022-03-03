@@ -37,11 +37,38 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-xl-6 col-md-6 col-12 mb-3 ">
-                            <img class="card-img-top"
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-8 col-md-7 col-sm-12 col-12 mb-3 ">
+                            <img class="card-img-top border border-secondary"
                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
                                 alt="Imagen representativa del programa">
+                        </div>
+                        <div class="col-xl-4 col-md-5  col-sm-12 col-12">
+                            <div class="profile border border-secondary rounded">
+                                <div class="profile_info">
+                                    <p class="profile_name">
+                                        Juan Antonio
+                                    </p>
+                                    <div class="profile_avatar">
+                                        <img src="http://127.0.0.1:8000/images/provisional-desarrollo/avatar.png"
+                                             alt="Imagen de perfil del entrenador">
+                                    </div>
+                                    <p class="profile_description">
+                                        Entrenador personal, experto en dietética
+                                    </p>
+                                </div>
+                                <div class="profile_social_media">
+                                    <a href="#">
+                                        <img src="{{ asset('images/iconos/trainer_instagram.svg') }}" alt="Instagram" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="{{ asset('images/iconos/trainer_facebook.svg') }}" alt="Instagram" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="{{ asset('images/iconos/trainer_linkedin.svg') }}" alt="Instagram" />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="mb-3">
                             <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
