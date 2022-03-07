@@ -5,12 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Plan extends Model
+class Admin extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'titulo',
-        'descripcion',
-        'imagen'
-    ];
 }

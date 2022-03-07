@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SolicitudController;
+use App\Http\Controllers\PlanController;
+use App\Http\Controllers\AdminController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -43,8 +46,8 @@ Route::get('/Post', function () {
 })->name('Post');
 
 Route::get('/solicitar', [SolicitudController::class, 'mostrarFormulario'])->name('solicitar');
+Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+Route::get('/admin/planes', [PlanController::class, 'index']);
 
 
-Route::get('/admin', function () {
-    return view('admin.index');
-})->name('admin');
+

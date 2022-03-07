@@ -8,7 +8,7 @@
   <div class="card-body">
     <h5 class="card-title">Planes</h5>
     <p class="card-text">Administra los planes.</p>
-    <a href="#" class="btn btn-warning">Ir a planes</a>
+    <a href="{{url('admin.planes')}}" class="btn btn-warning">Ir a planes</a>
   </div>
 </div>
 
