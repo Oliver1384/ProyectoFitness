@@ -41,4 +41,8 @@ Route::get('/Post', function () {
     return view('post');
 })->name('Post');
 
+Route::get('/admin', function () {
+    return view('admin.index');
+})->name('admin');
+
 
