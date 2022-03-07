@@ -23,7 +23,7 @@
                     explicabo hic incidunt ipsum laborum minus non quidem quo sequi soluta? </p>
             </div>
             <div class="col-12 text-center">
-                <button class="btn btn-light mb-3 ">Crea tu plan</button>
+                <a href="{{ url('solicitar') }}" class="btn btn-light mb-3 ">Crea tu plan</a>
             </div>
 
         </div>
