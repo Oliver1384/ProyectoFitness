@@ -7,7 +7,15 @@
 .contenedor{
     display: flex;
     width: 100%;
-    background-color: black;
-    justify-content: space-around;
+    height: 90vh;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
 
 }
+
+.card{
+    margin:.2em 0 0 .3rem;
+
+}
+
