@@ -3,7 +3,7 @@
 @section('content')
 <div class="contenedor">
 
-<div class="card" style="width: 35rem;">
+<div class="card">
   <img src="{{asset('images/articles/Article_04.png')}}" class="card-img-top" id='planes' alt="...">
   <div class="card-body">
     <h5 class="card-title">Planes</h5>
@@ -12,7 +12,7 @@
   </div>
 </div>
 
-<div class="card" style="width: 35rem;">
+<div class="card">
   <img src="{{asset('images/articles/Article_05.png')}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Posts</h5>
@@ -21,7 +21,7 @@
   </div>
 </div>
 
-<div class="card" style="width: 35rem;">
+<div class="card">
   <img src="{{asset('images/articles/Article_06.png')}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Podcasts</h5></p>
@@ -30,7 +30,7 @@
   </div>
 </div>
 
-<div class="card" style="width: 35rem;">
+<div class="card">
   <img src="{{asset('images/articles/Article_02.png')}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Contacto</h5>
@@ -39,7 +39,7 @@
   </div>
 </div>
 
-<div class="card" style="width: 35rem;">
+<div class="card">
   <img src="{{asset('images/articles/Article_04.png')}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Usuarios</h5>
