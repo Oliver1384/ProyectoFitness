@@ -45,3 +45,6 @@ Route::get('/Post', function () {
 Route::get('/solicitar', [SolicitudController::class, 'mostrarFormulario'])->name('solicitar');
 
 
+Route::get('/admin', function () {
+    return view('admin.index');
+})->name('admin');
