@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PodcastController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\InformacionController;
 
 
 /*
@@ -54,3 +55,4 @@ Route::get('/admin/planes', [PlanController::class, 'index']);
 Route::get('/admin/posts', [PostController::class, 'index']);
 Route::get('/admin/podcasts', [PodcastController::class, 'index']);
 Route::get('/admin/usuarios', [UserController::class, 'index']);
+Route::get('/admin/informacion', [InformacionController::class, 'index']);

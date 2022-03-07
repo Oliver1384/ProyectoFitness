@@ -35,7 +35,7 @@
   <div class="card-body">
     <h5 class="card-title">Contacto</h5>
     <p class="card-text">Edita la información de contacto.</p>
-    <a href="#" class="btn btn-warning">Ir a contacto</a>
+    <a href="{{url('admin/informacion')}}" class="btn btn-warning">Ir a contacto</a>
   </div>
 </div>
 
@@ -44,7 +44,7 @@
   <div class="card-body">
     <h5 class="card-title">Usuarios</h5>
     <p class="card-text">Crear nuevos usuarios.</p>
-    <a href="{{url('admin/usuarios')}}" class="btn btn-warning">Ir a usuarios</a>
+    <a href="{{url('admin/podcasts')}}" class="btn btn-warning">Ir a usuarios</a>
   </div>
 </div>
 
