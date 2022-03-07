@@ -8,7 +8,7 @@
   <div class="card-body">
     <h5 class="card-title">Planes</h5>
     <p class="card-text">Administra los planes.</p>
-    <a href="{{url('admin.planes')}}" class="btn btn-warning">Ir a planes</a>
+    <a href="{{url('admin/planes')}}" class="btn btn-warning">Ir a planes</a>
   </div>
 </div>
 
@@ -17,7 +17,7 @@
   <div class="card-body">
     <h5 class="card-title">Posts</h5>
     <p class="card-text">Administra los posts.</p>
-    <a href="#" class="btn btn-warning">Ir a posts</a>
+    <a href="{{url('admin/posts')}}" class="btn btn-warning">Ir a posts</a>
   </div>
 </div>
 
@@ -26,7 +26,7 @@
   <div class="card-body">
     <h5 class="card-title">Podcasts</h5></p>
     <p class="card-text">Administra los podcasts.</p>
-    <a href="#" class="btn btn-warning">Ir a podcast</a>
+    <a href="{{url('admin/podcasts')}}" class="btn btn-warning">Ir a podcast</a>
   </div>
 </div>
 
@@ -44,7 +44,7 @@
   <div class="card-body">
     <h5 class="card-title">Usuarios</h5>
     <p class="card-text">Crear nuevos usuarios.</p>
-    <a href="#" class="btn btn-warning">Ir a usuarios</a>
+    <a href="{{url('admin/usuarios')}}" class="btn btn-warning">Ir a usuarios</a>
   </div>
 </div>
 
