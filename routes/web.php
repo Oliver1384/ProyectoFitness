@@ -52,14 +52,14 @@ Route::get('/Post', function () {
 
 Route::get('/solicitar', [SolicitudController::class, 'mostrarFormulario'])->name('solicitar');
 Route::post('/solicitar', [SolicitudController::class, 'enviarFormulario']);
-
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
 Route::get('/admin/planes', [PlanController::class, 'index']);
 Route::get('/admin/posts', [PostController::class, 'index']);
 Route::get('/admin/podcasts', [PodcastController::class, 'index']);
-Route::get('/admin/usuarios', [UserController::class, 'index']);
+//Route::get('/admin/usuarios', [UserController::class, 'index']);
+Route::resource('/admin/usuarios', UserController::class);
 Route::get('/admin/informacion', [InformacionController::class, 'index']);
 
-Auth::routes();
 
+Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
