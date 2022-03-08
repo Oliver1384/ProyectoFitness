@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- META -->
     <meta charset="UTF-8">
@@ -27,11 +28,11 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Open+Sans:wght@300&family=Sora:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Open+Sans:wght@300&family=Sora:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
 
     <!-- OWN RESOURCES -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('css/nav.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/nav.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/carousel.css') }}" />
 
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -39,6 +40,7 @@
     <script src="{{ asset('js/carousel.js') }}"></script>
 
 </head>
+
 <body>
     <div class="nav-movil">
         <div class="header">
@@ -52,39 +54,73 @@
             <li><a href="{{ url('/Planes') }}">PLANES</a></li>
             <li><a href="{{ url('/Contacto') }}">CONTACTO</a></li>
         </ul>
+
+
     </div>
+    
+    
+    
     <nav class="nav-principal">
-            <div class="burger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <figure>
-                <img src="{{ asset('images/logo/navbar-logo_110x50.png') }}" alt="logo de proyecto fitness"/>
-            </figure>
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <figure>
+            <img src="{{ asset('images/logo/navbar-logo_110x50.png') }}" alt="logo de proyecto fitness" />
+        </figure>
+        
+        <ul class="nav-escritorio">
+            <li class="nav-item ">
+                <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ Request::is('Tienda') ? 'active' : '' }}" aria-current="page" href="{{ url('/Tienda') }}">Tienda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ Request::is('Podcasts') ? 'active' : '' }}" aria-current="page" href="{{ url('Podcasts')  }}">Podcasts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ Request::is('Posts') ? 'active' : '' }}" aria-current="page" href="{{ url('/Posts')  }}">Posts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ Request::is('Planes') ? 'active' : '' }}" aria-current="page" href="{{ url('/Planes')  }}">Planes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ Request::is('Contacto') ? 'active' : '' }}" aria-current="page" href="{{ url('/Contacto') }}">Contacto</a>
+            </li>
+            
+            
+            @if(@Auth::user())
+            @guest
+            @if (Route::has('login'))
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+            </li>
+                    @endif
+                    @else
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }}
+                        </a>
 
-               <ul class="nav-escritorio">
-                    <li class="nav-item ">
-                        <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Inicio</a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ Request::is('Tienda') ? 'active' : '' }}" aria-current="page" href="{{ url('/Tienda') }}">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ Request::is('Podcasts') ? 'active' : '' }}" aria-current="page" href="{{ url('Podcasts')  }}">Podcasts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ Request::is('Posts') ? 'active' : '' }}" aria-current="page" href="{{ url('/Posts')  }}">Posts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ Request::is('Planes') ? 'active' : '' }}" aria-current="page" href="{{ url('/Planes')  }}">Planes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ Request::is('Contacto') ? 'active' : '' }}" aria-current="page" href="{{ url('/Contacto') }}">Contacto</a>
-                    </li>
-                </ul>
+                    @endguest
+                    @endif
+            
+        </ul>
+
     </nav>
-
 
     @yield('content')
     <footer class="footer-movil">
@@ -101,7 +137,7 @@
         </div>
         <p>Copyright © 2022 proyectofitness. Todos los derechos reservados</p>
     </footer>
-<footer class="footer-escritorio">
+    <footer class="footer-escritorio">
         <figure class="imagenFooter">
         </figure>
         <div class="contenido-footer">
@@ -118,40 +154,40 @@
             </div>
             <div class="enlacesFooterEscritorio">
 
-                    <section class="footer-izquierdo">
-                        <div>
-                            <b>Artículos</b>
-                            <p>Artículos destacados</p>
-                            <p>Ver nuestro artículos</p>
+                <section class="footer-izquierdo">
+                    <div>
+                        <b>Artículos</b>
+                        <p>Artículos destacados</p>
+                        <p>Ver nuestro artículos</p>
 
-                        </div>
+                    </div>
 
-                    </section>
-                    <section class="footer-derecho">
-                        <div>
-                            <b>Podcast</b>
-                            <p>Escuchar nuestro podcast</p>
+                </section>
+                <section class="footer-derecho">
+                    <div>
+                        <b>Podcast</b>
+                        <p>Escuchar nuestro podcast</p>
 
-                        </div>
+                    </div>
 
-                    </section>
-                    <section class="footer-izquierdo">
+                </section>
+                <section class="footer-izquierdo">
 
-                        <div>
-                            <b>Programas</b>
-                            <p>Nuestros programas destacados</p>
-                            <p>¡Personaliza tu programa!</p>
+                    <div>
+                        <b>Programas</b>
+                        <p>Nuestros programas destacados</p>
+                        <p>¡Personaliza tu programa!</p>
 
-                        </div>
-                    </section>
-                    <section class="footer-derecho">
+                    </div>
+                </section>
+                <section class="footer-derecho">
 
-                        <div>
-                            <b>Contacto</b>
-                            <p>Nuestra ubicación</p>
+                    <div>
+                        <b>Contacto</b>
+                        <p>Nuestra ubicación</p>
 
-                        </div>
-                    </section>
+                    </div>
+                </section>
 
             </div>
             <p class="copyright">Copyright © 2022 proyectofitness. Todos los derechos reservados</p>
@@ -160,4 +196,5 @@
 
     </footer>
 </body>
+
 </html>
