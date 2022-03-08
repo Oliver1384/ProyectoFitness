@@ -2,6 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SolicitudController;
+use App\Http\Controllers\PlanController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\PodcastController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\InformacionController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -43,8 +50,9 @@ Route::get('/Post', function () {
 })->name('Post');
 
 Route::get('/solicitar', [SolicitudController::class, 'mostrarFormulario'])->name('solicitar');
-
-
-Route::get('/admin', function () {
-    return view('admin.index');
-})->name('admin');
+Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+Route::get('/admin/planes', [PlanController::class, 'index']);
+Route::get('/admin/posts', [PostController::class, 'index']);
+Route::get('/admin/podcasts', [PodcastController::class, 'index']);
+Route::get('/admin/usuarios', [UserController::class, 'index']);
+Route::get('/admin/informacion', [InformacionController::class, 'index']);

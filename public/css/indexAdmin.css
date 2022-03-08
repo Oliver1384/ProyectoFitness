@@ -7,15 +7,17 @@
 .contenedor{
     display: flex;
     width: 100%;
-    height: 90vh;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    overflow: hidden;
+    margin-top: 1em;
 
-}
+} 
 
 .card{
-    margin:.2em 0 0 .3rem;
+    margin:.2em 0 0 .3em;
+    max-width: 400px;
 
 }
 
