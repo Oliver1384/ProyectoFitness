@@ -2,8 +2,19 @@
 
 @section('content')
 <link rel="stylesheet" href="{{ URL::asset('css/solicitudes.css') }}">
-<h1>Solicita tu plan</h1>
-    <form action="{{ url('solicitar') }}" method="post">
+
+@if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+@endif
+
+
+
+@if(Request::isMethod('get'))
+    <h1>Solicita tu plan</h1>
+    <form action="{{ url('/solicitar') }}" method="post">
+        @csrf
         <div class="form-group">
             <label >
                 Nombre y apellidos
@@ -28,20 +39,21 @@
         </div>
         <div class="form-group">
             <label>
-                Cuéntanos tus hábitos alimenticios
-                <textarea name="habitos_alimenticios" cols="30" rows="10"></textarea>
+                Hábitos alimenticios
+                <textarea name="habitos_alimenticios" cols="30" rows="10" placeholder="Indica que alimentación llevas en tu día a día"></textarea>
             </label>
             <label>
-                Háblanos sobre tu rutina de ejercicios
-                <textarea name="habitos_deporte" cols="30" rows="10"></textarea>
+                ¿Haces deporte?
+                <textarea name="habitos_deporte" cols="30" rows="10" placeholder="Running, natación, fútbol..."></textarea>
             </label>
             <label>
-                Tu objetivo a conseguir con nuestro plan
+                Tu objetivo a conseguir
                 <textarea name="objetivo" cols="30" rows="10" placeholder="Ganar musculatura, pérdida de peso..."></textarea>
             </label>
         </div>
-        
-    
-    
+        <input type="submit" value="SOLICITAR">
     </form>
+@else
+    <h1>Tu solicitud ha sido enviada con éxito</h1>
+@endif
 @endsection
