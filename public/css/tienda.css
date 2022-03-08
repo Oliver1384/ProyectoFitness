@@ -158,6 +158,15 @@ main h1{
 }
 
 
+#paginator a{
+    border-color: var(--main-orange);
+    background-color: transparent;
+    color: var(--main-orange);
+}
+ #paginator a:hover{
+    background-color: var(--main-orange);
+    color: var(--main-black);
+}
 
 @media(min-width:750px){
 
