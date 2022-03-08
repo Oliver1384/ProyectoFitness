@@ -102,6 +102,7 @@ h2 span {
     text-align: center;
     font-family: var(--title-font);
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .entrenador {
