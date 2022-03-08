@@ -21,7 +21,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0|^8.0",
+                "php": "^7.2|^8.0",
                 "symfony/http-foundation": "^4|^5|^6",
                 "symfony/http-kernel": "^4|^5|^6"
             },
@@ -8023,5 +8023,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.1.0"
 }
