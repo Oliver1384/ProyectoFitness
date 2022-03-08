@@ -10,14 +10,14 @@
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-
-    margin-top: 1em;
+    padding: 1em;
+ 
 
 } 
 
 .card{
     margin:.2em 0 0 .3em;
-    max-width: 400px;
+    max-width: 500px;
 
 }
 
