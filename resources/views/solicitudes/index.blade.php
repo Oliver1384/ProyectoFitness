@@ -28,15 +28,15 @@
         </div>
         <div class="form-group">
             <label>
-                Cuéntanos tus hábitos alimenticios
+                Hábitos alimenticios
                 <textarea name="habitos_alimenticios" cols="30" rows="10"></textarea>
             </label>
             <label>
-                Háblanos sobre tu rutina de ejercicios
+                ¿Haces deporte?
                 <textarea name="habitos_deporte" cols="30" rows="10"></textarea>
             </label>
             <label>
-                Tu objetivo a conseguir con nuestro plan
+                Tu objetivo a conseguir
                 <textarea name="objetivo" cols="30" rows="10" placeholder="Ganar musculatura, pérdida de peso..."></textarea>
             </label>
         </div>
