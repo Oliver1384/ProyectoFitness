@@ -14,6 +14,10 @@
     
 }
 
+.article-effect{
+    filter: blur(.15em) brightness(1.2) !important;
+}
+
 .carousel-control-prev, .carousel-control-next {
     max-height: none !important;
     max-width: none !important;
@@ -102,6 +106,7 @@ h2 span {
     text-align: center;
     font-family: var(--title-font);
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .entrenador {
