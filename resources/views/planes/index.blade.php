@@ -1,2 +1,4 @@
-@extends('layouts.templateAdmin')
+@extends('layouts.template')
+
+
 
