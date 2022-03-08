@@ -51,6 +51,8 @@ Route::get('/Post', function () {
 })->name('Post');
 
 Route::get('/solicitar', [SolicitudController::class, 'mostrarFormulario'])->name('solicitar');
+Route::post('/solicitar', [SolicitudController::class, 'enviarFormulario']);
+
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
 Route::get('/admin/planes', [PlanController::class, 'index']);
 Route::get('/admin/posts', [PostController::class, 'index']);

@@ -9,7 +9,8 @@ form{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    
+    font-family: var(--content-font);
+    margin: .5em 0;
 }
 
 form  .form-group{
@@ -40,6 +41,26 @@ form .form-group input,form .form-group textarea {
 form .form-group label{
     display: flex;
     flex-flow: column nowrap;
-    flex: 1 1 200px;
+    flex: 1 1 300px;
     margin: .5em;
+}
+
+form textarea{
+    padding: .5em;
+}
+
+form input[type="submit"]{
+    background-color: var(--main-orange);
+    padding: .5em ;
+    max-width: 200px;
+    align-self: center;
+    border: 0;
+    border-radius: .2em;
+    font-weight: bolder;
+    color: var(--basic-white);
+}
+
+form input[type="submit"]:hover{
+    background-color: var(--main-black);
+    
 }

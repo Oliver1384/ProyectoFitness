@@ -152,6 +152,9 @@ main h1{
 #paginator{
     margin: 0 !important;
     display: none !important;
+    background-color: var(--main-black);
+    height: 30vh;
+    
 }
 
 
@@ -164,6 +167,8 @@ main h1{
 
     #paginator{
         display: flex !important;
+        justify-content: center;
+        align-items: center;
     }
 
     .controls.ocultarEscritorio{

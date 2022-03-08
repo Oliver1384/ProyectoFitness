@@ -8,18 +8,29 @@
     --aux-font: 'Open Sans', sans-serif;
 }
 
+
+#main-article h1 .text-black{
+    color: var(--main-orange) !important;
+    
+}
+
 .carousel-control-prev, .carousel-control-next {
     max-height: none !important;
     max-width: none !important;
 }
 
 h1.article-title {
+    text-transform: uppercase !important;
     text-align: center;
 }
 
 h2 {
     color: var(--basic-white);
+    font-family: var(--title-font) !important;
+    font-weight: bolder;
 }
+
+
 
 h2 span {
     margin: 0;
