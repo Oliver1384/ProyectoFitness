@@ -8,6 +8,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\PodcastController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\InformacionController;
+use Illuminate\Support\Facades\Auth;
 
 
 /*
