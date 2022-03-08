@@ -2,8 +2,19 @@
 
 @section('content')
 <link rel="stylesheet" href="{{ URL::asset('css/solicitudes.css') }}">
-<h1>Solicita tu plan</h1>
-    <form action="{{ url('solicitar') }}" method="post">
+
+@if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+@endif
+
+
+
+@if(Request::isMethod('get'))
+    <h1>Solicita tu plan</h1>
+    <form action="{{ url('/solicitar') }}" method="post">
+        @csrf
         <div class="form-group">
             <label >
                 Nombre y apellidos
@@ -42,4 +53,7 @@
         </div>
         <input type="submit" value="SOLICITAR">
     </form>
+@else
+    <h1>Tu solicitud ha sido enviada con éxito</h1>
+@endif
 @endsection
