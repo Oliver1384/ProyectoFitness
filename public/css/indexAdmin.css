@@ -10,8 +10,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    overflow: hidden;
-    margin: 1em 0;
+    margin: .5em 0;
 
 } 
 
