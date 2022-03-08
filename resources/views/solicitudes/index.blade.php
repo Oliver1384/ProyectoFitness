@@ -29,19 +29,17 @@
         <div class="form-group">
             <label>
                 Hábitos alimenticios
-                <textarea name="habitos_alimenticios" cols="30" rows="10"></textarea>
+                <textarea name="habitos_alimenticios" cols="30" rows="10" placeholder="Indica que alimentación llevas en tu día a día"></textarea>
             </label>
             <label>
                 ¿Haces deporte?
-                <textarea name="habitos_deporte" cols="30" rows="10"></textarea>
+                <textarea name="habitos_deporte" cols="30" rows="10" placeholder="Running, natación, fútbol..."></textarea>
             </label>
             <label>
                 Tu objetivo a conseguir
                 <textarea name="objetivo" cols="30" rows="10" placeholder="Ganar musculatura, pérdida de peso..."></textarea>
             </label>
         </div>
-        
-    
-    
+        <input type="submit" value="SOLICITAR">
     </form>
 @endsection
