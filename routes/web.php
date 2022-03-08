@@ -56,3 +56,7 @@ Route::get('/admin/posts', [PostController::class, 'index']);
 Route::get('/admin/podcasts', [PodcastController::class, 'index']);
 Route::get('/admin/usuarios', [UserController::class, 'index']);
 Route::get('/admin/informacion', [InformacionController::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

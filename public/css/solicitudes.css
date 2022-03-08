@@ -1,0 +1,45 @@
+h1{
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    text-align: center;
+    margin: .5em 0;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    
+}
+
+form  .form-group{
+    display: flex;
+    flex-flow: row wrap;
+    margin: .5em;
+    justify-content: space-around;
+    font-size: 1.2em;
+    font-weight: bolder;
+    border-radius: .2em;
+}
+
+
+form .form-group:first-of-type{
+    background-color: var(--main-orange);
+}
+
+form .form-group:last-of-type{
+    background-color: var(--main-black);
+    color: var(--basic-white);
+}
+
+form .form-group input,form .form-group textarea {
+    margin: .5em 0;
+
+}
+
+form .form-group label{
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 200px;
+    margin: .5em;
+}
