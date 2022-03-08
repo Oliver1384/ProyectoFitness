@@ -232,6 +232,7 @@
     flex: 2 1 400px;
     justify-content: space-between;
     border-left: 8px solid var(--main-orange);
+    background-color: var(--basic-white);
 }
 
 .enlacesFooterEscritorio {
