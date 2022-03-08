@@ -5,7 +5,7 @@
     --basic-white:  #FFFFFF;
     --title-nav-font: oswald;
     --alternative-font: sans-serif;
-    --content-font: notosans;
+    --content-font: 'Noto Sans', sans-serif;
 }
 
 #articles-page {
@@ -29,12 +29,14 @@
 
 .article-title{
     background-color: transparent !important;
+    font-family: var(--title-font);
+    font-weight: bolder;
 }
 
 .article:nth-child(2) h1.article-title,
 .article:nth-child(5) h1.article-title,
 .article:nth-child(6) h1.article-title {
-    color: var(--basic-white) !important;
+    color:var(--main-black) !important; 
 }
 
 .article:nth-child(3) h1.article-title,
@@ -42,6 +44,7 @@
 .article:nth-child(7) h1.article-title {
     color: var(--main-black) !important;
 }
+
 
 @media (min-width: 1200px) {
     .article {
@@ -51,7 +54,7 @@
         border-right: 0px !important;
     }
     .article:nth-child(even) h1.article-title {
-        color: var(--basic-white) !important;
+        color:var(--main-black) !important; 
     }
     .article:nth-child(odd) h1.article-title {
         color: var(--main-black) !important;
@@ -80,9 +83,10 @@
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: .5;
+    opacity: .7;
     background-size: cover !important;
     background-position: center center !important;
+    filter: blur(.1em) brightness(.9) !important;
 }
 
 .article-content {
@@ -145,6 +149,10 @@
     font-size: 120px;
     color:var(--main-white);
     margin: 1rem;
+}
+
+.enlacesfooterescritorio p{
+    font-family: var(--content-font) !important;
 }
 
 .controls {

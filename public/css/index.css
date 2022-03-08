@@ -14,6 +14,10 @@
     
 }
 
+.article-effect{
+    filter: blur(.15em) brightness(1.2) !important;
+}
+
 .carousel-control-prev, .carousel-control-next {
     max-height: none !important;
     max-width: none !important;
