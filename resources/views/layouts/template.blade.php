@@ -57,7 +57,9 @@
 
 
     </div>
-
+    
+    
+    
     <nav class="nav-principal">
         <div class="burger">
             <div class="bar"></div>
@@ -67,7 +69,7 @@
         <figure>
             <img src="{{ asset('images/logo/navbar-logo_110x50.png') }}" alt="logo de proyecto fitness" />
         </figure>
-
+        
         <ul class="nav-escritorio">
             <li class="nav-item ">
                 <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Inicio</a>
@@ -88,12 +90,13 @@
                 <a class="nav-link {{ Request::is('Contacto') ? 'active' : '' }}" aria-current="page" href="{{ url('/Contacto') }}">Contacto</a>
             </li>
             
-                    
-                    @guest
-                    @if (Route::has('login'))
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                    </li>
+            
+            @if(@Auth::user())
+            @guest
+            @if (Route::has('login'))
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+            </li>
                     @endif
                     @else
                     <li class="nav-item dropdown">
@@ -113,11 +116,11 @@
                         </div>
                     </li>
                     @endguest
+                    @endif
             
         </ul>
 
     </nav>
-
 
     @yield('content')
     <footer class="footer-movil">

@@ -9,7 +9,7 @@
   <div class="card-body">
     <h5 class="card-title">Crear nuevo usuario</h5>
     <p class="card-text">Gestiona los usuarios que acceden a este portal.</p>
-    <a href="{{url('admin/')}}" class="btn btn-warning">Ir a crear usuario</a>
+    <a href="{{route('usuarios.create')}}" class="btn btn-warning">Ir a crear usuario</a>
   </div>
 </div>
 
