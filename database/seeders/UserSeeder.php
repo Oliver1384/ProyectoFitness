@@ -10,6 +10,9 @@ class UserSeeder extends Seeder {
     public function run() {
         $informacioncentroId = DB::table('informacioncentro')->pluck('id');
         $faker = Faker::create();
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        DB::table('users')->truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
         for($i = 0; $i < 20; $i++) {
             DB::table('users')->insert([
                 'name' => $faker->name,
