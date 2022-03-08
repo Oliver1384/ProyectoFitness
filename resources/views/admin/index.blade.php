@@ -1,4 +1,4 @@
-@extends('layouts.templateAdmin')
+@extends('layouts.template')
 <link rel="stylesheet" href="{{asset('/css/indexAdmin.css')}}">
 @section('content')
 <div class="contenedor">
