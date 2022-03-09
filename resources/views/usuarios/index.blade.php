@@ -4,8 +4,8 @@
 <h1>Bienvenido a la gestión de Usuarios</h1>
 
 <section class="barraElementos">
-  <form action="{{route.('usuarios.index')}}" method="get">
-  <a type="button" id="add" href="{{route('usuarios.store')}}" class="btn btn-primary btn-lg">Añadir</a>
+  <form action="{{route('usuarios.index')}}" method="get">
+  <a type="button" id="add" href="{{route('usuarios.create')}}" class="btn btn-primary btn-lg">Añadir</a>
     <div class="form-row" style="display: flex; justify-content:flex-end; margin: .5em 4em 0 0; ">
       <div class="d-flex" style="max-width: 300px;">
         <input type="text" name="texto" class="form-control">
@@ -20,7 +20,7 @@
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="{{$usuario->imagen}}" class="img-fluid rounded-start" alt="...">
+        <img src="{{asset($usuario->imagen)}}" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
