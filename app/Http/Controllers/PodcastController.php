@@ -14,29 +14,37 @@ class PodcastController extends Controller {
         return view('podcasts.index')->with(compact('podcasts','usuarios'));
     }
 
-    public function formularioAgregarPodcast() {
+    public function create() {
         return view('podcasts.create');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    public function store(Request $request) {
+        $request->validate([
+            'titulo' => 'required|min:3|max:100',
+            'tema' => 'required|min:10|max:80',
+            'audio' => 'max:5000|mimes:mp3',
+            'imagen' => 'nullable|max:5000|mimes:jpeg,png,jpg',
+            'destacado' => 'required|min:2|max:2',
+        ]);
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+        $input = $request->all();
+
+        if ($image = $request->file('imagen')) {
+            $imageDestinationPath = 'uploads/';
+            $imagenUsuario = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($imageDestinationPath, $imagenUsuario);
+            $input['imagen'] = "{$imageDestinationPath}{$imagenUsuario}";
+        }
+
+        if ($audio = $request->file('audio')) {
+            $audioDestinationPath = 'audio/';
+            $audioPodcast = date('YmdHis') . "." . $audio->getClientOriginalExtension();
+            $audio->move($audioDestinationPath, $audioPodcast);
+            $input['audio'] = "{$audioDestinationPath}{$audioPodcast}";
+        }
+
+        Podcast::create($input);
+        return redirect()->route('podcasts.index');
     }
 
     /**

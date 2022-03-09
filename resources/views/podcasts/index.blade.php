@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{asset('/css/podcastsAdmin.css')}}">
     <section class="barraElementos">
         <a type="button" id="add" href="{{route('agregarPodcast')}}" class="btn btn-primary btn-lg">+ Añadir</a>
-        <form action="{{}}" method="get">
+        <form action="#" method="get">
             <div class="form-row" style="display: flex; justify-content:flex-end; margin: .5em 4em 0 0; ">
                 <div class="d-flex" style="max-width: 300px;">
                     <input type="text" name="texto" class="form-control">
