@@ -36,11 +36,11 @@
     </div>
   </div>
   @endforeach
-  <span class="paginador" style="display: flex; justify-content:center; margin: 1em;">
-    {{$usuarios->links()}}
-  </span>
-
+  
 </div>
 
+<span class="paginador" style="display: flex; justify-content:center; margin: 1em;">
+  {{$usuarios->links()}}
+</span>
 
 @endsection
