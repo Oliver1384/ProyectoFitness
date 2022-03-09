@@ -11293,6 +11293,6 @@ h1,h2,h3,h4,h5,h6{
   font-family: var(--title-font);
 }
 
-p{
-  font-family: var(--content-font);
+p, label, button, input, span{
+  font-family: var(--content-font) !important;
 }
