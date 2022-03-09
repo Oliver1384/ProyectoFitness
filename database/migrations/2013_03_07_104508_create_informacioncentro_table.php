@@ -13,7 +13,7 @@ class CreateInformacioncentroTable extends Migration
      */
     public function up()
     {
-        Schema::create('informacioncentro', function (Blueprint $table) {
+        Schema::create('informacioncentros', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
             $table->string('direccion');
@@ -24,6 +24,8 @@ class CreateInformacioncentroTable extends Migration
             $table->string('facebook');
             $table->timestamps();
         });
+        
+
     }
 
     /**

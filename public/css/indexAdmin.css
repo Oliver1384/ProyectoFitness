@@ -11,8 +11,9 @@
     justify-content: center;
     align-content: center;
     padding: 1em;
- 
-
+    overflow: hidden;
+    margin: 1em 0;
+    padding: 1em;
 } 
 
 .card{
