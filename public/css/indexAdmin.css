@@ -10,14 +10,10 @@
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-<<<<<<< HEAD
     padding: 1em;
- 
-=======
     overflow: hidden;
     margin: 1em 0;
->>>>>>> update
-
+    padding: 1em;
 } 
 
 .card{
