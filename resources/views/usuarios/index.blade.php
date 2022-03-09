@@ -4,7 +4,7 @@
 <h1>Bienvenido a la gestión de Usuarios</h1>
 
 <section class="barraElementos">
-  <a type="button" id="add" href="{{route('usuarios.create')}}" class="btn btn-primary btn-lg">+ Añadir</a>
+  <a type="button" id="add" href="{{route('usuarios.create')}}" class="btn btn-primary btn-lg">Añadir</a>
   <form action="{}" method="get">
     <div class="form-row" style="display: flex; justify-content:flex-end; margin: .5em 4em 0 0; ">
       <div class="d-flex" style="max-width: 300px;">
