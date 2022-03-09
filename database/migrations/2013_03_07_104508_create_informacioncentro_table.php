@@ -3,7 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Models\Informacioncentro;
 
 class CreateInformacioncentroTable extends Migration
 {
@@ -26,14 +25,7 @@ class CreateInformacioncentroTable extends Migration
             $table->timestamps();
         });
         
-        Informacioncentro::create([ 'nombre' => 'IES Arucas-Domingo Rivero',
-            'direccion' =>  'Cam. de la Cruz, 22, 35400 Arucas, Las Palmas',
-            'correo' => '35013842@gobiernodecanarias.org',
-            'telefono' => '928602844',
-            'youtube' => 'https://www.youtube.com/',
-            'instagram' => 'https://www.instagram.com/',
-            'facebook' =>'https://es-es.facebook.com/',
-        ]);
+
     }
 
     /**
