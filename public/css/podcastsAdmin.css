@@ -70,3 +70,25 @@
 img.card-img-top {
     max-width: 400px;
 }
+
+.page-link{
+    background-color: var(--main-black) !important;
+    border: none;
+    color: #FFB20F !important;
+}
+
+.page-item.active .page-link {
+    border-color: #FFB20F !important;
+}
+
+#add{
+    margin:1rem 0 0 1em ;
+    background-color: var(--main-black) !important;
+    border: none;
+}
+
+#buscar{
+    background-color: var(--main-black) !important;
+    border: none;
+    margin-left: 0.5rem;
+}

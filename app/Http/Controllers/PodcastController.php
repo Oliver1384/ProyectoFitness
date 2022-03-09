@@ -7,11 +7,15 @@ use App\Models\User;
 use Illuminate\Http\Request;
 
 class PodcastController extends Controller {
-    
+
     public function index() {
         $podcasts = Podcast::paginate(7);
         $usuarios = User::all();
         return view('podcasts.index')->with(compact('podcasts','usuarios'));
+    }
+
+    public function formularioAgregarPodcast() {
+        return view('podcasts.create');
     }
 
     /**
