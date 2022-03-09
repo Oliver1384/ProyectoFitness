@@ -1,9 +1,21 @@
 @extends('layouts.template')
 <link rel="stylesheet" href="{{ URL::asset('css/crearUsuario.css') }}">
+
 @section('content')
+@if ($errors->any())
+<div class="alert alert-danger">
+    <strong>Whoops!</strong> There were some problems with your input.<br><br>
+    <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
+
 <h1>Crear usuario</h1>
 
-<form action="{{ url('/solicitar') }}" method="post">
+<form action="{{route('usuarios.store')}}" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
 
@@ -17,7 +29,7 @@
         <input type="text" name="titulacion" min="8" max="100">
 
         <span> Presentación</span>
-        <textarea name="presntacion" id="" cols="30" rows="5"></textarea>
+        <textarea name="presentacion" id="" cols="30" rows="5"></textarea>
 
         <span> Facebook</span>
         <input type="text" name="facebook">
@@ -44,5 +56,6 @@
     </div>
 
 </form>
+
 
 @endsection
