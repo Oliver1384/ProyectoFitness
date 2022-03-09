@@ -62,7 +62,9 @@ class PlanController extends Controller
      */
     public function show(Plan $plan)
     {
-        //
+        print_r($plan);
+        exit;
+        return view('planes.show', ['plan' => $plan]);
     }
 
     /**

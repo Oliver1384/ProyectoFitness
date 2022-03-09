@@ -46,6 +46,15 @@
       <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-title">{{ $plan->titulo }}</h5> 
+          <div class="controls">
+            <a class="btn btn-sm btn-info" href="{{ route('planes.show',$plan) }}">Ver</a>
+            <a class="btn btn-sm btn-primary" href="{{ route('planes.edit',$plan->id) }}">Editar</a>
+            <form action="{{ route('planes.destroy',$plan->id)}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

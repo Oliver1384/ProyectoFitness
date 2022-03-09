@@ -1,0 +1,8 @@
+.datos{
+    display: flex;
+    background-color: red;
+    margin: 2em 0;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
