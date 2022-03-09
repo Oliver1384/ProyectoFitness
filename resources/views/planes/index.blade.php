@@ -1,6 +1,27 @@
 @extends('layouts.template')
 <link rel="stylesheet" href="{{asset('/css/gestionPlanes.css')}}">
 @section('content')
+@if ($message = Session::get('fail'))
+        <div class="alert alert-danger">
+            <p>{{ $message }}</p>
+        </div>
+@endif
+
+@if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+@endif
+@if ($errors->any())
+    <div class="alert alert-danger">
+       <p><strong>¡Vaya!</strong> Alguno de los campos no es correcto.</p>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 <h1>Bienvenido a la gestión de Planes</h1>
 
 <section class="barraElementos">
@@ -20,7 +41,7 @@
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="{{ $plan->imagen }}" class="img-fluid rounded-start" alt="...">
+        <img src="{{ asset($plan->imagen) }}" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">

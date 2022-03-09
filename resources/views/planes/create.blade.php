@@ -1,9 +1,30 @@
 @extends('layouts.template')
 <link rel="stylesheet" href="{{ URL::asset('css/crearPlan.css') }}">
 @section('content')
+@if ($message = Session::get('fail'))
+        <div class="alert alert-danger">
+            <p>{{ $message }}</p>
+        </div>
+@endif
+
+@if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+@endif
+@if ($errors->any())
+    <div class="alert alert-danger">
+       <p><strong>¡Vaya!</strong> Alguno de los campos no es correcto.</p>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 <h1>Crear plan</h1>
 
-<form action="{{ url('/solicitar') }}" method="post">
+<form action="{{ route('planes.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
 
@@ -11,15 +32,13 @@
             <input type="text" name="titulo">
     
             <span> Descripción</span>
-            <textarea name="descripcion" cols="30" rows="30" placeholder="Escribe aquí el contenido del plan" minlength="50" maxlength="10000"></textarea>
+            <textarea name="descripcion" cols="30" rows="20" placeholder="Escribe aquí el contenido del plan" minlength="50" maxlength="10000"></textarea>
 
             <span> Imagen</span>
             <input type="file" name="imagen" class="form-control" >
     
-    
-    
+            <input type="submit" value="Crear">
         </div>
-
     </form>
 
 @endsection
