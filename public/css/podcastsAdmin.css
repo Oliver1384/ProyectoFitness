@@ -1,0 +1,72 @@
+:root {
+    --main-orange: #FFB20F;
+    --main-black: #2A2B2A;
+    --main-white: #F9F7F3;
+    --basic-white: #FFFFFF;
+    --title-font: 'Oswald', sans-serif;
+    --content-font: 'Noto Sans', sans-serif;
+    --aux-font: 'Open Sans', sans-serif;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 2em 1em 0 1em;
+}
+
+.card {
+    margin: 0.5rem;
+}
+
+.card > * {
+    justify-content: center;
+    align-items: center;
+}
+
+.paginador > nav > ul >li > a {
+    border: 2px solid var(--main-orange);
+}
+
+
+.paginador > nav > ul >li > a:hover{
+    background-color: var(--main-orange);
+    color: var(--main-black);
+}
+
+.paginador > nav > ul >li.active {
+    border: 2px solid var(--main-white);
+    color: var(--main-black);
+}
+
+.paginador{
+  margin-top: 1em;
+}
+
+.paginadorContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #2A2B2A;
+    padding: 1em;
+}
+
+.page-link{
+    background-color: var(--main-black) !important;
+    border: none;
+    color: #FFB20F !important;
+}
+
+.page-item.active .page-link {
+    border-color: #FFB20F !important;
+}
+
+img.card-img-top {
+    max-width: 400px;
+}

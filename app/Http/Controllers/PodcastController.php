@@ -3,18 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Podcast;
+use App\Models\User;
 use Illuminate\Http\Request;
 
-class PodcastController extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return view('podcasts.index');
+class PodcastController extends Controller {
+    
+    public function index() {
+        $podcasts = Podcast::paginate(7);
+        $usuarios = User::all();
+        return view('podcasts.index')->with(compact('podcasts','usuarios'));
     }
 
     /**
