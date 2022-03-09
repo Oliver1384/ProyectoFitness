@@ -58,7 +58,7 @@ class RegisterController extends Controller
 
    
     protected function create(array $data) {
-        $users = User::query()
+        /*$users = User::query()
             ->orWhere('users.email', '=', $data['email'])
             ->orWhere('users.name', '=', $data['name'])
             ->select('users.id')
@@ -71,6 +71,6 @@ class RegisterController extends Controller
                 'password' => Hash::make($data['password']),
             ]);
         }
-        return $user;
+        return $user;*/
     }
 }

@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Faker\Factory as Faker;
+use App\Models\User;
 
 class UserSeeder extends Seeder {
     public function run()
@@ -22,10 +23,11 @@ class UserSeeder extends Seeder {
                     'linkedin' => 'https://es.linkedin.com/',
                     'titulacion' => $faker->jobTitle,
                     'presentacion' => $faker->sentence($nbWords = 10, $variableNbWords = true),
-                    'centro_id' => $faker->randomElement($informacioncentroId),
+                    //'centro_id' => $faker->randomElement($informacioncentroId),
                     'password' => $faker->password,
                 ]);
             }
         }
+        User::firstOrCreate(['name'=>'admin','email'=>'admin@gmail.com','password'=>'1234', 'titulacion'=>'primer administrador','presentacion'=>'']);
     }
 }
