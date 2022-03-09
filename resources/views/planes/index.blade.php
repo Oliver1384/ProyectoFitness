@@ -58,9 +58,9 @@
                   <input type="submit" value="editar" class="btn btn-info">
               </form>
 
-            <form action="{{ route('planes.destroy',$plan->id)}}" method="POST">
+            <form action="{{ url('/planes/destroy')}}" method="post">
                 @csrf
-                @method('DELETE')
+                <input type="hidden" name="id" value="{{$plan->id}}" class="btn btn-sm btn-info">
                 <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
             </form>
           </div>

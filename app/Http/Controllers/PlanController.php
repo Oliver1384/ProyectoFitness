@@ -117,6 +117,12 @@ class PlanController extends Controller
      */
     public function destroy(Plan $plan)
     {
-        //
+        dd($plan);
+    }
+
+    public function eliminarPlan(Request $request){
+        $plan = Plan::find($request->all()['id']);
+        $plan->delete();
+        return redirect()->route('planes.index')->with('success','Plan eliminado correctamente');
     }
 }
