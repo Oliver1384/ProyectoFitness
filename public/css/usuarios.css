@@ -45,7 +45,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    padding: 4em;
+    padding: 2em 1em 0 1em;
   
     
 
@@ -77,3 +77,15 @@ h1{
     background-color: var(--main-orange);
     color: var(--main-black);
 }
+.paginador{
+  margin-top: 1em;
+}
+
+.paginadorContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #2A2B2A;
+    padding: 1em;
+   
+}
+
