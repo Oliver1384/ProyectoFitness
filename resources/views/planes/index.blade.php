@@ -52,8 +52,12 @@
                   <input type="hidden" name="id" value="{{$plan->id}}" class="btn btn-sm btn-info">
                   <input type="submit" value="ver" class="btn btn-warning">
               </form>
+              <form action="{{route('planes.edit', $plan->id)}}" method="get">
+                  @csrf
+                  <input type="hidden" name="id" value="{{$plan->id}}" class="btn btn-sm btn-info">
+                  <input type="submit" value="editar" class="btn btn-info">
+              </form>
 
-            <a class="btn btn-sm btn-primary" href="{{ route('planes.edit',$plan->id) }}">Editar</a>
             <form action="{{ route('planes.destroy',$plan->id)}}" method="POST">
                 @csrf
                 @method('DELETE')
