@@ -38,9 +38,11 @@
   @endforeach
   
 </div>
+<div class="paginadorContainer">
+  <span class="paginador" >
+    {{$usuarios->links()}}
+  </span>
 
-<span class="paginador" style="display: flex; justify-content:center; margin: 1em;">
-  {{$usuarios->links()}}
-</span>
+</div>
 
 @endsection
