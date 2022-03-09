@@ -39,3 +39,30 @@ span{
     background-color: var(--main-black) !important;
     border: none !important;
 }
+
+@media (min-width: 750px) {
+
+    form{
+        margin-bottom: 4em;
+    }
+    
+    span{
+        padding: .2em;
+    }
+
+    input{
+        padding: .5em 0;
+    }
+
+    
+}
+
+
+@media (min-width: 1025px){
+
+    form{
+        margin: .5em auto;
+        max-width: 80%;
+        padding: 2em;
+    }
+}
