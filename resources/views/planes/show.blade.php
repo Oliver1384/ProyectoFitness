@@ -1,21 +1,18 @@
 @extends('layouts.template')
 <link rel="stylesheet" href="{{asset('/css/show.css')}}">
 @section('content')
-
+<a href="{{ url('/admin/planes') }}" class="btn btn-warning">volver</a>
 <div class="datos">
-    <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <img src="{{ asset($plan->imagen) }}" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">TITULO: {{ $plan->titulo }} </h5>
-                    <p class="card-text">DESCRIPCIÓN: {{ $plan->descripcion }}</p>
-                    <p class="card-text">AUTOR: "pendiente"</p>
-                </div>
-            </div>
-        </div>
+
+    <div>
+
+    </div>
+</div>
+
+<div class="card">
+  <img class="card-img-top" src="{{ asset($plan->imagen) }}" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-text">{{$plan->descripcion}}</p>
     </div>
 </div>
 @endsection

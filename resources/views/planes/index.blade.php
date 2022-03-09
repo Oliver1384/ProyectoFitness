@@ -37,7 +37,7 @@
 </section>
 <div class="contenedor">
 
-   @foreach($planes as $plan) 
+   @foreach($planes as $plan)
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
@@ -45,9 +45,14 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">{{ $plan->titulo }}</h5> 
+          <h5 class="card-title">{{ $plan->titulo }}</h5>
           <div class="controls">
-            <a class="btn btn-sm btn-info" href="{{ route('planes.show',$plan) }}">Ver</a>
+              <form action="{{route('planes.show', $plan->id)}}" method="get">
+                  @csrf
+                  <input type="hidden" name="id" value="{{$plan->id}}" class="btn btn-sm btn-info">
+                  <input type="submit" value="ver" class="btn btn-warning">
+              </form>
+
             <a class="btn btn-sm btn-primary" href="{{ route('planes.edit',$plan->id) }}">Editar</a>
             <form action="{{ route('planes.destroy',$plan->id)}}" method="POST">
                 @csrf
@@ -59,7 +64,7 @@
       </div>
     </div>
   </div>
-   @endforeach 
+   @endforeach
   <span class="paginador" style="display: flex; justify-content:center; margin: 1em;">
      {{ $planes->links()  }}
   </span>

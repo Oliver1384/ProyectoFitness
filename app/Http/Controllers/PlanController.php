@@ -13,8 +13,9 @@ class PlanController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
+
         $planes = Plan::latest()->paginate(8);
-        
+
         return view('planes.index', compact('planes'));
     }
 
@@ -48,7 +49,7 @@ class PlanController extends Controller
             $image->move($imageDestinationPath, $imagenPlan);
             $input['imagen'] = "{$imageDestinationPath}{$imagenPlan}";
         }
-       
+
         $input['user_id'] = 1; // Cambiar esto una vez implementado el login, esto deberá ser auth()->user()->id
         Plan::create($input);
         return redirect()->route('planes.index')->with('success','Plan creado correctamente.');
@@ -60,11 +61,9 @@ class PlanController extends Controller
      * @param  \App\Models\Plan  $plan
      * @return \Illuminate\Http\Response
      */
-    public function show(Plan $plan)
-    {
-        print_r($plan);
-        exit;
-        return view('planes.show', ['plan' => $plan]);
+    public function show(Request $request){
+        $plan = Plan::find($request->all()['id']);
+        return view('planes.show', compact('plan'));
     }
 
     /**
