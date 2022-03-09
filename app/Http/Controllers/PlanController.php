@@ -12,9 +12,10 @@ class PlanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('planes.index');
+    public function index(){
+        $planes = Plan::latest()->paginate(8);
+        
+        return view('planes.index', compact('planes'));
     }
 
     /**

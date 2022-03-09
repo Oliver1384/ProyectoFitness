@@ -1,0 +1,40 @@
+:root {
+    --main-orange: #FFB20F;
+    --main-black: #2A2B2A;
+    --main-white: #F9F7F3;
+    --basic-white: #FFFFFF;
+    --title-font: 'Oswald', sans-serif;
+    --content-font: 'Noto Sans', sans-serif;
+    --aux-font: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    background-color: var(--main-orange);
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    padding: 1.5em;
+    border-radius: .4em;
+}
+
+span{
+    font-size: 18px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    
+}
