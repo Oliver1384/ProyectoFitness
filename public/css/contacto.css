@@ -12,7 +12,8 @@
 
 h1 {
     text-align: center;
-    font-family: var(--title-nav-font);
+    font-family: var(--title-font);
+    font-weight: bolder;
 }
 
 h1 > span {

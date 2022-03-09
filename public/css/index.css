@@ -9,9 +9,18 @@
 }
 
 
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--title-font);
+}
+
+
 #main-article h1 .text-black{
     color: var(--main-orange) !important;
     
+}
+
+.article-effect{
+    filter: blur(.15em) brightness(1.2) !important;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -102,6 +111,7 @@ h2 span {
     text-align: center;
     font-family: var(--title-font);
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .entrenador {
