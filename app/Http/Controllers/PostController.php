@@ -14,7 +14,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('posts.index');
+        $posts = Post::latest()->paginate(8);
+        return view('posts.index', compact('posts'));
     }
 
     /**
@@ -46,7 +47,8 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        dd($post);
+        return view('posts.show', compact('post'));
     }
 
     /**

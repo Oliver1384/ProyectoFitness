@@ -69,6 +69,7 @@ class PlanController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request){
+        
         $plan = Plan::find($request->all()['id']);
         return view('planes.show', compact('plan'));
     }

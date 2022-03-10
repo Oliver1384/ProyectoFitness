@@ -48,6 +48,7 @@
         <div class="card-body">
           <h5 class="card-title">{{ $plan->titulo }}</h5>
           <div class="controls">
+            
               <form action="{{route('planes.show', $plan->id)}}" method="get">
                   @csrf
                   <input type="hidden" name="id" value="{{$plan->id}}" class="btn btn-sm btn-info">
