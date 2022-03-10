@@ -51,7 +51,7 @@ class PlanController extends Controller
         ]);
         $input = $request->all();
         if ($image = $request->file('imagen')) {
-            $imageDestinationPath = 'planes/';
+            $imageDestinationPath = 'imagenesPlanes/';
             $imagenPlan = date('YmdHis') . "." . $image->getClientOriginalExtension();
             $image->move($imageDestinationPath, $imagenPlan);
             $input['imagen'] = "{$imageDestinationPath}{$imagenPlan}";
@@ -103,7 +103,7 @@ class PlanController extends Controller
         ]);
         $input = $request->all();
         if (!empty($image = $request->file('imagen'))) {
-            $imageDestinationPath = 'planes/';
+            $imageDestinationPath = 'imagenesPlanes/';
             $imagenPlan = date('YmdHis') . "." . $image->getClientOriginalExtension();
             $image->move($imageDestinationPath, $imagenPlan);
             $input['imagen'] = "{$imageDestinationPath}{$imagenPlan}";

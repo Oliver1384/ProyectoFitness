@@ -17,38 +17,27 @@
         @csrf
         <div class="form-group">
             <label >
-                Nombre y apellidos
+                <span>Nombre y apellidos</span>
                 <input type="text" name="nombre" >
             </label>
             <label>
-                ¿Cuántos años tienes?
-                <input type="number" name="edad" min="16" max="80">
-            </label>
-            <label>
-                ¿Cuánto mides?
-                <input type="number" name="altura" min="1" step="0.01" max="2,3">
-            </label>
-            <label>
-                Peso actual
-                <input type="number" name="peso" min="40" step="0.01" max="150">
-            </label>
-            <label>
-                ¿Cuál es tu email?
+                <span>¿Cuál es tu email?</span>
                 <input type="text" name="email" min="8" max="100">
+            </label>
+            <label>
+                <span>Elige un entrenador</span>
+                <select name="" id="" class="entrenadores">
+                    @foreach($entrenadores as $entrenador)
+                        <option value"{{$entrenador->id}}">{{$entrenador->name}}</option>
+                    @endforeach
+                </select>
             </label>
         </div>
         <div class="form-group">
             <label>
-                Hábitos alimenticios
-                <textarea name="habitos_alimenticios" cols="30" rows="10" placeholder="Indica que alimentación llevas en tu día a día"></textarea>
-            </label>
-            <label>
-                ¿Haces deporte?
-                <textarea name="habitos_deporte" cols="30" rows="10" placeholder="Running, natación, fútbol..."></textarea>
-            </label>
-            <label>
                 Tu objetivo a conseguir
                 <textarea name="objetivo" cols="30" rows="10" placeholder="Ganar musculatura, pérdida de peso..."></textarea>
+            </label>
             </label>
         </div>
         <input type="submit" value="SOLICITAR">

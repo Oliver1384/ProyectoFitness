@@ -52,7 +52,7 @@ class PostController extends Controller
         ]);
         $input = $request->all();
         if ($image = $request->file('imagen')) {
-            $imageDestinationPath = 'posts/';
+            $imageDestinationPath = 'imagenesPosts/';
             $imagenPlan = date('YmdHis') . "." . $image->getClientOriginalExtension();
             $image->move($imageDestinationPath, $imagenPlan);
             $input['imagen'] = "{$imageDestinationPath}{$imagenPlan}";
@@ -102,7 +102,7 @@ class PostController extends Controller
         ]);
         $input = $request->all();
         if (!empty($image = $request->file('imagen'))) {
-            $imageDestinationPath = 'posts/';
+            $imageDestinationPath = 'imagenesPosts/';
             $imagenPost = date('YmdHis') . "." . $image->getClientOriginalExtension();
             $image->move($imageDestinationPath, $imagenPost);
             $input['imagen'] = "{$imageDestinationPath}{$imagenPost}";
