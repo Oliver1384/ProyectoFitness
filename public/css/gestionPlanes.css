@@ -25,7 +25,7 @@
 }
 
 .barraElementos{
- 
+
     display: flex;
     justify-content: space-between;
 }
@@ -47,24 +47,24 @@
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    
-  
-    
 
-} 
+
+
+
+}
 h1{
     text-align: center;
     font-family: var(--title-font);
     padding: 1em;
     background-color: #FFB20F;
     margin: .5em 0 !important;
-    
+
 }
 
 .card{
     margin:  1em ;
     max-width: 700px;
-    
+
 
 }
 
@@ -75,7 +75,7 @@ h1{
     margin: 1em 0 0 0;
 }
 
-.card .controls form {
+.card .controls > * {
     flex: 1 1 100px;
     display: flex;
     justify-content: center;
@@ -88,7 +88,7 @@ h1{
 
 
 .paginador > nav > ul >li > span, .paginador > nav > ul >li > a{
-    border-color: var(--main-orange); 
+    border-color: var(--main-orange);
 }
 
 .paginador > nav > ul >li > a:hover{
@@ -104,7 +104,7 @@ h1{
     justify-content: center;
     background-color: #2A2B2A;
     padding: 1em;
-    
+
 }
 
 
@@ -117,3 +117,5 @@ h1{
 .page-item.active .page-link {
     border-color: #FFB20F !important;
   }
+
+
