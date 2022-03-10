@@ -25,7 +25,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -36,7 +36,24 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $idUser = auth()->user()['id'];
+        $request->validate([
+            'titulo' => 'required|min:3|max:50',
+            'descripcion' => 'required|min:50|max:10000',
+            'imagen' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        $input = $request->all();
+        if ($image = $request->file('imagen')) {
+            $imageDestinationPath = 'posts/';
+            $imagenPlan = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($imageDestinationPath, $imagenPlan);
+            $input['imagen'] = "{$imageDestinationPath}{$imagenPlan}";
+        }
+
+        $input['user_id'] = $idUser; // Cambiar esto una vez implementado el login, esto deberá ser auth()->user()->id
+        $input['destacado'] = $input['destacado'] === "true" ? true : false;
+        Post::create($input);
+        return redirect()->route('posts.index')->with('success','Post creado correctamente.');
     }
 
     /**
