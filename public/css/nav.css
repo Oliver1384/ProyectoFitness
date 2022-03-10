@@ -65,7 +65,7 @@
 
 }
 
-.nav-escritorio li a:hover {
+.nav-escritorio li a:hover,.nav-escritorio li a:active  {
     color: var(--main-orange);
 }
 
@@ -163,6 +163,10 @@
 
 .podcast-index>div>div {
     flex: 1 1 300px;
+}
+
+#logout{
+    color: var(--main-orange) !important;
 }
 
 .footer-movil img {
