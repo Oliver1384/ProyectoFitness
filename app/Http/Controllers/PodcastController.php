@@ -66,8 +66,7 @@ class PodcastController extends Controller {
      * @param  \App\Models\Podcast  $podcast
      * @return \Illuminate\Http\Response
      */
-    public function edit(Podcast $podcast)
-    {
+    public function edit(Podcast $podcast) {
         //
     }
 
@@ -83,13 +82,8 @@ class PodcastController extends Controller {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Podcast  $podcast
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Podcast $podcast) {
-        //
+        $podcast->delete();
+        return redirect()->route('podcasts.index')->with('success','El podcast ha sido eliminado con éxito');
     }
 }
