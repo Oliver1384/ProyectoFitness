@@ -16,9 +16,9 @@ Route::get('/', function () {
     return view('index');
 })->name('Inicio');
 
-Route::get('/Tienda', function () {
+/*Route::get('/Tienda', function () {
     return view('shop');
-})->name('Tienda');
+})->name('Tienda');*/
 
 Route::get('/Podcasts', function () {
     return view('podcasts');
