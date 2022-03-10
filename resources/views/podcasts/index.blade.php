@@ -30,7 +30,9 @@
         <form action="{{ url('/admin/podcasts') }}" method="get">
             <div class="form-row" style="display: flex; justify-content:flex-end; margin: .5em 4em 0 0; ">
                 <div class="d-flex" style="max-width: 300px;">
-                    <input type="text" name="texto" class="form-control">
+                    <label>
+                        <input type="text" name="texto" class="form-control">
+                    </label>
                     <input type="submit" id="buscar" class="btn btn-primary" value="Buscar">
                 </div>
             </div>
@@ -71,7 +73,6 @@
             </div>
         @endforeach
     </div>
-
     <div class="paginadorContainer">
         <span class="paginador">
             {{$podcasts->links()}}

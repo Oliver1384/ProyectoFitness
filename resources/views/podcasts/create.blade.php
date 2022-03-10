@@ -13,7 +13,6 @@
     </div>
 @endif
 
-
 <form action="{{route('podcasts.store',['user_id'=>21])}}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
