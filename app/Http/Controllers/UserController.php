@@ -40,9 +40,9 @@ class UserController extends Controller
         $request->validate([
             'name' => 'required|min:3|max:100',
             'email' => 'required|min:10|max:80|email:rfc',
-            'facebook' => 'required|min:3|max:100',
-            'instagram' => 'required|min:3|max:100',
-            'linkedin' => 'required|min:3|max:100',
+            'facebook' => 'min:3|max:100',
+            'instagram' => 'min:3|max:100',
+            'linkedin' => 'min:3|max:100',
             'titulacion' => 'required|min:3|max:100',
             'presentacion' => 'required|min:3|max:200',
             'password' => 'required|min:5|max:80'
@@ -67,9 +67,9 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user)
+    public function show(User $usuario)
     {
-        //
+        return view('usuarios.show', compact('usuario'));
     }
 
     /**
@@ -78,9 +78,9 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit(User $usuario)
     {
-        //
+        return view('usuarios.edit', compact('usuario'));
     }
 
     /**
@@ -95,9 +95,9 @@ class UserController extends Controller
         $request->validate([
             'name' => 'required|min:3|max:100',
             'email' => 'required|min:10|max:80|email:rfc',
-            'facebook' => 'required|min:3|max:100',
-            'instagram' => 'required|min:3|max:100',
-            'linkedin' => 'required|min:3|max:100',
+            'facebook' => 'min:3|max:100',
+            'instagram' => 'min:3|max:100',
+            'linkedin' => 'min:3|max:100',
             'titulacion' => 'required|min:3|max:100',
             'presentacion' => 'required|min:3|max:200',
             'password' => 'required|min:5|max:80'
@@ -128,8 +128,9 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy(User $usuario)
     {
-        //
+        $usuario->delete();
+        return redirect()->route('usuarios.index');
     }
 }
