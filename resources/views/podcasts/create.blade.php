@@ -13,34 +13,35 @@
     </div>
 @endif
 
+
 <form action="{{route('podcasts.store',['user_id'=>21])}}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
         <label>Título:
-            <input type="text" name="titulo" value="{{$podcast->titulo}}">
+            <input type="text" name="titulo" value="{{old('titulo')}}">
         </label>
 
         <label>Tema:
-            <input type="text" name="tema" value="{{$podcast->tema}}">
+            <input type="text" name="tema" value="{{old('tema')}}">
         </label>
 
         <div>
             <p>Destacado</p>
             <label>Si
-                <input type="radio" name="destacado" value="1" >
+                <input type="radio" name="destacado" value="1" {{ (old('destacado') == 1 ? 'checked' : '') }} >
             </label>
             <label>No
-                <input type="radio" name="destacado" value="0">
+                <input type="radio" name="destacado" value="0" {{ (old('destacado') == 0 ? 'checked' : '') }} >
             </label>
         </div>
 
 
         <label>Audio mp3:
-            <input type="file" name="audio" class="form-control" value="{{ $podcast->audio }}">
+            <input type="file" name="audio" class="form-control" value="{{ old('audio') }}">
         </label>
 
         <label>Imagen:
-            <input type="file" name="imagen" class="form-control" value="{{ $podcast->imagen }}">
+            <input type="file" name="imagen" class="form-control" value="{{ old('imagen') }}">
         </label>
 
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

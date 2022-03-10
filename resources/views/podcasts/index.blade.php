@@ -3,12 +3,12 @@
 
 
 @section('content')
+    <link rel="stylesheet" href="{{asset('/css/podcastsAdmin.css')}}">
     @if ($message = Session::get('fail'))
             <div class="alert alert-danger">
                 <p>{{ $message }}</p>
             </div>
     @endif
-
     @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 <p>{{ $message }}</p>
@@ -24,10 +24,10 @@
             </ul>
         </div>
     @endif
-    <link rel="stylesheet" href="{{asset('/css/podcastsAdmin.css')}}">
+
     <section class="barraElementos">
-        <a type="button" id="add" href="{{route('agregarPodcast')}}" class="btn btn-primary btn-lg">+ Añadir</a>
-        <form action="#" method="get">
+        <a type="button" id="add" href="{{route('agregarPodcast')}}" class="btn btn-primary btn-lg">Añadir</a>
+        <form action="{{ url('/admin/podcasts') }}" method="get">
             <div class="form-row" style="display: flex; justify-content:flex-end; margin: .5em 4em 0 0; ">
                 <div class="d-flex" style="max-width: 300px;">
                     <input type="text" name="texto" class="form-control">
@@ -37,7 +37,6 @@
         </form>
     </section>
     <div class="contenedor">
-
         @foreach($podcasts as $podcast)
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
