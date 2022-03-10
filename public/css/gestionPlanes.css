@@ -64,9 +64,27 @@ h1{
 .card{
     margin: 0 2em 0 0;
     max-width: 700px;
+    
 
 }
 
+
+.card .controls{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1em 0 0 0;
+}
+
+.card .controls form {
+    flex: 1 1 100px;
+    display: flex;
+    justify-content: center;
+    margin: .2em;
+}
+
+.card .controls form input[type="submit"]{
+    width: 100%;
+}
 
 
 .paginador > nav > ul >li > span, .paginador > nav > ul >li > a{
