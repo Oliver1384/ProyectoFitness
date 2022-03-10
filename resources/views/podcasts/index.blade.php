@@ -16,16 +16,17 @@
         </form>
     </section>
     <div class="contenedor">
+
         @foreach($podcasts as $podcast)
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
-                    <img src="{{ $podcast->imagen }}" class="card-img-top" alt="imagen relacionada con el podcasts">
+                    <img src="{{ asset($podcast->imagen) }}" class="card-img-top" alt="imagen relacionada con el podcasts">
                     <div class="col-md-8">
                         <div class="card-body">
 
                             <h2 class="card-title">{{ $podcast->titulo }} <span>{{ $podcast->tema }}</span></h2>
                             <audio controls="controls">
-                                <source src="{{ $podcast->audio }}" type="audio/mp3" />
+                                <source src="{{ asset($podcast->audio) }}" type="audio/mp3" />
                                 Tu navegador no soporta el recurso de audio.
                             </audio>
                             <p class="card-text">Número de veces escuchado:{{$podcast->veces_escuchado}}</p>

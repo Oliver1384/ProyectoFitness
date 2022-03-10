@@ -69,6 +69,7 @@
 
 img.card-img-top {
     max-width: 400px;
+    margin-top: 1rem;
 }
 
 .page-link{

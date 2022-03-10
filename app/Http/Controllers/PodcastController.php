@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class PodcastController extends Controller {
 
     public function index() {
-        $podcasts = Podcast::paginate(7);
+        $podcasts = Podcast::latest()->paginate(7);
         $usuarios = User::all();
         return view('podcasts.index')->with(compact('podcasts','usuarios'));
     }
@@ -21,10 +21,11 @@ class PodcastController extends Controller {
     public function store(Request $request) {
         $request->validate([
             'titulo' => 'required|min:3|max:100',
+            'user_id' => 'required|min:1|max:1000',
             'tema' => 'required|min:10|max:80',
-            'audio' => 'max:5000|mimes:mp3',
-            'imagen' => 'nullable|max:5000|mimes:jpeg,png,jpg',
-            'destacado' => 'required|min:2|max:2',
+            'audio' => 'required|mimes:mp3|max:10048',
+            'imagen' => 'required|image|mimes:jpeg,jpg,png|max:2048',
+            'destacado' => 'required|min:1|max:1',
         ]);
 
         $input = $request->all();
@@ -46,6 +47,7 @@ class PodcastController extends Controller {
         Podcast::create($input);
         return redirect()->route('podcasts.index');
     }
+
 
     /**
      * Display the specified resource.
@@ -87,8 +89,7 @@ class PodcastController extends Controller {
      * @param  \App\Models\Podcast  $podcast
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Podcast $podcast)
-    {
+    public function destroy(Podcast $podcast) {
         //
     }
 }
