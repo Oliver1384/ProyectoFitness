@@ -11289,8 +11289,8 @@ textarea.form-control-lg {
 
 
 
-h1,h2,h3,h4,h5,h6{
-  font-family: var(--title-font);
+h1,h2,h3,h4,h5,h6, h1 span, h2 span{
+  font-family: var(--title-font) !important;
 }
 
 p, label, button, input, span{
