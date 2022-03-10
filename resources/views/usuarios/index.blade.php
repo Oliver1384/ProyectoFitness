@@ -27,26 +27,23 @@
           <h5 class="card-title">{{$usuario->name}}</h5>
           <p class="card-text">{{$usuario->email}}</p>
           <p class="card-text">{{$usuario->titulacion}}</p>
-          <p class="card-text">{{$usuario->presentacion}}</p>
-          <a href="{{$usuario->facebook}}">{{$usuario->facebook}}</a>
-          <a href="{{$usuario->instagram}}">{{$usuario->instagram}}</a>
-          <a href="{{$usuario->linkedin}}">{{$usuario->linkedin}}</a>
+          
+          <form action="{{ route('usuarios.destroy',$usuario->id)}}" method="POST" style="margin: 0 0 0 1em;" class="botones">
+            <a href="{{route('usuarios.show', $usuario->id)}}" class="btn btn-warning">Mostrar</a>
+            <a href="{{route('usuarios.edit', $usuario->id)}}" class="btn btn-info">Editar</a>
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-sm btn-danger" style="padding: .5em 1.2em;" onclick="confirm('¿Desea eliminar éste archivo?')">Borrar</button>
+          </form>
         </div>
-        <form action="{{ route('usuarios.destroy',$usuario->id)}}" method="POST" style="margin: 0 0 0 1em;" class="botones">
-                        <a href="{{route('usuarios.show', $usuario->id)}}" class="btn btn-warning">Mostrar</a>
-                        <a href="{{route('usuarios.edit', $usuario->id)}}" class="btn btn-info">Editar</a>
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-sm btn-danger" style="padding: .5em 1.2em;" onclick="confirm('¿Desea eliminar éste archivo?')">Borrar</button>
-                    </form>
-      </div>
       </div>
     </div>
+  </div>
   @endforeach
-  
+
 </div>
 <div class="paginadorContainer">
-  <span class="paginador" >
+  <span class="paginador">
     {{$usuarios->links()}}
   </span>
 

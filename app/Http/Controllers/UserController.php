@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -12,10 +13,18 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+
+        $texto = trim($request->get('texto'));
+        if(!empty($texto)){
+            $usuarios = DB::table('users')->select('*')->where('name', 'LIKE', "%{$texto}%")->paginate(9);
+            return view('usuarios.index', compact('usuarios'));
+        }
+
         $usuarios = User::paginate(9);
-        return view('usuarios.index', compact('usuarios'));
+        return view('usuarios.index', compact('usuarios') );
+
     }
 
     /**
@@ -69,6 +78,7 @@ class UserController extends Controller
      */
     public function show(User $usuario)
     {
+        
         return view('usuarios.show', compact('usuario'));
     }
 
