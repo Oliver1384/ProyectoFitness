@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class PostController extends Controller
 {
@@ -12,9 +14,15 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $posts = Post::latest()->paginate(8);
+        $posts;
+        if(isset($request->all()['texto']) && !empty(trim($request->get('texto')))){
+            $texto = trim($request->get('texto'));
+            $posts = DB::table('posts')->select('*')->where('titulo', 'LIKE', "%{$texto}%")->paginate(6);
+        }else{
+            $posts = Post::latest()->paginate(6);
+        }
         return view('posts.index', compact('posts'));
     }
 
@@ -102,7 +110,7 @@ class PostController extends Controller
         } else {
             unset($input['imagen']);
         }
-
+        $input['destacado'] = $input['destacado'] === "true" ? true : false;
         $post->update($input);
 
         return redirect()->route('posts.index')->with('success','Post actualizado correctamente');

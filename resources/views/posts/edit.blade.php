@@ -34,6 +34,11 @@
             <input type="text" name="titulo" value="{{$post->titulo}}">
             <span> Descripción</span>
             <textarea name="descripcion" cols="30" rows="20" placeholder="Escribe aquí el contenido del post" minlength="50" maxlength="10000" >{{$post->descripcion}}</textarea>
+            <span>Destacado</span>
+            <select name="destacado">
+                <option value="false">No</option>
+                <option value="true">Si</option>
+            </select>
             <span> Imagen</span>
             <input type="file" name="imagen" class="form-control" value="{{$post->imagen}}" >
             <input type="hidden" name="id" value="{{$post->id}}">
