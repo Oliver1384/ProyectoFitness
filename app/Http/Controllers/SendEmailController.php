@@ -5,11 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\NotifyMail;
 
-class SendEmailController extends Controller
-{
+class SendEmailController extends Controller {
     /**
-     * El parámetro de send() es el mensaje que envías
-     * to() --> el correo al que va dirigido
+     * to() -> contiene el correo electronico del receptor
+     * El contenido del mensaje se encuentra en la vista "planesPersonalizados.send"
      */
     public function index() {
         Mail::to('oliverartilesortega@alumno.ieselrincon.es')->send(new NotifyMail());
