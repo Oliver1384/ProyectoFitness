@@ -21,23 +21,9 @@
     margin: 0 1em 1em 0 ;
 
 }
-#volver{
-    margin:1em ;
-    background-color: var(--main-black) !important;
-    border: none;
-}
-
-#volver:hover{
-    background-color: var(--main-orange) !important;
-}
-
-.redes{
-    display: flex;
-    flex-flow: column nowrap;
-}
 
 
-@media (min-width: 780px) {
+@media (min-width: 450px) {
 
     .contenedor{
      
@@ -45,7 +31,6 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        align-items: center;
 
     }
 
