@@ -9,6 +9,8 @@ use App\Http\Controllers\PodcastController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PlanPersonalizadoController;
+use App\Http\Controllers\SendEmailController;
+
 
 
 Route::get('/', function () {
@@ -39,6 +41,8 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.index')->middleware('auth');
+
+Route::get('/admin/send-email', [SendEmailController::class, 'index']);
 
 Route::get('/solicitar', [SolicitudController::class, 'mostrarFormulario'])->name('solicitar');
 Route::post('/solicitar', [SolicitudController::class, 'enviarFormulario']);
