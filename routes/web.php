@@ -26,10 +26,6 @@ Route::get('/', function () {
     return view('index');
 })->name('Inicio');
 
-/*Route::get('/register', function () {
-    return view('index');
-})->name('Inicio');*/
-
 /*Route::get('/Tienda', function () {
     return view('shop');
 })->name('Tienda');*/
