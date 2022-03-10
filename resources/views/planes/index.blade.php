@@ -61,7 +61,7 @@
             <form action="{{ url('/planes/destroy')}}" method="post">
                 @csrf
                 <input type="hidden" name="id" value="{{$plan->id}}" class="btn btn-sm btn-info">
-                <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
+                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('¿Desea eliminar el plan?')">Eliminar</button>
             </form>
           </div>
         </div>
@@ -69,11 +69,13 @@
     </div>
   </div>
    @endforeach
-  <span class="paginador" style="display: flex; justify-content:center; margin: 1em;">
-     {{ $planes->links()  }}
-  </span>
-
-</div>
+   
+  </div>
+  <div class="paginadorContainer">
+    <span class="paginador" style="display: flex; justify-content:center; margin: 1em;">
+        {{ $planes->links() }}
+    </span>
+  </div>
 
 
 @endsection
