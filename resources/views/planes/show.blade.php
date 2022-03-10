@@ -1,7 +1,7 @@
 @extends('layouts.template')
 <link rel="stylesheet" href="{{asset('/css/show.css')}}">
 @section('content')
-<a href="{{ url('/admin/planes') }}" class="btn btn-warning">volver</a>
+<a href="{{ url('/admin/planes') }}" class="btn btn-warning volver">volver</a>
 <div class="datos">
 
     <div>

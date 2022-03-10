@@ -22,7 +22,7 @@
         </ul>
     </div>
 @endif
-<a href="{{ url('/admin/planes') }}" class="btn btn-warning">volver</a>
+<a href="{{ url('/admin/planes') }}" class="btn btn-warning volver">volver</a>
 
 <h1>Editar plan</h1>
 
