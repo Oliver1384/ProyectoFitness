@@ -22,6 +22,7 @@
         </ul>
     </div>
 @endif
+<a href="{{ url('/admin/posts') }}" class="btn btn-warning volver">volver</a>
 <h1>Crear post</h1>
 
 <form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data">
