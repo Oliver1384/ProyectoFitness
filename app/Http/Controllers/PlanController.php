@@ -21,7 +21,7 @@ class PlanController extends Controller
         }else{
             $planes = Plan::latest()->paginate(6);
         }
-        
+
 
         return view('planes.index', compact('planes'));
     }
@@ -51,7 +51,7 @@ class PlanController extends Controller
         ]);
         $input = $request->all();
         if ($image = $request->file('imagen')) {
-            $imageDestinationPath = 'uploads/';
+            $imageDestinationPath = 'planes/';
             $imagenPlan = date('YmdHis') . "." . $image->getClientOriginalExtension();
             $image->move($imageDestinationPath, $imagenPlan);
             $input['imagen'] = "{$imageDestinationPath}{$imagenPlan}";
@@ -69,7 +69,7 @@ class PlanController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request){
-        
+
         $plan = Plan::find($request->all()['id']);
         return view('planes.show', compact('plan'));
     }
@@ -103,13 +103,13 @@ class PlanController extends Controller
         ]);
         $input = $request->all();
         if (!empty($image = $request->file('imagen'))) {
-            $imageDestinationPath = 'uploads/';
+            $imageDestinationPath = 'planes/';
             $imagenPlan = date('YmdHis') . "." . $image->getClientOriginalExtension();
             $image->move($imageDestinationPath, $imagenPlan);
             $input['imagen'] = "{$imageDestinationPath}{$imagenPlan}";
 
         } else {
-            unset($input['img']);
+            unset($input['imagen']);
         }
         $plan = Plan::find($request['id']);
         $plan->update($input);
@@ -125,7 +125,7 @@ class PlanController extends Controller
      */
     public function destroy(Plan $plan)
     {
-        dd($plan);
+
     }
 
     public function eliminarPlan(Request $request){

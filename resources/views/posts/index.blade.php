@@ -50,11 +50,11 @@
           <div class="controls">
               <a href="{{route('posts.show', $post->id)}}" class="btn btn-warning">mostrar</a>
               <a href="{{route('posts.edit', $post->id)}}" class="btn btn-info">editar</a>
-            
-            <form action="{{ url('/posts/destroy')}}" method="post">
+
+            <form action="{{ route('posts.destroy', $post->id)}}" method="post">
                 @csrf
-                <input type="hidden" name="id" value="{{$post->id}}" class="btn btn-sm btn-info">
-                <input type="submit" class="btn btn-sm btn-danger" onclick="return confirm('¿Desea eliminar el plan?')" value="eliminar">
+                @method('DELETE')
+                <input type="submit" class="btn btn-sm btn-danger" onclick="return confirm('¿Desea eliminar el post?')" value="eliminar">
             </form>
           </div>
         </div>
@@ -62,7 +62,7 @@
     </div>
   </div>
    @endforeach
-   
+
   </div>
   <div class="paginadorContainer">
     <span class="paginador" style="display: flex; justify-content:center; margin: 1em;">

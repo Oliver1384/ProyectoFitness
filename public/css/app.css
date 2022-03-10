@@ -11296,3 +11296,13 @@ h1,h2,h3,h4,h5,h6, h1 span, h2 span{
 p, label, button, input, span{
   font-family: var(--content-font) !important;
 }
+
+
+.volver{
+
+    margin: 1em 0 0 1em;
+}
+
+#barra-navegacion{
+    display: none;
+}

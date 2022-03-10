@@ -52,11 +52,12 @@ Route::resource('/admin/planes', PlanController::class)->middleware('auth');
 Route::resource('/admin/planPersonalizado', PlanPersonalizadoController::class)->middleware('auth');
 
 Route::resource('/admin/posts', PostController::class)->middleware('auth');
-Route::get('/admin/posts', [PostController::class, 'index'])->middleware('auth');
-
 Route::get('/admin/podcasts', [PodcastController::class, 'index'])->middleware('auth');
 Route::get('/admin/agregarPodcast', [PodcastController::class, 'create'])->middleware('auth')->name('agregarPodcast');
 Route::resource('/admin/podcasts', PodcastController::class)->middleware('auth');
 
 Route::resource('/admin/usuarios', UserController::class)->middleware('auth');
-
+Auth::routes([
+    'register' => false
+]);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

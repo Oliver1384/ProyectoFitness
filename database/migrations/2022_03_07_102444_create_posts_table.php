@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
             $table->id();
 
             $table->string('titulo');
-            $table->string('descripcion');
+            $table->string('descripcion',10000);
             $table->string('imagen');
             $table->foreignId('user_id');
             $table->boolean('destacado');
