@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.card{
+    max-width: 1000px;
+    max-height: 800px;
+}
+
+.botones{
+    display: flex;
+   
+    justify-content: flex-end;
+    
+}
+
+.botones > a, .botones> button{
+    margin: 0 1em 1em 0 ;
+
+}
+
+
+@media (min-width: 450px) {
+
+    .contenedor{
+     
+        height: 90%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+
+    }
+
+    .card{
+        height: 400px;
+    }
+    
+    .card-title{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    a{
+        font-size: 18px;
+    }
+  
+  
+}
+    
