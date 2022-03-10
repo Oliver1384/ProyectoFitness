@@ -105,6 +105,24 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin') }}">
+                                Admin
+                            </a>
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin/planes') }}">
+                                planes
+                            </a>
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin/posts') }}">
+                                posts
+                            </a>
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin/podcasts') }}">
+                                podcasts
+                            </a>
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin/contacto') }}">
+                                contacto
+                            </a>
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin/usuarios') }}">
+                                usuarios
+                            </a>
                             <a class="dropdown-item" id="logout" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
