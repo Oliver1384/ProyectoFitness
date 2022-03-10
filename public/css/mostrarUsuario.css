@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.card{
+    max-width: 1000px;
+    max-height: 800px;
+}
+
+.botones{
+    display: flex;
+    background-color: azure;
+    justify-content: flex-end;
+    
+}
+
+.botones > a, .botones> button{
+    margin: 0 1em 1em 0 ;
+
+}
+
+
+    

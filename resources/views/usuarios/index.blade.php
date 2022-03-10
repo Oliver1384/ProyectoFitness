@@ -53,16 +53,16 @@
           <a href="{{$usuario->instagram}}">{{$usuario->instagram}}</a>
           <a href="{{$usuario->linkedin}}">{{$usuario->linkedin}}</a>
         </div>
+        <form action="{{ route('usuarios.destroy',$usuario->id)}}" method="POST" style="margin: 0 0 0 1em;" class="botones">
+                        <a href="{{route('usuarios.show', $usuario->id)}}" class="btn btn-warning">Mostrar</a>
+                        <a href="{{route('usuarios.edit', $usuario->id)}}" class="btn btn-info">Editar</a>
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-sm btn-danger" style="padding: .5em 1.2em;" onclick="confirm('¿Desea eliminar éste archivo?')">Borrar</button>
+                    </form>
+      </div>
       </div>
     </div>
-    <form action="{{ route('usuarios.destroy',$usuario->id)}}" method="POST" style="margin: 0 0 0 1em;">
-                    <a href="{{route('usuarios.show', $usuario->id)}}" class="btn btn-warning">Mostrar</a>
-                    <a href="{{route('usuarios.edit', $usuario->id)}}" class="btn btn-info">Editar</a>
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-sm btn-danger" style="padding: .5em 1.2em;" onclick="confirm('¿Desea eliminar éste archivo?')">Borrar</button>
-                </form>
-  </div>
   @endforeach
   
 </div>
