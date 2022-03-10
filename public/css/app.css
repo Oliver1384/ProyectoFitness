@@ -11302,3 +11302,7 @@ p, label, button, input, span{
 
     margin: 1em 0 0 1em;
 }
+
+#barra-navegacion{
+    display: none;
+}
