@@ -80,3 +80,14 @@ h1{
 
 }
 
+.botones{
+    display:flex;
+
+    justify-content: flex-end;
+}
+
+.botones > a, .botones> button{
+    margin: 0 1em 1em 0 ;
+
+}
+
