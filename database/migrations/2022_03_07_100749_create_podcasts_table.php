@@ -19,7 +19,7 @@ class CreatePodcastsTable extends Migration
             $table->string('tema');
             $table->string('audio');
             $table->string('imagen');
-            $table->integer('veces_escuchado');
+            $table->integer('veces_escuchado')->default(0);
             $table->boolean('destacado');
             $table->foreignId('user_id');
             $table->timestamps();

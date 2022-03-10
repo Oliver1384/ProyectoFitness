@@ -35,7 +35,6 @@
     flex-flow: row wrap;
     justify-content: center;
     padding: 2em 0 0 0;
-    
 } 
 
 h1{
@@ -48,7 +47,6 @@ h1{
 
 .card{
     margin: 0 1em;
-    max-width: 700px;
 }
 
 .paginador > nav > ul >li > span, .paginador > nav > ul >li > a{
@@ -68,9 +66,7 @@ h1{
     justify-content: center;
     background-color: #2A2B2A;
     padding: 1em;
-    
 }
-
 
 .page-link{
     background-color: var(--main-black) !important;

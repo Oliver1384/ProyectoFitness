@@ -5,7 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Podcast extends Model
-{
+class Podcast extends Model {
     use HasFactory;
+
+    protected $fillable = [
+        'titulo',
+        'tema',
+        'audio',
+        'imagen',
+        'destacado',
+        'user_id',
+    ];
 }
