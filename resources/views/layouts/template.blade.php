@@ -74,9 +74,9 @@
             <li class="nav-item ">
                 <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Inicio</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::is('Tienda') ? 'active' : '' }}" aria-current="page" href="{{ url('/Tienda') }}">Tienda</a>
-            </li>
+            <!--<li class="nav-item">
+                <a class="nav-link {{-- Request::is('Tienda')?'active':'' --}}" aria-current="page" href="{{ url('/Tienda') }}">Tienda</a>
+            </li>-->
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('Podcasts') ? 'active' : '' }}" aria-current="page" href="{{ url('Podcasts')  }}">Podcasts</a>
             </li>
@@ -105,7 +105,25 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin') }}">
+                                Admin
+                            </a>
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin/planes') }}">
+                                planes
+                            </a>
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin/posts') }}">
+                                posts
+                            </a>
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin/podcasts') }}">
+                                podcasts
+                            </a>
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin/contacto') }}">
+                                contacto
+                            </a>
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin/usuarios') }}">
+                                usuarios
+                            </a>
+                            <a class="dropdown-item" id="logout" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>

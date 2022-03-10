@@ -22,6 +22,7 @@
         </ul>
     </div>
 @endif
+
 <h1>Bienvenido a la gestión de Planes</h1>
 
 <section class="barraElementos">
@@ -47,10 +48,11 @@
         <div class="card-body">
           <h5 class="card-title">{{ $plan->titulo }}</h5>
           <div class="controls">
+            
               <form action="{{route('planes.show', $plan->id)}}" method="get">
                   @csrf
                   <input type="hidden" name="id" value="{{$plan->id}}" class="btn btn-sm btn-info">
-                  <input type="submit" value="ver" class="btn btn-warning">
+                  <input type="submit" value="mostrar" class="btn btn-warning">
               </form>
               <form action="{{route('planes.edit', $plan->id)}}" method="get">
                   @csrf

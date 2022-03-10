@@ -35,7 +35,6 @@
     flex-flow: row wrap;
     justify-content: center;
     padding: 2em 0 0 0;
-    
 } 
 
 h1{
@@ -48,7 +47,6 @@ h1{
 
 .card{
     margin: 0 1em;
-    max-width: 700px;
 }
 
 .paginador > nav > ul >li > span, .paginador > nav > ul >li > a{
@@ -68,17 +66,14 @@ h1{
     justify-content: center;
     background-color: #2A2B2A;
     padding: 1em;
-    
 }
 
-.botones{
-    display:flex;
-
-    justify-content: flex-end;
+.page-link{
+    background-color: var(--main-black) !important;
+    border: none;
+    color: #FFB20F !important;
 }
 
-.botones > a, .botones> button{
-    margin: 0 1em 1em 0 ;
-
-}
-
+.page-item.active .page-link {
+    border-color: #FFB20F !important;
+  }

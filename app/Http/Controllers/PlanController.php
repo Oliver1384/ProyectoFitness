@@ -17,9 +17,9 @@ class PlanController extends Controller
         $planes;
         if(isset($request->all()['texto']) && !empty(trim($request->get('texto')))){
             $texto = trim($request->get('texto'));
-            $planes = DB::table('planes')->select('*')->where('titulo', 'LIKE', "%{$texto}%")->paginate(8);
+            $planes = DB::table('planes')->select('*')->where('titulo', 'LIKE', "%{$texto}%")->paginate(6);
         }else{
-            $planes = Plan::latest()->paginate(8);
+            $planes = Plan::latest()->paginate(6);
         }
         
 
@@ -69,6 +69,7 @@ class PlanController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request){
+        
         $plan = Plan::find($request->all()['id']);
         return view('planes.show', compact('plan'));
     }

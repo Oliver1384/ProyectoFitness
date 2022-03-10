@@ -28,6 +28,11 @@ class UserSeeder extends Seeder {
                 ]);
             }
         }
-        User::firstOrCreate(['name'=>'admin','email'=>'admin@gmail.com','password'=>'1234', 'titulacion'=>'primer administrador','presentacion'=>'']);
+        User::firstOrCreate(
+            ['name'=>'admin',
+            'email'=>'admin@gmail.com',
+            'password'=> bcrypt('1234'),
+             'titulacion'=>'primer administrador',
+             'presentacion'=>'']);
     }
 }
