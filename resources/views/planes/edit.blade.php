@@ -22,22 +22,22 @@
         </ul>
     </div>
 @endif
-<h1>Crear plan</h1>
+<a href="{{ url('/admin/planes') }}" class="btn btn-warning">volver</a>
 
-<form action="{{ route('planes.store') }}" method="POST" enctype="multipart/form-data">
+<h1>Editar plan</h1>
+
+<form action="{{ route('planes.update', $plan->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
+        @method('PUT')
         <div class="form-group">
-
             <span> Título</span>
-            <input type="text" name="titulo">
-    
+            <input type="text" name="titulo" value="{{$plan->titulo}}">
             <span> Descripción</span>
-            <textarea name="descripcion" cols="30" rows="20" placeholder="Escribe aquí el contenido del plan" minlength="50" maxlength="10000"></textarea>
-
+            <textarea name="descripcion" cols="30" rows="20" placeholder="Escribe aquí el contenido del plan" minlength="50" maxlength="10000" >{{$plan->descripcion}}</textarea>
             <span> Imagen</span>
-            <input type="file" name="imagen" class="form-control" >
-    
-            <input type="submit" value="Crear">
+            <input type="file" name="imagen" class="form-control" value="{{$plan->imagen}}" >
+            <input type="hidden" name="id" value="{{$plan->id}}">
+            <input type="submit" value="Actualizar">
         </div>
     </form>
 

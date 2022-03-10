@@ -1,0 +1,25 @@
+.datos{
+    display: flex;
+    background-color: red;
+    margin: 2em 0;
+
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    max-width: 720px;
+    margin: 2em auto;
+
+}
+
+.card p{
+    margin: 0 auto;
+
+}
+
+p{
+    max-width: 90%;
+    overflow: hidden;
+}

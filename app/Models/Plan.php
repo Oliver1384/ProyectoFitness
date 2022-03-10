@@ -8,9 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Plan extends Model
 {
     use HasFactory;
+    protected $table = "planes";
     protected $fillable = [
+        'id',
         'titulo',
         'descripcion',
-        'imagen'
+        'imagen',
+        'user_id'
     ];
 }
