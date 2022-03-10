@@ -17,11 +17,11 @@
     @csrf
     <div class="form-group">
         <label>Título:
-            <input type="text" name="titulo" value="{{old('titulo')}}">
+            <input type="text" name="titulo" value="{{$podcast->titulo}}">
         </label>
 
         <label>Tema:
-            <input type="text" name="tema" value="{{old('tema')}}">
+            <input type="text" name="tema" value="{{$podcast->tema}}">
         </label>
 
         <div>
@@ -36,11 +36,11 @@
 
 
         <label>Audio mp3:
-            <input type="file" name="audio" class="form-control" value="{{old('audio')}}">
+            <input type="file" name="audio" class="form-control" value="{{ $podcast->audio }}">
         </label>
 
         <label>Imagen:
-            <input type="file" name="imagen" class="form-control" value="{{old('imagen')}}">
+            <input type="file" name="imagen" class="form-control" value="{{ $podcast->imagen }}">
         </label>
 
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

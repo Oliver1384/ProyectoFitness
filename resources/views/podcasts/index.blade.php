@@ -46,7 +46,7 @@
                         <div class="card-body">
 
                             <h2 class="card-title">{{ $podcast->titulo }} <span>{{ $podcast->tema }}</span></h2>
-                            <audio controls="controls">
+                            <audio controls preload="none">
                                 <source src="{{ asset($podcast->audio) }}" type="audio/mp3" />
                                 Tu navegador no soporta el recurso de audio.
                             </audio>
@@ -59,8 +59,8 @@
                                 @endif
                             @endforeach
                             <div>
-                                <a class="btn btn-sm btn-primary" href="#">Editar</a>
-                                <form class="inline-block" action="{{ route('podcasts.destroy',$podcast->id) }}" method="POST">
+                                <a class="btn btn-sm btn-primary" href="{{ route('podcasts.edit', $podcast->id) }}">Editar</a>
+                                <form class="inline-block" action="{{ route('podcasts.destroy', $podcast->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
                                     <button onclick="return confirm('¿Estás seguro de querer eliminar el libro?')" type="submit" class="btn btn-sm btn-danger">Eliminar</button>
