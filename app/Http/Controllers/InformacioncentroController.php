@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Informacioncentro;
 
 class InformacioncentroController extends Controller
 {
@@ -13,7 +14,7 @@ class InformacioncentroController extends Controller
      */
     public function index()
     {
-        //
+        return view('informacion.index');
     }
 
     /**
@@ -54,9 +55,9 @@ class InformacioncentroController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id, Informacioncentro $informacioncentro)
     {
-        //
+        return view('informacion.index', compact('informacioncentro'));
     }
 
     /**
@@ -66,9 +67,24 @@ class InformacioncentroController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Informacioncentro $informacioncentro)
     {
-        //
+        $request->validate([
+            'nombre' => 'required|min:3|max:100',
+            'direccion' => 'min:3|max:100',
+            'telefono' => 'min:6|max:50',
+            'correo' => 'required|min:10|max:80|email:rfc',
+            'facebook' => 'min:3|max:100',
+            'instagram' => 'min:3|max:100',
+            'youtube' => 'min:3|max:100',
+
+        ]);
+        $input = $request->all();
+
+        $informacioncentro->update($input);
+
+        return redirect()->route('informacion.index');
+
     }
 
     /**

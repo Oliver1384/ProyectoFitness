@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PlanPersonalizadoController;
 
 
+
 Route::get('/', function () {
     return view('index');
 })->name('Inicio');
@@ -46,6 +47,7 @@ Route::get('/admin', [AdminController::class, 'index'])->name('admin.index')->mi
 Route::post('/planes/destroy', [PlanController::class, 'eliminarPlan'])->middleware('auth');
 Route::resource('/admin/planes', PlanController::class)->middleware('auth');
 Route::resource('/admin/posts', PostController::class)->middleware('auth');
+Route::resource('/admin/informacionCentro', InformacioncentroController::class)->middleware('auth');
 Route::resource('/admin/planPersonalizado', PlanPersonalizadoController::class)->middleware('auth');
 Route::get('/admin/posts', [PostController::class, 'index'])->middleware('auth');
 Route::get('/admin/podcasts', [PodcastController::class, 'index'])->middleware('auth');

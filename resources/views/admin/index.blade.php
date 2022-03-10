@@ -35,7 +35,7 @@
   <div class="card-body">
     <h5 class="card-title">Contacto</h5>
     <p class="card-text">Edita la información de contacto.</p>
-    <a href="{{url('admin/informacion')}}" class="btn btn-warning">Ir a contacto</a>
+    <a href="{{url('admin/informacionCentro')}}" class="btn btn-warning">Ir a contacto</a>
   </div>
 </div>
 
