@@ -9,6 +9,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\PodcastController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\PlanPersonalizadoController;
 
 
 Route::get('/', function () {
@@ -45,6 +46,7 @@ Route::get('/admin', [AdminController::class, 'index'])->name('admin.index')->mi
 Route::post('/planes/destroy', [PlanController::class, 'eliminarPlan'])->middleware('auth');
 Route::resource('/admin/planes', PlanController::class)->middleware('auth');
 Route::resource('/admin/posts', PostController::class)->middleware('auth');
+Route::resource('/admin/planPersonalizado', PlanPersonalizadoController::class)->middleware('auth');
 Route::get('/admin/posts', [PostController::class, 'index'])->middleware('auth');
 Route::get('/admin/podcasts', [PodcastController::class, 'index'])->middleware('auth');
 Route::resource('/admin/usuarios', UserController::class)->middleware('auth');
