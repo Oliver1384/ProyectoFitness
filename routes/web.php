@@ -26,6 +26,10 @@ Route::get('/', function () {
     return view('index');
 })->name('Inicio');
 
+/*Route::get('/register', function () {
+    return view('index');
+})->name('Inicio');*/
+
 /*Route::get('/Tienda', function () {
     return view('shop');
 })->name('Tienda');*/
@@ -58,5 +62,7 @@ Route::resource('/admin/planes', PlanController::class)->middleware('auth');
 Route::resource('/admin/posts', PostController::class)->middleware('auth');
 Route::get('/admin/podcasts', [PodcastController::class, 'index'])->middleware('auth');
 Route::resource('/admin/usuarios', UserController::class)->middleware('auth');
-Auth::routes();
+Auth::routes([
+    'register' => false
+]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
