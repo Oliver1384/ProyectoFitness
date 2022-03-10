@@ -54,8 +54,8 @@ Route::get('/solicitar', [SolicitudController::class, 'mostrarFormulario'])->nam
 Route::post('/solicitar', [SolicitudController::class, 'enviarFormulario']);
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.index')->middleware('auth');
 Route::post('/planes/destroy', [PlanController::class, 'eliminarPlan'])->middleware('auth');
-
 Route::resource('/admin/planes', PlanController::class)->middleware('auth');
+Route::resource('/admin/posts', PostController::class)->middleware('auth');
 Route::get('/admin/posts', [PostController::class, 'index'])->middleware('auth');
 Route::get('/admin/podcasts', [PodcastController::class, 'index'])->middleware('auth');
 Route::resource('/admin/usuarios', UserController::class)->middleware('auth');
