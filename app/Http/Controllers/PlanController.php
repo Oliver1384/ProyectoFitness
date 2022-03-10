@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Plan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PlanController extends Controller
 {
@@ -12,9 +13,15 @@ class PlanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(){
-
-        $planes = Plan::latest()->paginate(8);
+    public function index(Request $request){
+        $planes;
+        if(isset($request->all()['texto']) && !empty(trim($request->get('texto')))){
+            $texto = trim($request->get('texto'));
+            $planes = DB::table('planes')->select('*')->where('titulo', 'LIKE', "%{$texto}%")->paginate(8);
+        }else{
+            $planes = Plan::latest()->paginate(8);
+        }
+        
 
         return view('planes.index', compact('planes'));
     }
