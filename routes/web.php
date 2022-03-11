@@ -23,13 +23,14 @@ Route::get('/Posts', function () {
     return view('posts');
 })->name('Posts');
 
+
+Route::get('/Posts/{$id}', [ContenidoController::class , 'verPost'])->name('Posts');
+
 Route::get('/Planes', function () {
     return view('plans');
 })->name('Planes');
 
-Route::get('/Contacto', function () {
-    return view('contact');
-})->name('Contacto');
+Route::get('/Contacto', [ContenidoController::class, 'infoContacto'])->name('Contacto');
 
 Route::get('/Post', function () {
     return view('post');

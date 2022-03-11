@@ -19,6 +19,17 @@ class ContenidoController extends Controller{
         return view('index', compact('podcasts'));
     }
 
+    public function infoContacto(){
+        $informacion = Informacioncentro::find(1);
+
+        return view('contact', compact('informacion'));
+    }
+
+
+    public function verPost($id){
+        dd($id);
+    }
+
     public function podcasts(){
         $podcasts = Podcast::latest()->get();
         $podcastsDestacados = Podcast::latest()->where('destacado', true)->get();

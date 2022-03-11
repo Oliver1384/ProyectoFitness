@@ -17,7 +17,7 @@ class CreateInformacioncentroTable extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('direccion');
-            $table->string('descripcion');
+            $table->string('descripcion', 5000);
             $table->string('correo')->unique();
             $table->string('telefono');
             $table->string('youtube');
