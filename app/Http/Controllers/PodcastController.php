@@ -5,12 +5,18 @@ namespace App\Http\Controllers;
 use App\Models\Podcast;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PodcastController extends Controller {
 
-    public function index() {
-        $podcasts = Podcast::latest()->paginate(7);
+    public function index(Request $request) {
         $usuarios = User::all();
+        if(isset($request->all()['texto']) && !empty(trim($request->get('texto')))){
+            $texto = trim($request->get('texto'));
+            $podcasts = DB::table('podcasts')->select('*')->where('titulo', 'LIKE', "%{$texto}%")->paginate(6);
+        }else{
+            $podcasts = Podcast::latest()->paginate(6);
+        }
         return view('podcasts.index')->with(compact('podcasts','usuarios'));
     }
 
@@ -60,36 +66,46 @@ class PodcastController extends Controller {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Podcast  $podcast
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Podcast $podcast)
-    {
-        //
+
+    public function edit($id) {
+        $podcast = Podcast::find($id);
+        return view('podcasts.edit', compact('podcast'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Podcast  $podcast
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Podcast $podcast)
-    {
-        //
+
+    public function update(Request $request, $id) {
+        $request->validate([
+            'titulo' => 'required|min:3|max:100',
+            'tema' => 'required|min:10|max:80',
+            'audio' => 'nullable|mimes:mp3|max:10048',
+            'imagen' => 'nullable|image|mimes:jpeg,jpg,png|max:2048',
+            'destacado' => 'required|min:1|max:1',
+        ]);
+        $input = $request->all();
+        if (!empty($image = $request->file('imagen'))) {
+            $imageDestinationPath = 'uploads/';
+            $imagenUsuario = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($imageDestinationPath, $imagenUsuario);
+            $input['imagen'] = "{$imageDestinationPath}{$imagenUsuario}";
+        } else {
+            unset($input['imagen']);
+        }
+        if (!empty($audio = $request->file('audio'))) {
+            $audioDestinationPath = 'audio/';
+            $audioPodcast = date('YmdHis') . "." . $audio->getClientOriginalExtension();
+            $audio->move($audioDestinationPath, $audioPodcast);
+            $input['audio'] = "{$audioDestinationPath}{$audioPodcast}";
+        } else {
+            unset($input['audio']);
+        }
+        $podcast = Podcast::find($id);
+        $podcast->update($input);
+
+        return redirect()->route('podcasts.index')->with('success','Podcast actualizado correctamente');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Podcast  $podcast
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Podcast $podcast) {
-        //
+        $podcast->delete();
+        return redirect()->route('podcasts.index')->with('success','El podcast ha sido eliminado con éxito');
     }
 }

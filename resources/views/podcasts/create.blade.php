@@ -27,20 +27,20 @@
         <div>
             <p>Destacado</p>
             <label>Si
-                <input type="radio" name="destacado" value="1" >
+                <input type="radio" name="destacado" value="1" {{ (old('destacado') == 1 ? 'checked' : '') }} >
             </label>
             <label>No
-                <input type="radio" name="destacado" value="0">
+                <input type="radio" name="destacado" value="0" {{ (old('destacado') == 0 ? 'checked' : '') }} >
             </label>
         </div>
 
 
         <label>Audio mp3:
-            <input type="file" name="audio" class="form-control" value="{{old('audio')}}">
+            <input type="file" name="audio" class="form-control" value="{{ old('audio') }}">
         </label>
 
         <label>Imagen:
-            <input type="file" name="imagen" class="form-control" value="{{old('imagen')}}">
+            <input type="file" name="imagen" class="form-control" value="{{ old('imagen') }}">
         </label>
 
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

@@ -53,13 +53,16 @@
             <li><a href="{{ url('/Posts') }}">POSTS</a></li>
             <li><a href="{{ url('/Planes') }}">PLANES</a></li>
             <li><a href="{{ url('/Contacto') }}">CONTACTO</a></li>
+            @if(auth()->user())
+            <li><a href="{{ url('/admin') }}">ADMIN</a></li>
+            @endif
         </ul>
 
 
     </div>
-    
-    
-    
+
+
+
     <nav class="nav-principal">
         <div class="burger">
             <div class="bar"></div>
@@ -69,14 +72,14 @@
         <figure>
             <img src="{{ asset('images/logo/navbar-logo_110x50.png') }}" alt="logo de proyecto fitness" />
         </figure>
-        
+
         <ul class="nav-escritorio">
             <li class="nav-item ">
                 <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Inicio</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::is('Tienda') ? 'active' : '' }}" aria-current="page" href="{{ url('/Tienda') }}">Tienda</a>
-            </li>
+            <!--<li class="nav-item">
+                <a class="nav-link {{-- Request::is('Tienda')?'active':'' --}}" aria-current="page" href="{{ url('/Tienda') }}">Tienda</a>
+            </li>-->
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('Podcasts') ? 'active' : '' }}" aria-current="page" href="{{ url('Podcasts')  }}">Podcasts</a>
             </li>
@@ -89,8 +92,8 @@
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('Contacto') ? 'active' : '' }}" aria-current="page" href="{{ url('/Contacto') }}">Contacto</a>
             </li>
-            
-            
+
+
             @if(@Auth::user())
             @guest
             @if (Route::has('login'))
@@ -135,7 +138,7 @@
                     </li>
                     @endguest
                     @endif
-            
+
         </ul>
 
     </nav>

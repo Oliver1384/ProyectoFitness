@@ -1,0 +1,43 @@
+:root {
+    --main-orange: #FFB20F;
+    --main-black: #2A2B2A;
+    --main-white: #F9F7F3;
+    --basic-white: #FFFFFF;
+    --title-font: 'Oswald', sans-serif;
+    --content-font: 'Noto Sans', sans-serif;
+    --aux-font: 'Open Sans', sans-serif;
+}
+
+main.py-4{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-color: #252725 !important;
+    background-size: cover;
+}
+
+main > .container{
+    margin-top: 2em;
+}
+
+main figure{
+    margin-top: 2em;
+}
+
+main .card-header{
+    background-color: var(--main-orange);
+    font-weight: bolder;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+main button.btn-primary{
+    background-color: var(--main-orange) !important;
+    border: 0 !important;
+}

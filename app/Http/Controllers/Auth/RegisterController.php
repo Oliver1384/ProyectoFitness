@@ -56,7 +56,7 @@ class RegisterController extends Controller
         ]);
     }
 
-   
+
     protected function create(array $data) {
         /*$users = User::query()
             ->orWhere('users.email', '=', $data['email'])

@@ -48,13 +48,12 @@
         <div class="card-body">
           <h5 class="card-title">{{ $plan->titulo }}</h5>
           <div class="controls">
+
               <form action="{{route('planes.show', $plan->id)}}" method="get">
-                  @csrf
                   <input type="hidden" name="id" value="{{$plan->id}}" class="btn btn-sm btn-info">
                   <input type="submit" value="mostrar" class="btn btn-warning">
               </form>
               <form action="{{route('planes.edit', $plan->id)}}" method="get">
-                  @csrf
                   <input type="hidden" name="id" value="{{$plan->id}}" class="btn btn-sm btn-info">
                   <input type="submit" value="editar" class="btn btn-info">
               </form>
@@ -70,7 +69,7 @@
     </div>
   </div>
    @endforeach
-   
+
   </div>
   <div class="paginadorContainer">
     <span class="paginador" style="display: flex; justify-content:center; margin: 1em;">
