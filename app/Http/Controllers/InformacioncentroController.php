@@ -14,7 +14,8 @@ class InformacioncentroController extends Controller
      */
     public function index()
     {
-        return view('informacion.index');
+        $informacion = Informacioncentro::find(1);
+        return view('informacion.index', compact('informacion'));
     }
 
     /**
@@ -35,7 +36,9 @@ class InformacioncentroController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        
+     
     }
 
     /**
@@ -55,9 +58,11 @@ class InformacioncentroController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id, Informacioncentro $informacioncentro)
+    public function edit($id, Informacioncentro $informacion)
     {
-        return view('informacion.index', compact('informacioncentro'));
+
+        $informacion = Informacioncentro::find($id);
+        return view('informacion.edit', compact('informacion'));
     }
 
     /**
@@ -67,10 +72,12 @@ class InformacioncentroController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Informacioncentro $informacioncentro)
+    public function update(Request $request, $id)
     {
+
+       
         $request->validate([
-            'nombre' => 'required|min:3|max:100',
+            'descripcion' => 'required|min:10|max:100',
             'direccion' => 'min:3|max:100',
             'telefono' => 'min:6|max:50',
             'correo' => 'required|min:10|max:80|email:rfc',
@@ -79,11 +86,12 @@ class InformacioncentroController extends Controller
             'youtube' => 'min:3|max:100',
 
         ]);
+
         $input = $request->all();
+        //dd($id);
+        Informacioncentro::find(1)->update($input);
 
-        $informacioncentro->update($input);
-
-        return redirect()->route('informacion.index');
+        return redirect()->route('informacionCentro.index');
 
     }
 
