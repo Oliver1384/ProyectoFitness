@@ -41,7 +41,8 @@
     </section>
     <div class="contenedor">
         @foreach($podcasts as $podcast)
-            <div class="card mb-3">
+
+            <div class="card mb-3" >
                 <img src="{{ asset($podcast->imagen) }}" class="card-img-top" alt="imagen relacionada con el podcasts">
                     <div class="card-body">
                         <h2 class="card-title">{{ $podcast->titulo }} <span>{{ $podcast->tema }}</span></h2>
@@ -49,18 +50,14 @@
                             <source src="{{ asset($podcast->audio) }}" type="audio/mp3"/>
                             Tu navegador no soporta el recurso de audio.
                         </audio>
-                        <p class="card-text">Número de veces escuchado: {{$podcast->veces_escuchado}}</p>
+                        <p class="card-text">Veces escuchado: {{$podcast->veces_escuchado}}</p>
                         <p class="card-text">{{($podcast->destacado === 1) ? 'Destacado' : 'No destacado'}}</p>
-
-                        @foreach ($usuarios as $usuario)
-                            @if($usuario->id === $podcast->user_id)
-                                <p class="card-text">Autor: {{$usuario->name}}</p>
-                            @endif
-                        @endforeach
+                        @if(isset($podcast->user))
+                        <p class="card-text ">Autor:  {{ $podcast->user->email }} </p>
+                        @endif
                         <div class="botonesPodcast">
                             <a class="btn btn-info btn-sm" href="{{ route('podcasts.edit', $podcast->id) }}">Editar</a>
-                            <form class="inline-block" action="{{ route('podcasts.destroy', $podcast->id) }}"
-                                  method="POST">
+                            <form class="inline-block" action="{{ route('podcasts.destroy', $podcast->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button onclick="return confirm('¿Estás seguro de querer eliminar el libro?')"

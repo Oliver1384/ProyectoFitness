@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\Models\Plan;
 use App\Models\Post;
+use App\Models\Podcast;
 
 class User extends Authenticatable
 {
@@ -57,5 +58,9 @@ class User extends Authenticatable
     }
     public function post(){
         return $this->hasMany(Post::class);
+    }
+
+    public function podcast(){
+        return $this->hasMany(Podcast::class);
     }
 }
