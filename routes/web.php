@@ -30,9 +30,7 @@ Route::get('/Planes', function () {
     return view('plans');
 })->name('Planes');
 
-Route::get('/Contacto', function () {
-    return view('contact');
-})->name('Contacto');
+Route::get('/Contacto', [ContenidoController::class, 'infoContacto'])->name('Contacto');
 
 Route::get('/Post', function () {
     return view('post');

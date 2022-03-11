@@ -77,9 +77,9 @@ class InformacioncentroController extends Controller
 
        
         $request->validate([
-            'descripcion' => 'required|min:10|max:100',
+            'descripcion' => 'required|min:10|max:5000',
             'direccion' => 'min:3|max:100',
-            'telefono' => 'min:6|max:50',
+            'telefono' => 'min:6|max:15',
             'correo' => 'required|min:10|max:80|email:rfc',
             'facebook' => 'min:3|max:100',
             'instagram' => 'min:3|max:100',
