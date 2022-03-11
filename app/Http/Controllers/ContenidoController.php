@@ -26,5 +26,8 @@ class ContenidoController extends Controller{
     }
 
 
+    public function verPost($id){
+        dd($id);
+    }
 
 }
