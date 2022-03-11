@@ -150,8 +150,8 @@ audio {
 }
 
 .podcastCategoria img {
-    max-width: 224px;
-    max-height: 65%;
+    max-width: 95%;
+    max-height: 95%;
 }
 
 .podcastCategoria .podcast h2 {

@@ -69,17 +69,12 @@
             </div>
         </div>
     </div>
-
-    <div class="carouselExampleControls carousel carousel-4 nuestrosPodcasts ocultarMovil" data-ride="carousel">
+    <div class="carouselExampleControls carousel carousel-3 nuestrosPodcasts ocultarMovil" data-ride="carousel">
         <h1>NUESTROS PODCASTS</h1>
         <div class="position-relative w-100 h-100">
             <div class="carousel-inner">
                 @for($i = 0; $i < count($podcasts); $i++)
-                    @if($i === 0)
-                        <div class="carousel-item active">
-                    @else
-                        <div class="carousel-item ">
-                    @endif
+                    <div class="carousel-item ">
                         <div>
                             <div class="card podcast">
                                 <img src="{{ asset($podcasts[$i]->imagen) }}" alt="imagen relacionada con la temática del podcast">
@@ -96,74 +91,36 @@
                         </div>
                     </div>
                 @endfor
-
-
+            </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+                    data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
+                    data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
     </div>
-
 
     <div class="podcasts ocultarEscritorio">
         <h1>PODCASTS</h1>
-        <div class="card podcast">
-            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
-            <div>
+        @for($i = 0; $i < count($podcasts); $i++)
+            <div class="card podcast">
+                <img src="{{ asset($podcasts[$i]->imagen) }}" alt="imagen relacionada con la temática del podcast">
                 <div>
-                    <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
+                    <div>
+                        <h2>{{ $podcasts[$i]->titulo }} <br><span>{{ $podcasts[$i]->tema }}</span></h2>
+                    </div>
+                    <audio controls preload="none">
+                        <source src="{{ asset($podcasts[$i]->audio) }}" type="audio/mp3"/>
+                        Tu navegador no soporta el recurso de audio.
+                    </audio>
                 </div>
-                <audio controls="controls">
-                    <source src="#" type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                </audio>
             </div>
-        </div>
-        <div class="card podcast">
-            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
-            <div>
-                <div>
-                    <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
-                </div>
-                <audio controls="controls">
-                    <source src="#" type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        </div>
-        <div class="card podcast">
-            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
-            <div>
-                <div>
-                    <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
-                </div>
-                <audio controls="controls">
-                    <source src="#" type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        </div>
-        <div class="card podcast">
-            <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="imagen relacionada con la temática del podcast">
-            <div>
-                <div>
-                    <h2>PODCAST 1 <span>TEMA PODCAST</span></h2>
-                </div>
-                <audio controls="controls">
-                    <source src="#" type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        </div>
+        @endfor
     </div>
     <div class="controls ocultarEscritorio">
         <button>

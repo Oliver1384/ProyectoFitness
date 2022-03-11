@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Podcast;
-use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class PodcastController extends Controller {
 
@@ -15,7 +13,6 @@ class PodcastController extends Controller {
             $podcasts = Podcast::where('titulo', 'LIKE', "%{$texto}%")->paginate(6);
         }else{
             $podcasts = Podcast::latest()->paginate(6);
-
         }
         return view('podcasts.index')->with(compact('podcasts'));
     }
