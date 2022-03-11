@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SolicitudController;
+use App\Http\Controllers\ContenidoController;
 use App\Http\Controllers\PlanController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PostController;
@@ -15,9 +16,7 @@ use App\Http\Controllers\InformacioncentroController;
 
 
 
-Route::get('/', function () {
-    return view('index');
-})->name('Inicio');
+Route::get('/',[ContenidoController::class, 'inicio'] )->name('Inicio');
 
 Route::get('/Podcasts', function () {
     return view('podcasts');

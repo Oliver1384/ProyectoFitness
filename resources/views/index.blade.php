@@ -10,7 +10,7 @@
             <div class="article-effect" style="background:url('images/articles/Article_Main.png');"></div>
             <div class="article-content">
                 <h1 class="article-title">
-                    <span class="text-black">Artículo</span> <span class="text-white">principal</span>
+                    <span class="text-black">Artículo</span> <span class="text-white">{{ $podcasts[0] }}principal</span>
                 </h1>
                 <div class="article-button">
                     <button class="btn btn-light">Leer más</button>
