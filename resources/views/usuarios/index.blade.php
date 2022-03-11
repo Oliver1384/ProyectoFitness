@@ -54,7 +54,7 @@
             <a href="{{route('usuarios.edit', $usuario->id)}}" class="btn btn-info">Editar</a>
             @csrf
             @method('DELETE')
-            <button type="submit" class="btn btn-sm btn-danger" style="padding: .5em 1.2em;" onclick="confirm('¿Desea eliminar éste archivo?')">Borrar</button>
+            <button type="submit" class="btn btn-sm btn-danger" style="padding: .5em 1.2em;" onclick="return confirm('¿Desea eliminar éste usuario?')">Borrar</button>
           </form>
         </div>
       </div>
