@@ -31,13 +31,27 @@ h5{
 
 }
 
-span{
+.contacto{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.contacto label{
+    flex: 1 1 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: .5em ;
+}
+
+label, span{
     font-weight: bold;
     margin: .5em 0;
 }
 
-section:last-child{
+.contacto section{
     display: flex;
+    width: 100%;
     justify-content: center;
 }
 
@@ -49,9 +63,23 @@ section:last-child{
     width: 60%;
     margin: 2em 0 1em 0;
     border: none;
+    max-width: 100px;
 }
 
 .boton:hover{
     background-color: var(--main-white);
     color: var(--main-black); 
+}
+
+@media (min-width: 1025px){
+
+    .contenedor{
+        margin: 3em 0 !important;
+    }
+    form{
+        margin: 1em auto;
+        max-width: 90%;
+        padding: 2em;
+        font-size: 110%;
+    }
 }
