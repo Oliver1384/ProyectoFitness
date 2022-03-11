@@ -71,7 +71,9 @@ p {
 
 .datos-informacion {
     flex: inherit !important;
-    width: 90%;
+    width: 100%;
+    margin: 0 0 0 5em;
+
 }
 
 .mapa, iframe {
@@ -127,6 +129,7 @@ p {
     }
 
     .datos-informacion{
+        margin: 0 0 0 5em;
         flex:1 !important;
     }
 
@@ -160,7 +163,7 @@ p {
     }
 
     .telefono, .ubicacion, .email{
-        margin: .3em 0 0 1em;
+        margin: .3em 0 0 4em;
 
     }
 

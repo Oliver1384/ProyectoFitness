@@ -16,5 +16,6 @@ class Informacioncentro extends Model {
         'youtube',
         'instagram',
         'facebook',
+        'descripcion',
     ];
 }

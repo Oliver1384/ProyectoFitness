@@ -10,6 +10,7 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PlanPersonalizadoController;
 use App\Http\Controllers\SendEmailController;
+use App\Http\Controllers\InformacioncentroController;
 
 
 
@@ -40,25 +41,19 @@ Route::get('/Post', function () {
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.index')->middleware('auth');
-
 Route::get('/admin/send-email', [SendEmailController::class, 'index']);
-
 Route::get('/solicitar', [SolicitudController::class, 'mostrarFormulario'])->name('solicitar');
 Route::post('/solicitar', [SolicitudController::class, 'enviarFormulario']);
-
 Route::post('/planes/destroy', [PlanController::class, 'eliminarPlan'])->middleware('auth');
 Route::resource('/admin/planes', PlanController::class)->middleware('auth');
 Route::resource('/admin/posts', PostController::class)->middleware('auth');
 Route::resource('/admin/informacionCentro', InformacioncentroController::class)->middleware('auth');
 Route::resource('/admin/planPersonalizado', PlanPersonalizadoController::class)->middleware('auth');
-
 Route::resource('/admin/posts', PostController::class)->middleware('auth');
 Route::get('/admin/podcasts', [PodcastController::class, 'index'])->middleware('auth');
 Route::get('/admin/agregarPodcast', [PodcastController::class, 'create'])->middleware('auth')->name('agregarPodcast');
 Route::resource('/admin/podcasts', PodcastController::class)->middleware('auth');
-
 Route::resource('/admin/usuarios', UserController::class)->middleware('auth');
 Auth::routes([
     'register' => false

@@ -14,6 +14,7 @@ class InformacionCentroSeeder extends Seeder {
         'youtube' => 'https://www.youtube.com/',
         'instagram' => 'https://www.instagram.com/',
         'facebook' =>'https://es-es.facebook.com/',
+        'descripcion'=>'Lorem ipsum dolor, sit amet consectetur adipisicing elit. '
     ]);
     }
 }
