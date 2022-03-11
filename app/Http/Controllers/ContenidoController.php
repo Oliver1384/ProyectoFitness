@@ -19,6 +19,8 @@ class ContenidoController extends Controller{
         return view('index', compact('podcasts'));
     }
 
-
+    public function verPost($id){
+        dd($id);
+    }
 
 }

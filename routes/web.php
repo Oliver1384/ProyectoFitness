@@ -26,6 +26,9 @@ Route::get('/Posts', function () {
     return view('posts');
 })->name('Posts');
 
+
+Route::get('/Posts/{$id}', [ContenidoController::class , 'verPost'])->name('Posts');
+
 Route::get('/Planes', function () {
     return view('plans');
 })->name('Planes');
