@@ -50,7 +50,6 @@
                             <source src="{{ asset($podcast->audio) }}" type="audio/mp3"/>
                             Tu navegador no soporta el recurso de audio.
                         </audio>
-                        <p class="card-text">Veces escuchado: {{$podcast->veces_escuchado}}</p>
                         <p class="card-text">{{($podcast->destacado === 1) ? 'Destacado' : 'No destacado'}}</p>
                         @if(isset($podcast->user))
                         <p class="card-text ">Autor:  {{ $podcast->user->email }} </p>
