@@ -1,0 +1,57 @@
+:root {
+    --main-orange: #FFB20F;
+    --main-black: #2A2B2A;
+    --main-white: #F9F7F3;
+    --basic-white: #FFFFFF;
+    --title-font: 'Oswald', sans-serif;
+    --content-font: 'Noto Sans', sans-serif;
+    --aux-font: 'Open Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    margin: 1em;
+    border-radius: .5em;
+    background-color: var(--main-orange);
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 2em;
+}
+
+h5{
+    text-align: center;
+    
+    font-size: 3em !important;
+    margin: .5em 0 .8em 0 !important;
+
+}
+
+span{
+    font-weight: bold;
+    margin: .5em 0;
+}
+
+section:last-child{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    background-color: #2A2B2A;
+    color: var(--main-white);
+    border-radius: .5em;
+    padding: .5em 0 ;
+    width: 60%;
+    margin: 2em 0 1em 0;
+    border: none;
+}
+
+.boton:hover{
+    background-color: var(--main-white);
+    color: var(--main-black); 
+}

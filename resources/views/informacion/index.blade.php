@@ -1,25 +1,31 @@
 @extends('layouts.template')
-
+<link rel="stylesheet" href="{{asset('/css/mostrarInformacion.css')}}">
 @section('content')
 
 <div class="contenedor">
-<form action="{{ route('planes.store') }}" method="POST" enctype="multipart/form-data">
-        @csrf
-        <div class="form-group">
+    <div class="card mb-3">
 
-            <span> Teléfono</span>
-            <input type="text" name="telefono">
-    
-            <span> Dirección</span>
-            <textarea name="dirección" cols="30" rows="20" placeholder="Escribe aquí el contenido del plan" minlength="50" maxlength="10000"></textarea>
-
-            <span> Correo</span>
-            <input type="file" name="correo" class="form-control" >
-    
-            <input type="submit" value="Crear">
+        <div class="card-header">
+            Información del centro
         </div>
-    </form>
+            <div class="card-body">
+                <h5 class="card-title"><span>Nombre:</span> {{$informacion->nombre}}</h5>
+                <p class="card-text"><span>Teléfono:</span> {{$informacion->telefono}}</p>
+                <p class="card-text"><span>Dirección:</span> {{$informacion->correo}}</p>
+                <p class="card-text"><span>Descripción: </span>{{$informacion->descripcion}}</p>
+                <section class="redes">
+                    <a href="{{$informacion->facebook}}">{{$informacion->facebook}}</a>
+                    <a href="{{$informacion->instagram}}">{{$informacion->instagram}}</a>
+                    <a href="{{$informacion->youtube}}">{{$informacion->youtube}}</a>
+                </section>
+                <section class="boton">
+                    <a href="{{route('informacionCentro.edit', $informacion->id)}}" class="btn btn-info">Editar</a>
+                </section>
+            </div>
+
+
+        </div>
+    </div>
 </div>
 
-@ensection
-
+@endsection
