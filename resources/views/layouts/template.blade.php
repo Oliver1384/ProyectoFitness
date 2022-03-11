@@ -69,10 +69,14 @@
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+
+
+        <a href="{{ url('/') }}">
         <figure>
+          
             <img src="{{ asset('images/logo/navbar-logo_110x50.png') }}" alt="logo de proyecto fitness" />
         </figure>
-
+        </a>
         <ul class="nav-escritorio">
             <li class="nav-item ">
                 <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Inicio</a>
