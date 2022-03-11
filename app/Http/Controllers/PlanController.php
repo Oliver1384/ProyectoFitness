@@ -21,8 +21,6 @@ class PlanController extends Controller
         }else{
             $planes = Plan::latest()->paginate(6);
         }
-
-
         return view('planes.index', compact('planes'));
     }
 
@@ -123,10 +121,9 @@ class PlanController extends Controller
      * @param  \App\Models\Plan  $plan
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Plan $plan)
-    {
+    /*public function destroy(Plan $plan){
 
-    }
+    }*/
 
     public function eliminarPlan(Request $request){
         $plan = Plan::find($request->all()['id']);

@@ -48,14 +48,6 @@
   </div>
 </div>
 
-<div class="card">
-  <img src="{{asset('images/articles/Article_04.png')}}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Planes personalizados</h5>
-    <p class="card-text">Crear nuevos usuarios.</p>
-    <a href="{{url('admin/planPersonalizado')}}" class="btn btn-warning">Ir a planes personalizados</a>
-  </div>
-</div>
 
 </div>
 
