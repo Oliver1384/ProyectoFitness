@@ -7,17 +7,17 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class NotifyMail extends Mailable
-{
+class NotifyMail extends Mailable {
     use Queueable, SerializesModels;
+    private $correoUsuario;
+    private $objetivo;
 
-
-    public function __construct() {
+    public function __construct($correoUsuario,$objetivo) {
+        $this->correoUsuario = $correoUsuario;
+        $this->objetivo = $objetivo;
     }
 
-
-    public function build()
-    {
-        return $this->view('planesPersonalizados.send');
+    public function build() {
+        return $this->view('planesPersonalizados.send',['correoUsuario' => $this->correoUsuario, 'objetivo' => $this->objetivo]);
     }
 }

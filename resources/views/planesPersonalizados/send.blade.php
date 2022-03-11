@@ -7,8 +7,8 @@
     <title>Plan de Proyecto Fitness</title>
 </head>
 <body>
-    <p>Hola soy una nariz</p>
-    <p>👃👌 </p>
+    <p>Solicitado por {{$correoUsuario}}</p>
+    <p>Objetivo: {{$objetivo}}</p>
 </body>
 </html>
 
