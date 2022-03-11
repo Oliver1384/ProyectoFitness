@@ -45,7 +45,7 @@
             <div class="card mb-3" >
                 <img src="{{ asset($podcast->imagen) }}" class="card-img-top" alt="imagen relacionada con el podcasts">
                     <div class="card-body">
-                        <h2 class="card-title">{{ $podcast->titulo }} <span>{{ $podcast->tema }}</span></h2>
+                        <h5 class="card-title">{{ $podcast->titulo }} <span>{{ $podcast->tema }}</span></h5>
                         <audio controls preload="none">
                             <source src="{{ asset($podcast->audio) }}" type="audio/mp3"/>
                             Tu navegador no soporta el recurso de audio.
@@ -60,7 +60,7 @@
                             <form class="inline-block" action="{{ route('podcasts.destroy', $podcast->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button onclick="return confirm('¿Estás seguro de querer eliminar el libro?')"
+                                <button onclick="return confirm('¿Estás seguro de querer eliminar el podcast?')"
                                         type="submit" class="btn btn-sm btn-danger">Eliminar
                                 </button>
                             </form>
