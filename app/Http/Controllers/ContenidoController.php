@@ -15,10 +15,13 @@ class ContenidoController extends Controller{
 
     public function inicio(){
         $podcasts = Podcast::latest()->take(4)->get();
-        
+
         return view('index', compact('podcasts'));
     }
 
-
-
+    public function podcasts(){
+        $podcasts = Podcast::latest()->get();
+        $podcastsDestacados = Podcast::latest()->where('destacado', true)->get();
+        return view('podcasts', compact('podcasts','podcastsDestacados'));
+    }
 }

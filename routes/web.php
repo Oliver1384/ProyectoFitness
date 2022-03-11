@@ -17,10 +17,7 @@ use App\Http\Controllers\InformacioncentroController;
 
 
 Route::get('/',[ContenidoController::class, 'inicio'] )->name('Inicio');
-
-Route::get('/Podcasts', function () {
-    return view('podcasts');
-})->name('Podcasts');
+Route::get('/Podcasts',[ContenidoController::class, 'podcasts'] )->name('Podcasts');
 
 Route::get('/Posts', function () {
     return view('posts');
