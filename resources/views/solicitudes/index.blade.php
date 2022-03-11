@@ -1,17 +1,27 @@
 @extends('layouts.template')
 
 @section('content')
-<link rel="stylesheet" href="{{ URL::asset('css/solicitudes.css') }}">
-
-@if ($message = Session::get('success'))
+    <link rel="stylesheet" href="{{ URL::asset('css/solicitudes.css') }}">
+    @if ($message = Session::get('fail'))
+        <div class="alert alert-danger">
+            <p>{{ $message }}</p>
+        </div>
+    @endif
+    @if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p>{{ $message }}</p>
         </div>
-@endif
-
-
-
-@if(Request::isMethod('get'))
+    @endif
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <p><strong>¡Vaya!</strong> Alguno de los campos no es correcto.</p>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <h1>Solicita tu plan</h1>
     <form action="{{ url('/solicitar') }}" method="post">
         @csrf
@@ -26,9 +36,9 @@
             </label>
             <label>
                 <span>Elige un entrenador</span>
-                <select name="" id="" class="entrenadores">
+                <select name="entrenador" class="entrenadores">
                     @foreach($entrenadores as $entrenador)
-                        <option value"{{$entrenador->id}}">{{$entrenador->name}}</option>
+                        <option value="{{$entrenador->id}}">{{$entrenador->name}}</option>
                     @endforeach
                 </select>
             </label>
@@ -42,7 +52,4 @@
         </div>
         <input type="submit" value="SOLICITAR">
     </form>
-@else
-    <h1>Tu solicitud ha sido enviada con éxito</h1>
-@endif
 @endsection
