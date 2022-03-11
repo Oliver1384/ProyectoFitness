@@ -10,14 +10,16 @@ use Illuminate\Support\Facades\DB;
 class PodcastController extends Controller {
 
     public function index(Request $request) {
-        $usuarios = User::all();
+    
+        $podcasts;
         if(isset($request->all()['texto']) && !empty(trim($request->get('texto')))){
             $texto = trim($request->get('texto'));
-            $podcasts = DB::table('podcasts')->select('*')->where('titulo', 'LIKE', "%{$texto}%")->paginate(6);
+            $podcasts = Podcast::where('titulo', 'LIKE', "%{$texto}%")->paginate(6);
         }else{
             $podcasts = Podcast::latest()->paginate(6);
+    
         }
-        return view('podcasts.index')->with(compact('podcasts','usuarios'));
+        return view('podcasts.index')->with(compact('podcasts'));
     }
 
     public function create() {
