@@ -120,7 +120,7 @@
                             <a class="dropdown-item" id="logout" href="{{ url('/admin/podcasts') }}">
                                 podcasts
                             </a>
-                            <a class="dropdown-item" id="logout" href="{{ url('/admin/contacto') }}">
+                            <a class="dropdown-item" id="logout" href="{{ url('/admin/informacionCentro') }}">
                                 contacto
                             </a>
                             <a class="dropdown-item" id="logout" href="{{ url('/admin/usuarios') }}">
