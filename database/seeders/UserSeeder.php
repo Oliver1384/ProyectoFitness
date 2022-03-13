@@ -8,9 +8,7 @@ use Faker\Factory as Faker;
 use App\Models\User;
 
 class UserSeeder extends Seeder {
-    public function run()
-    {
-        $informacioncentroId = DB::table('informacioncentros')->pluck('id');
+    public function run() {
         $faker = Faker::create();
         if (DB::table('users')->count() < 50) {
             for ($i = 0; $i < 20; $i++) {
@@ -23,15 +21,14 @@ class UserSeeder extends Seeder {
                     'linkedin' => 'https://es.linkedin.com/',
                     'titulacion' => $faker->jobTitle,
                     'presentacion' => $faker->sentence($nbWords = 10, $variableNbWords = true),
-                    //'centro_id' => $faker->randomElement($informacioncentroId),
                     'password' => $faker->password,
                 ]);
             }
         }
         User::firstOrCreate(
             ['name'=>'admin',
-            'email'=>'admin@gmail.com',
-            'password'=> bcrypt('1234'),
+            'email'=>'proyectofitnessgc@gmail.com',
+            'password'=> bcrypt('8h38s/L'),
              'titulacion'=>'primer administrador',
              'presentacion'=>'']);
     }
