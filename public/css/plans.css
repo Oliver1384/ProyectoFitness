@@ -4,6 +4,8 @@
 
 .pContenido1{
     color: var(--main-black);
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .titulo{

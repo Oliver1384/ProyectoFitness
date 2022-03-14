@@ -9,18 +9,11 @@
                 <span class="span2Contenido1">tu plan </span>
             </h1>
             <div class="col-lg-6 col-md-8 col-sm-10">
-                <p class="fst-italic pContenido1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis
-                    corporis deleniti ea eos et fugit in,
-                    iure neque nulla numquam odio officiis perspiciatis quas quis sed sint sunt voluptates. Lorem ipsum
-                    dolor sit amet, consectetur adipisicing elit. Fugiat, illum ipsa magni necessitatibus neque pariatur
-                    quidem!
-                    Illo ipsum minus neque veritatis vero? Assumenda corporis impedit libero molestias nemo rerum vero.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut autem debitis dolorem eius,
-                    exercitationem ipsa molestiae,
-                    mollitia nisi non officia pariatur quidem reiciendis sit sunt velit voluptatum. Dignissimos, vel! Lorem
-                    ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque autem culpa cum cupiditate
-                    distinctio dolores enim et,
-                    explicabo hic incidunt ipsum laborum minus non quidem quo sequi soluta? </p>
+                <p class="fst-italic pContenido1 ">Solicita a nuestros entrenadores un plan hecho a tu medida. <br>
+                    Rellena el formulario y selecciona al entrenador que deseas que cree tu plan.
+                     <br>Pronto recibirás un correo con el plan personalizado creado por el entrenador seleccionado.
+
+                 </p>
             </div>
             <div class="col-12 text-center">
                 <a href="{{ url('solicitar') }}" class="btn btn-light mb-3 ">Crea tu plan</a>
