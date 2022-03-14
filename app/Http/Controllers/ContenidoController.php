@@ -27,7 +27,7 @@ class ContenidoController extends Controller{
 
 
     public function posts(){
-        $destacado = Post::where(['destacado' => true])->latest()->take(1)->get();
+        $destacado = Post::where(['destacado' => true])->latest()->take(1)->get()->first();
         $posts = Post::latest()->paginate(6);
         return view('posts', compact('destacado', 'posts'));
 

@@ -98,6 +98,7 @@ q:after  { content: "»" }
     width: 25%;
     background: var(--main-white);
     text-align: justify;
+    padding: 0 0 1.5em 0;
 }
 
 .profile_top {
