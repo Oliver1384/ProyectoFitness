@@ -45,16 +45,12 @@
 
         </div>
     </div>
+    <a href="{{url('/Planes')}}">
     <div class="planes">
-        <a href="{{url('/Planes')}}">
             <h2>PLANES<span> PERSONALIZADOS</span></h2>
-        </a>
-    </div>
-    <!--<div class="productos">
-        <a href="{{url('/Produtos')}}">
-            <h2>PRODUCTOS<span> ESTRELLA</span></h2>
-        </a>
-    </div>-->
+        </div>
+    </a>
+    
     <div class="entrenadores">
         <div id="carouselExampleIndicators" class="carousel carousel-7 slide" data-ride="carousel">
             <h3>Nuestros entrenadores</h3>

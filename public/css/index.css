@@ -13,6 +13,10 @@ h1,h2,h3,h4,h5,h6{
     font-family: var(--title-font);
 }
 
+a, a:hover{
+    text-decoration: none;
+}
+
 
 #main-article h1 .text-black{
     color: var(--main-orange) !important;
