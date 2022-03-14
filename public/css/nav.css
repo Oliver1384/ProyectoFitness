@@ -175,6 +175,7 @@
 
 .footer-movil {
     padding: 1.5rem;
+    background-color: var(--basic-white);
 }
 
 .footer-movil div{
@@ -191,9 +192,14 @@
     text-decoration: none;
 }
 
-footer{
-    background-color: var(--basic-white);
-    
+footer a {
+    text-decoration: none;  
+    color: var(--main-black);  
+}
+
+footer a:hover{
+    color: var(--main-orange);
+    text-decoration: none;
 }
 
 .footer-escritorio {

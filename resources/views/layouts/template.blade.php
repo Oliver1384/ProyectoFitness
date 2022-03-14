@@ -181,16 +181,14 @@
                 <section class="footer-izquierdo">
                     <div>
                         <b>Artículos</b>
-                        <p>Artículos destacados</p>
-                        <p>Ver nuestro artículos</p>
-
+                        <p><a href="{{ url('/Posts') }}">Ver nuestros artículos</a></p>
                     </div>
 
                 </section>
                 <section class="footer-derecho">
                     <div>
                         <b>Podcast</b>
-                        <p>Escuchar nuestro podcast</p>
+                        <p><a href="{{ url('/Podcasts') }}">Escuchar nuestros podcast</a></p>
 
                     </div>
 
@@ -199,8 +197,8 @@
 
                     <div>
                         <b>Programas</b>
-                        <p>Nuestros programas destacados</p>
-                        <p>¡Personaliza tu programa!</p>
+                        <p><a href="{{ url('/Planes') }}">Nuestros programas destacados</a></p>
+                        <p><a href="{{ url('/solicitar') }}">¡Personaliza tu programa!</a></p>
 
                     </div>
                 </section>
@@ -208,7 +206,7 @@
 
                     <div>
                         <b>Contacto</b>
-                        <p>Nuestra ubicación</p>
+                        <p><a href="{{ url('/Contacto') }}">Nuestra ubicación</a></p>
 
                     </div>
                 </section>
