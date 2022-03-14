@@ -140,14 +140,34 @@ h2 span {
 .entrenador article {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: space-between;
+    justify-content: space-between;
     text-align: center;
     background-color: var(--main-white);
-    align-items: center;
     padding: 1em;
     border-radius: .4em;
     margin: 0 .5em;
+    height: 80%;
+   
 }
+
+.entrenador article figure{
+    flex: 1 1 100;
+}
+.entrenador article .datos-entrenador{
+    flex: 1 1 150px;
+    max-height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.datos-entrenador > p{
+    flex: 1;
+    
+}
+
+
 
 .entrenador a {
     text-decoration: none;
@@ -161,6 +181,7 @@ h2 span {
 .redes {
     display: flex;
     flex-flow: nowrap;
+    justify-content: space-between;
 }
 
 .redes a {
@@ -171,10 +192,7 @@ h2 span {
     margin: 0 .5em;
 }
 
-.datos-entrenador {
-    display: flex;
-    flex-flow: column nowrap;
-}
+
 
 @media (min-width:750px) {
     .planes, .productos {

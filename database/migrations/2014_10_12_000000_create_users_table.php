@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('facebook')->default('https://es-es.facebook.com/');
             $table->string('instagram')->default('https://www.instagram.com/');
             $table->string('linkedin')->default('https://es.linkedin.com/');
-            $table->string('titulacion');
+            $table->string('titulacion', 50);
             $table->string('presentacion');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

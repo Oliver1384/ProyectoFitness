@@ -14,10 +14,12 @@ use App\Models\Informacioncentro;
 class ContenidoController extends Controller{
 
     public function inicio(){
+        $entrenadores = User::where('name', 'not like', '%admin%')->get();
+        
         $podcasts = Podcast::latest()->take(4)->get();
         $destacado = Post::where(['destacado' => true])->latest()->take(1)->get()->first();
 
-        return view('index', compact('podcasts', 'destacado'));
+        return view('index', compact('podcasts', 'destacado', 'entrenadores'));
     }
 
     public function infoContacto(){
