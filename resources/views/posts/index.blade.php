@@ -69,6 +69,4 @@
         {{ $posts->links() }}
     </span>
   </div>
-
-
 @endsection

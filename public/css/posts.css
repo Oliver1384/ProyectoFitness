@@ -36,7 +36,7 @@
 .article:nth-child(2) h1.article-title,
 .article:nth-child(5) h1.article-title,
 .article:nth-child(6) h1.article-title {
-    color:var(--main-black) !important; 
+    color:var(--main-black) !important;
 }
 
 .article:nth-child(3) h1.article-title,
@@ -54,7 +54,7 @@
         border-right: 0px !important;
     }
     .article:nth-child(even) h1.article-title {
-        color:var(--main-black) !important; 
+        color:var(--main-black) !important;
     }
     .article:nth-child(odd) h1.article-title {
         color: var(--main-black) !important;
@@ -175,7 +175,7 @@
     display: none !important;
     background-color: var(--main-black);
     height: 20vh;
-    
+
 }
 
 #paginator a{
@@ -246,4 +246,5 @@
     }
 
 }
+
 

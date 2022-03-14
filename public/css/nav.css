@@ -193,7 +193,7 @@
 
 footer{
     background-color: var(--basic-white);
-    
+
 }
 
 .footer-escritorio {
@@ -230,7 +230,7 @@ footer{
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: center;
-    
+
 }
 
 .enlacesFooterEscritorio section {
