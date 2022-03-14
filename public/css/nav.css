@@ -200,6 +200,7 @@
     font-family: var(--content-font);
     font-size: 1.1em;
 
+
 }
 
 .footer-escritorio .imagenFooter {
@@ -216,6 +217,7 @@
     flex-flow: column nowrap;
     flex: 2 1 400px;
     justify-content: space-between;
+    align-items: center;
     border-left: 8px solid var(--main-orange);
     background-color: var(--basic-white);
 }
@@ -243,7 +245,8 @@ section.footer-izquierdo {
     display: flex;
     width: 100%;
     flex-flow: column nowrap;
-    align-items: flex-start;
+    align-items: center;
+    margin: .5em 2em;
 }
 
 .enlacesFooterEscritorio div p {
