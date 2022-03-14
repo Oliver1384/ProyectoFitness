@@ -150,8 +150,8 @@ audio {
 }
 
 .podcastCategoria img {
-    max-width: 224px;
-    max-height: 65%;
+    max-width: 95%;
+    max-height: 95%;
 }
 
 .podcastCategoria .podcast h2 {
@@ -188,6 +188,11 @@ audio {
     flex-direction: row;
 }
 
+.contenedorPodcast div.card.podcast {
+    min-width: 380px;
+    min-height: 140px;
+}
+
 .carousel-control-prev, .carousel-control-next {
     max-height: 100px;
     max-width: 100px;
@@ -221,6 +226,7 @@ audio {
 
     .podcastCategoria > div > .podcast:last-child {
         min-width: 90%;
+        min-height: 185px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }

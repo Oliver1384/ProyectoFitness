@@ -4,7 +4,7 @@
 <div class="contenedor">
 
 <div class="card">
-  <img src="{{asset('images/articles/Article_04.png')}}" class="card-img-top" id='planes' alt="...">
+  <img src="{{asset('images/admin/planes.jpg')}}" class="card-img-top" id='planes' alt="...">
   <div class="card-body">
     <h5 class="card-title">Planes</h5>
     <p class="card-text">Administra los planes.</p>
@@ -13,7 +13,7 @@
 </div>
 
 <div class="card">
-  <img src="{{asset('images/articles/Article_05.png')}}" class="card-img-top" alt="...">
+  <img src="{{asset('images/admin/posts.jpg')}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Posts</h5>
     <p class="card-text">Administra los posts.</p>
@@ -22,7 +22,7 @@
 </div>
 
 <div class="card">
-  <img src="{{asset('images/articles/Article_06.png')}}" class="card-img-top" alt="...">
+  <img src="{{asset('images/admin/podcast.jpg')}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Podcasts</h5></p>
     <p class="card-text">Administra los podcasts.</p>
@@ -31,7 +31,7 @@
 </div>
 
 <div class="card">
-  <img src="{{asset('images/articles/Article_02.png')}}" class="card-img-top" alt="...">
+  <img src="{{asset('images/admin/contacto.jpg')}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Contacto</h5>
     <p class="card-text">Edita la información de contacto.</p>
@@ -40,7 +40,7 @@
 </div>
 
 <div class="card">
-  <img src="{{asset('images/articles/Article_04.png')}}" class="card-img-top" alt="...">
+  <img src="{{asset('images/admin/usuarios.jpg')}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Usuarios</h5>
     <p class="card-text">Crear nuevos usuarios.</p>

@@ -7,14 +7,16 @@
 
     <div class="col-12">
         <div id="main-article" class="text-main-white bg-main-orange">
-            <div class="article-effect" style="background:url('images/articles/Article_Main.png');"></div>
+            <div class="article-effect" style="background:url('{{ asset($destacado->imagen) }}');"></div>
             <div class="article-content">
                 <h1 class="article-title">
-                    <span class="text-black">Artículo</span> <span class="text-white">{{ $podcasts[0] }}principal</span>
+                    <span class="text-black">{{ $destacado->titulo }}</span>
                 </h1>
-                <div class="article-button">
-                    <button class="btn btn-light">Leer más</button>
-                </div>
+                <a href="{{ route('showpost', $destacado->id) }}">
+                    <div class="article-button">
+                        <button class="btn btn-light">Leer más</button>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -23,64 +25,36 @@
         <h2>PODCAST <br><span>MÁS RECIENTES</span></h2>
         <div class=" podcastIndex">
             <div>
-                <div class="podcast ">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="Imagen relacionada con la temática del podcast">
-                    <div>
+                @foreach($podcasts as $podcast)
+                    <div class="podcast ">
+                        <figure>
+                            <img src="{{ asset($podcast->imagen) }}" alt="">
+                        </figure>
                         <div>
-                            <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
+                            <div>
+                                <h2>{{ $podcast->titulo }} <br><span>{{ $podcast->tema }}</span></h2>
+                            </div>
+                            <audio controls preload="none">
+                                <source src="{{ asset($podcast->audio) }}" type="audio/mp3"/>
+                                Tu navegador no soporta el recurso de audio.
+                            </audio>
                         </div>
-                        <audio controls="controls">
-                            <source src="#" type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
                     </div>
-                </div>
-                <div class="podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="Imagen relacionada con la temática del podcast">
-                    <div>
-                        <div>
-                            <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
-                        </div>
-                        <audio controls="controls">
-                            <source src="#" type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-                <div class="podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="Imagen relacionada con la temática del podcast">
-                    <div>
-                        <div>
-                            <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
-                        </div>
-                        <audio controls="controls">
-                            <source src="#" type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-                <div class="podcast">
-                    <img src="{{ asset('images/provisional-desarrollo/podcast.jpg') }}" alt="Imagen relacionada con la temática del podcast">
-                    <div>
-                        <div>
-                            <h2>PODCAST 1 <br><span>TEMA PODCAST</span></h2>
-                        </div>
-                        <audio controls="controls">
-                            <source src="#" type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
+                @endforeach
             </div>
 
         </div>
     </div>
     <div class="planes">
-        <h2>PLANES<span> PERSONALIZADOS</span></h2>
+        <a href="{{url('/Planes')}}">
+            <h2>PLANES<span> PERSONALIZADOS</span></h2>
+        </a>
     </div>
-    <div class="productos">
-        <h2>PRODUCTOS<span> ESTRELLA</span></h2>
-    </div>
+    <!--<div class="productos">
+        <a href="{{url('/Produtos')}}">
+            <h2>PRODUCTOS<span> ESTRELLA</span></h2>
+        </a>
+    </div>-->
     <div class="entrenadores">
         <div id="carouselExampleIndicators" class="carousel carousel-7 slide" data-ride="carousel">
             <h3>Nuestros entrenadores</h3>

@@ -6,12 +6,12 @@
         <div class="row">
             <div class="col-12">
                 <div id="main-article" class="text-main-white bg-main-orange">
-                    <div class="article-effect" style="background:url('images/articles/Article_Main.png');"></div>
+                    <div class="article-effect" style="background:url('{{ asset($destacado->imagen) }}');"></div>
                     <div class="article-content">
                         <h1 class="article-title">
-                            <span class="text-black">Artículo</span> <span class="text-white">principal</span>
+                            <span class="text-black">{{ $destacado->titulo }}</span>
                         </h1>
-                        <a href="{{ url('Post') }}">
+                        <a href="{{ route('showpost', $destacado->id) }}">
                             <div class="article-button">
                                 <button class="btn btn-light">Leer más</button>
                             </div>
@@ -19,7 +19,24 @@
                     </div>
                 </div>
             </div>
+            @foreach ($posts as $post)
             <div class="col-12 col-lg-6 col-xl-4 article">
+                <div class="text-main-white bg-main-black">
+                    <div class="article-effect" style="background:url('{{ asset($destacado->imagen) }}');"></div>
+                    <div class="article-content">
+                        <h1 class="article-title">
+                            <span>{{ $post->titulo }}</span>
+                        </h1>
+                        <a href="{{ route('showpost', $post->id) }}">
+                            <div class="article-button">
+                                <button class="btn btn-light">Leer más</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            <!--<div class="col-12 col-lg-6 col-xl-4 article">
                 <div class="text-main-white bg-main-black">
                     <div class="article-effect" style="background:url('images/articles/Article_01.png');"></div>
                     <div class="article-content">
@@ -96,9 +113,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
-        <div id="paginator" class="ocultarMovil">
+        <!--<div id="paginator" class="ocultarMovil">
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                     <li class="page-item"><a class="page-link active" href="#">«</a></li>
@@ -123,5 +140,10 @@
                 &gt;
             </button>
         </div>
-    </div>
+    </div>-->
+    <div class="paginadorContainer">
+        <span class="paginador" style="display: flex; justify-content:center; margin: 1em;">
+            {{ $posts->links() }}
+        </span>
+      </div>
     @endsection

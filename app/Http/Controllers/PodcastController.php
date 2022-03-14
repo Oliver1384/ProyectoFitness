@@ -3,21 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Podcast;
-use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class PodcastController extends Controller {
 
     public function index(Request $request) {
-    
-        $podcasts;
         if(isset($request->all()['texto']) && !empty(trim($request->get('texto')))){
             $texto = trim($request->get('texto'));
             $podcasts = Podcast::where('titulo', 'LIKE', "%{$texto}%")->paginate(6);
         }else{
             $podcasts = Podcast::latest()->paginate(6);
-    
         }
         return view('podcasts.index')->with(compact('podcasts'));
     }

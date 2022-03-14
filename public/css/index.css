@@ -51,6 +51,11 @@ h2 span {
     flex-flow: row wrap;
 }
 
+.podcast figure{
+    max-width: 100%;
+    overflow: hidden;
+}
+
 .planes {
     min-height: 50vh;
     background-color: var(--main-orange);
@@ -60,6 +65,14 @@ h2 span {
     background-repeat: no-repeat;
     background-position: bottom;
     margin: 1em 0;
+}
+
+.planes a, .productos a{
+    display: block;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
 }
 
 .planes h2 {
@@ -97,7 +110,7 @@ h2 span {
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    background-color: var(--main-orange);
+    background-color: var(--main-black);
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -110,6 +123,7 @@ h2 span {
     padding: 1em 0 0;
     text-align: center;
     font-family: var(--title-font);
+    color: var(--main-white);
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -119,7 +133,7 @@ h2 span {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-orange);
+    background-color: var(--main-black);
     height: 50vh;
 }
 

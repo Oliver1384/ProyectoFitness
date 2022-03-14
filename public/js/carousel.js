@@ -3,12 +3,19 @@ $(document).ready(function () {
     var carousels = document.querySelectorAll(".carousel");
     var controlers = new Array(2);
 
-    // Por c
+    // Por cada carrousel:
     for (let i = 0; i < carousels.length; i++) {
+        // Obtenemos la cantidad de items activos al dividir entre el largo del carrousel-inner
+        // y el largo del item:
+        let carrouselW = $(carousels[i]).find('.carousel-inner').width(),
+            itemW = $(carousels[i]).find('.carousel-item').width();
+        let totalElements = Math.round(carrouselW / itemW);
+
         controlers[i] = {
             'carouselWidth': $(carousels[i]).find('.carousel-inner')[0].scrollWidth,
-            'cardWidth': $(carousels[i]).find('.carousel-item').width(),
+            'cardWidth': itemW,
             'scrollPosition': 0,
+            'total': totalElements,
         }
 
         // Listeners:
@@ -27,18 +34,20 @@ function moveNext(carousel, controler) {
     // Si la nueva posición no es mayor al tamaño máximo del scroll,
     // lo movemos hacia la derecha. En caso contrario, vuelva a la primera
     // posición.
-    if (controler.scrollPosition < controler.carouselWidth - controler.cardWidth * 4) {
+    if (controler.scrollPosition < controler.carouselWidth - controler.cardWidth * controler.total) {
         controler.scrollPosition += controler.cardWidth;
     } else {
         controler.scrollPosition = 0;
     }
+
+    // Redondeamos:
+    controler.scrollPosition = Math.round(controler.scrollPosition * 100) / 100;
 
     // Animamos el carrousel:
     $(carousel).find('.carousel-inner').animate({
         scrollLeft: controler.scrollPosition
     }, 600
     );
-
 }
 
 function movePrev(carousel, controler) {
@@ -47,9 +56,16 @@ function movePrev(carousel, controler) {
     // posición.
     if (controler.scrollPosition > 0) {
         controler.scrollPosition -= controler.cardWidth;
+        if(controler.scrollPosition < 0) controler.scrollPosition = controler.carouselWidth;
+    } else if(controler.scrollPosition = controler.carouselWidth) {
+        controler.scrollPosition -= controler.cardWidth * controler.total;
     } else {
         controler.scrollPosition = controler.carouselWidth;
     }
+
+    // Redondeamos:
+    controler.scrollPosition = Math.round(controler.scrollPosition * 100) / 100;
+    if(controler.scrollPosition < 10) controler.scrollPosition = 0;
 
     // Animamos el carrousel:
     $(carousel).find('.carousel-inner').animate({

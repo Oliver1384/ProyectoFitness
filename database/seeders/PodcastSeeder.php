@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Faker\Factory as Faker;
 
 class PodcastSeeder extends Seeder {
- 
+
     public function run() {
         $idUsuario = DB::table('users')->pluck('id');
         $faker = Faker::create();
@@ -20,7 +20,6 @@ class PodcastSeeder extends Seeder {
                 'tema' =>  $faker->sentence($nbWords = 3, $variableNbWords = true),
                 'audio' => '/audio/audio-prueba.mp3',
                 'imagen' => $faker->imageUrl($width = 640, $height = 480),
-                'veces_escuchado' => $faker->numberBetween($min = 10, $max = 10000),
                 'destacado' => $faker->boolean,
                 'user_id' => $faker->randomElement($idUsuario),
             ]);
