@@ -123,7 +123,7 @@
         @endfor
     </div>
     <div class="controls ocultarEscritorio">
-        <button class="retroceder">
+        <button>
             <
         </button>
 
