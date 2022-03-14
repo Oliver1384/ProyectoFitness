@@ -56,8 +56,6 @@
             <li><a href="{{ url('/admin') }}">ADMIN</a></li>
             @endif
         </ul>
-
-
     </div>
 
 
