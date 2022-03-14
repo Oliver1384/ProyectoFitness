@@ -69,13 +69,13 @@
             </div>
         </div>
     </div>
-    <div class="carouselExampleControls carousel carousel-3 nuestrosPodcasts ocultarMovil" data-ride="carousel">
+    <div class="carouselExampleControls carousel carousel-4 nuestrosPodcasts ocultarMovil" data-ride="carousel">
         <h1>NUESTROS PODCASTS</h1>
         <div class="position-relative w-100 h-100">
             <div class="carousel-inner">
                 @for($i = 0; $i < count($podcasts); $i++)
                     <div class="carousel-item ">
-                        <div>
+                        <div class="contenedorPodcast">
                             <div class="card podcast">
                                 <img src="{{ asset($podcasts[$i]->imagen) }}" alt="imagen relacionada con la temática del podcast">
                                 <div>
@@ -109,16 +109,16 @@
         <h1>PODCASTS</h1>
         @for($i = 0; $i < count($podcasts); $i++)
             <div class="card podcast">
-                <img src="{{ asset($podcasts[$i]->imagen) }}" alt="imagen relacionada con la temática del podcast">
-                <div>
+                    <img src="{{ asset($podcasts[$i]->imagen) }}" alt="imagen relacionada con la temática del podcast">
                     <div>
-                        <h2>{{ $podcasts[$i]->titulo }} <br><span>{{ $podcasts[$i]->tema }}</span></h2>
+                        <div>
+                            <h2>{{ $podcasts[$i]->titulo }} <br><span>{{ $podcasts[$i]->tema }}</span></h2>
+                        </div>
+                        <audio controls preload="none">
+                            <source src="{{ asset($podcasts[$i]->audio) }}" type="audio/mp3"/>
+                            Tu navegador no soporta el recurso de audio.
+                        </audio>
                     </div>
-                    <audio controls preload="none">
-                        <source src="{{ asset($podcasts[$i]->audio) }}" type="audio/mp3"/>
-                        Tu navegador no soporta el recurso de audio.
-                    </audio>
-                </div>
             </div>
         @endfor
     </div>
