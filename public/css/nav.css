@@ -191,16 +191,17 @@
     text-decoration: none;
 }
 
-
+footer{
+    background-color: var(--basic-white);
+    
+}
 
 .footer-escritorio {
     display: none;
     height: 400px;
     border-top: .5em solid var(--main-orange);
     font-family: var(--content-font);
-    font-size: 1.1em;
-
-
+    font-size: 1em;
 }
 
 .footer-escritorio .imagenFooter {
@@ -217,19 +218,23 @@
     flex-flow: column nowrap;
     flex: 2 1 400px;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
     border-left: 8px solid var(--main-orange);
     background-color: var(--basic-white);
 }
+
+
 
 .enlacesFooterEscritorio {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    
 }
 
 .enlacesFooterEscritorio section {
+    flex: 1 1 45%;
     width: 45%;
     display: flex;
     flex-flow: row wrap;
