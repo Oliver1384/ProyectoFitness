@@ -19,12 +19,10 @@ use App\Http\Controllers\InformacioncentroController;
 Route::get('/',[ContenidoController::class, 'inicio'] )->name('Inicio');
 Route::get('/Podcasts',[ContenidoController::class, 'podcasts'] )->name('Podcasts');
 
-Route::get('/Posts', function () {
-    return view('posts');
-})->name('Posts');
+Route::get('/Posts', [ContenidoController::class, 'posts'])->name('Posts');
 
 
-Route::get('/Posts/{$id}', [ContenidoController::class , 'verPost'])->name('mostrarPost');
+Route::get('/showpost/{id}', [ContenidoController::class , 'verPost'])->name('showpost');
 
 Route::get('/Planes', function () {
     return view('plans');

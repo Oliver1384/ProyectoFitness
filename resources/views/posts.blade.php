@@ -11,7 +11,7 @@
                         <h1 class="article-title">
                             <span class="text-black">Artículo</span> <span class="text-white">principal</span>
                         </h1>
-                        <a href="{{ url('Post') }}">
+                        <a href="{{ route('showpost', 20) }}">
                             <div class="article-button">
                                 <button class="btn btn-light">Leer más</button>
                             </div>
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div id="paginator" class="ocultarMovil">
+        <!--<div id="paginator" class="ocultarMovil">
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                     <li class="page-item"><a class="page-link active" href="#">«</a></li>
@@ -123,5 +123,10 @@
                 &gt;
             </button>
         </div>
-    </div>
+    </div>-->
+    <div class="paginadorContainer">
+        <span class="paginador" style="display: flex; justify-content:center; margin: 1em;">
+            {{ $posts->links() }}
+        </span>
+      </div>
     @endsection

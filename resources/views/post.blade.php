@@ -5,10 +5,10 @@
 @section('content')
     <div id="article">
         <div class="m-0 p-0 row">
-            <div class="col-12" style="background:url('images/articles/Article_Main.png');">
+            <div class="col-12" style='background:url({{asset("{$post->imagen}")  }});'>
                 <div class="background_article"></div>
                 <div class="title_article">
-                    <h1>Vestibulum gravida, tortor id luctus facilisis.</h1>
+                    <h1>{{ $post->titulo }}</h1>
                 </div>
             </div>
             <div class="m-0 p-0 col-12">
@@ -16,23 +16,9 @@
                     <div class="message">
                         <hr />
                         <section>
-                            <h1>Lorem ipsum:</h1>
-                            <q>¿Vestibulum ante ipsum primis in faucibus orci luctus et ultrices?</q>
-                            <q>¿Vestibulum ante ipsum primis in faucibus orci luctus et ultrices?</q>
-                            <p>Etiam et tempor est. Nunc malesuada orci eu ante pretium, vel consectetur est semper</p>
-                            <p>Morbi eget elementum magna, et cursus ante. Duis molestie sagittis ante, in finibus orci.
-                                Curabitur ullamcorper erat nisl, ac efficitur libero aliquam sed. Morbi purus odio, laoreet
-                                consectetur tincidunt vel, luctus sit amet dolor. Maecenas lobortis mattis massa, vel
-                                commodo diam ullamcorper in. Quisque imperdiet efficitur eleifend. Nunc a justo congue,
-                                fermentum eros eget, mollis augue. Etiam pretium massa sed libero pretium, semper vulputate
-                                eros mattis. In quis elementum tellus. Fusce malesuada sodales arcu, vitae condimentum massa
-                                sagittis at. In bibendum volutpat quam, eget auctor dolor volutpat sit amet. Phasellus id
-                                ligula ut odio fringilla maximus.</p>
-                        </section>
-                        <hr />
-                        <section>
-                            <h1>Nullam sagittis ex in pulvinar sodales:</h1>
-                            Etiam et tempor est. Nunc malesuada orci eu ante pretium, vel consectetur est semper. Morbi eget
+                            <h1>Presentación entrenador</h1>
+                            <p>{{ $post->user->presentacion }} ffff</p>
+                            <!--Etiam et tempor est. Nunc malesuada orci eu ante pretium, vel consectetur est semper. Morbi eget
                             elementum magna, et cursus ante. Duis molestie sagittis ante, in finibus orci. Curabitur
                             ullamcorper erat nisl, ac efficitur libero aliquam sed. Morbi purus odio, laoreet consectetur
                             tincidunt vel, luctus sit amet dolor. Maecenas lobortis mattis massa, vel commodo diam
@@ -59,31 +45,47 @@
                             eget neque rutrum sem tincidunt aliquet sed non eros. Aenean diam sem, pretium et ipsum sit
                             amet, scelerisque tempor justo. Donec quis odio id magna vestibulum tempus. Vivamus et risus eu
                             ante ornare eleifend et mollis ipsum. Donec mollis ligula vitae turpis viverra, non laoreet
-                            metus efficitur. </p>
+                            metus efficitur. </p>-->
+                        </section>
+                        <hr />
+                        <section>
+                            <h1>{{ $post->titulo }}</h1>
+                            <p>{{ $post->descripcion }}</p>
+                            <!--<q>¿Vestibulum ante ipsum primis in faucibus orci luctus et ultrices?</q>
+                            <q>¿Vestibulum ante ipsum primis in faucibus orci luctus et ultrices?</q>
+                            <p>Etiam et tempor est. Nunc malesuada orci eu ante pretium, vel consectetur est semper</p>
+                            <p>Morbi eget elementum magna, et cursus ante. Duis molestie sagittis ante, in finibus orci.
+                                Curabitur ullamcorper erat nisl, ac efficitur libero aliquam sed. Morbi purus odio, laoreet
+                                consectetur tincidunt vel, luctus sit amet dolor. Maecenas lobortis mattis massa, vel
+                                commodo diam ullamcorper in. Quisque imperdiet efficitur eleifend. Nunc a justo congue,
+                                fermentum eros eget, mollis augue. Etiam pretium massa sed libero pretium, semper vulputate
+                                eros mattis. In quis elementum tellus. Fusce malesuada sodales arcu, vitae condimentum massa
+                                sagittis at. In bibendum volutpat quam, eget auctor dolor volutpat sit amet. Phasellus id
+                                ligula ut odio fringilla maximus.</p>-->
                         </section>
                         <hr />
                     </div>
                     <div class="profile">
                         <div class="profile_avatar">
-                            <img src="http://127.0.0.1:8000/images/provisional-desarrollo/avatar.png"
+                            <img src= "{{asset("{$post->user->imagen}")  }}"
                                 alt="Imagen de perfil del entrenador">
                         </div>
                         <div class="profile_info">
                             <p class="profile_name">
-                                Juan Antonio
+                                {{ $post->user->name }}
                             </p>
                             <p class="profile_description">
-                                Entrenador personal, experto en dietética
+                                {{ $post->user->titulacion }}
                             </p>
                         </div>
                         <div class="profile_social_media">
-                            <a href="#">
+                            <a href="{{ $post->user->instagram }}" target="_blank">
                                 <img src="{{ asset('images/iconos/trainer_instagram.svg') }}" alt="Instagram" />
                             </a>
-                            <a href="#">
+                            <a href="{{ $post->user->facebook }}" target="_blank">
                                 <img src="{{ asset('images/iconos/trainer_facebook.svg') }}" alt="Instagram" />
                             </a>
-                            <a href="#">
+                            <a href="{{ $post->user->linkedin }}" target="_blank">
                                 <img src="{{ asset('images/iconos/trainer_linkedin.svg') }}" alt="Instagram" />
                             </a>
                         </div>
