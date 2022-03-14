@@ -109,26 +109,56 @@
         <h1>PODCASTS</h1>
         @for($i = 0; $i < count($podcasts); $i++)
             <div class="card podcast">
-                    <img src="{{ asset($podcasts[$i]->imagen) }}" alt="imagen relacionada con la temática del podcast">
+                <img src="{{ asset($podcasts[$i]->imagen) }}" alt="imagen relacionada con la temática del podcast">
+                <div>
                     <div>
-                        <div>
-                            <h2>{{ $podcasts[$i]->titulo }} <br><span>{{ $podcasts[$i]->tema }}</span></h2>
-                        </div>
-                        <audio controls preload="none">
-                            <source src="{{ asset($podcasts[$i]->audio) }}" type="audio/mp3"/>
-                            Tu navegador no soporta el recurso de audio.
-                        </audio>
+                        <h2>{{ $podcasts[$i]->titulo }} <br><span>{{ $podcasts[$i]->tema }}</span></h2>
                     </div>
+                    <audio controls preload="none">
+                        <source src="{{ asset($podcasts[$i]->audio) }}" type="audio/mp3"/>
+                        Tu navegador no soporta el recurso de audio.
+                    </audio>
+                </div>
             </div>
         @endfor
     </div>
     <div class="controls ocultarEscritorio">
-        <button>
+        <button class="retroceder">
             <
         </button>
 
-        <button>
+        <button class="avanzar">
             >
         </button>
     </div>
+    <script>
+        let iteracion = 0;
+        let podcasts = document.querySelectorAll('.ocultarEscritorio .podcast');
+        let botonAvanzar = document.querySelector('.avanzar');
+        let botonRetroceder = document.querySelector('.retroceder');
+        botonRetroceder.addEventListener('click', restarIteracion);
+        botonAvanzar.addEventListener('click', sumarIteracion);
+        mostrar();
+        function mostrar() {
+            for (let i = 0; i < podcasts.length ; i++) {
+                if (i < iteracion+5 && i >= iteracion) {
+                    podcasts[i].style.display = 'flex';
+                } else {
+                    podcasts[i].style.display = 'none';
+                }
+            }
+        }
+        function restarIteracion() {
+            if (iteracion >= 5 ) {
+                iteracion -= 5;
+                mostrar();
+            }
+        }
+        function sumarIteracion() {
+            if (iteracion+5 <= podcasts.length) {
+                iteracion += 5;
+                mostrar();
+            }
+        }
+    </script>
 @endsection
