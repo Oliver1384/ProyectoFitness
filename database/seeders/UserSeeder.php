@@ -15,7 +15,7 @@ class UserSeeder extends Seeder {
                 DB::table('users')->insert([
                     'name' => $faker->name,
                     'email' => $faker->email,
-                    'imagen' => $faker->imageUrl($width = 640, $height = 480),
+                    'imagen' => '/images/perfil-generico.png',
                     'facebook' => 'https://es-es.facebook.com/',
                     'instagram' => 'https://www.instagram.com/',
                     'linkedin' => 'https://es.linkedin.com/',
