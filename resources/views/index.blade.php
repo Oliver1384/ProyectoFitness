@@ -58,8 +58,38 @@
     <div class="entrenadores">
         <div id="carouselExampleIndicators" class="carousel carousel-7 slide" data-ride="carousel">
             <h3>Nuestros entrenadores</h3>
-
             <div class="carousel-inner">
+                @foreach ($entrenadores as $entrenador)
+        
+                <div class="carousel-item">
+                    <div class="entrenador">
+                        <article>
+                            <figure>
+                                <img src="{{ asset($entrenador->imagen) }}" alt="Imagen de perfil del entrenador">
+                            </figure>
+                            <div class="datos-entrenador">
+                                <p class="entrenador-nombre">{{ $entrenador->name }}</p>
+                                <p class="grado">{{ $entrenador->titulacion }}</p>
+                                <div class="redes">
+                                    <a href="{{ $entrenador->instagram }}" target="_blank">
+                                        <img src="{{ asset('images/iconos/trainer_instagram.svg') }}" alt="Instagram" />
+                                    </a>
+                                    <a href="{{ $entrenador->facebook }}" target="_blank">
+                                        <img src="{{ asset('images/iconos/trainer_facebook.svg') }}" alt="Instagram" />
+                                    </a>
+                                    <a href="{{ $entrenador->linkedin }}" target="_blank">
+                                        <img src="{{ asset('images/iconos/trainer_linkedin.svg') }}" alt="Instagram" />
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                @endforeach
+
+<!--
+
                 <div class="carousel-item active">
                     <div class="entrenador">
                         <article>
@@ -283,7 +313,7 @@
                             </div>
                         </article>
                     </div>
-                </div>
+                </div>-->
             </div>
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
