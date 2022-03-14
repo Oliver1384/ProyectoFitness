@@ -15,8 +15,9 @@ class ContenidoController extends Controller{
 
     public function inicio(){
         $podcasts = Podcast::latest()->take(4)->get();
+        $destacado = Post::where(['destacado' => true])->latest()->take(1)->get()->first();
 
-        return view('index', compact('podcasts'));
+        return view('index', compact('podcasts', 'destacado'));
     }
 
     public function infoContacto(){
@@ -26,8 +27,17 @@ class ContenidoController extends Controller{
     }
 
 
+    public function posts(){
+        $destacado = Post::where(['destacado' => true])->latest()->take(1)->get()->first();
+        $posts = Post::latest()->paginate(6);
+        return view('posts', compact('destacado', 'posts'));
+
+
+    }
+
     public function verPost($id){
-        dd($id);
+        $post = Post::find($id);
+        return view('post', compact('post'));
     }
 
     public function podcasts(){

@@ -30,6 +30,6 @@ class UserSeeder extends Seeder {
             'email'=>'proyectofitnessgc@gmail.com',
             'password'=> bcrypt('8h38s/L'),
              'titulacion'=>'primer administrador',
-             'presentacion'=>'']);
+             'presentacion'=>'Buenas soy el administrador y esta es mi presentación de ejemplo, so far so good people.']);
     }
 }
