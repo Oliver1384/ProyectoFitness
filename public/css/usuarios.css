@@ -77,3 +77,14 @@ h1{
 .page-item.active .page-link {
     border-color: #FFB20F !important;
   }
+
+  .col-md-4{
+      display: flex;
+      justify-content:center ;
+      align-items: center;
+  }
+
+  img{
+      width: 70%;
+      
+  }
