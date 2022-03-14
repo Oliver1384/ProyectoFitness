@@ -122,6 +122,6 @@ div.botonesPodcast {
 }
 
 .page-item.active .page-link {
-    border-color: yellow !important;
+    border-color: var(--basic-white) !important;
 }
 
