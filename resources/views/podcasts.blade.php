@@ -77,7 +77,10 @@
                     <div class="carousel-item ">
                         <div class="contenedorPodcast">
                             <div class="card podcast">
-                                <img src="{{ asset($podcasts[$i]->imagen) }}" alt="imagen relacionada con la temática del podcast">
+                                <figure>
+
+                                    <img src="{{ asset($podcasts[$i]->imagen) }}" alt="imagen relacionada con la temática del podcast">
+                                </figure>
                                 <div>
                                     <div>
                                         <h2>{{ $podcasts[$i]->titulo }} <br><span>{{ $podcasts[$i]->tema }}</span></h2>

@@ -115,7 +115,7 @@ audio {
     }
 
     h2 {
-        margin-left: 2rem;
+       /* margin-left: 2rem;*/
     }
     span {
         margin: 0;
@@ -189,8 +189,27 @@ audio {
 }
 
 .contenedorPodcast div.card.podcast {
-    min-width: 380px;
-    min-height: 140px;
+    width: 330px;
+    height: 140px;
+    display: flex;
+    flex-flow: row nowrap;
+    
+    
+}
+
+.contenedorPodcast div.card.podcast > figure{
+    flex: 1 1 100px;
+    height: 100%;
+    margin: 0 !important;
+}
+.contenedorPodcast div.card.podcast > div{
+    flex: 1 1 200px;
+    max-width: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 .5em;
+    height: 100%;
+    
 }
 
 .carousel-control-prev, .carousel-control-next {
