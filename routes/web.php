@@ -24,9 +24,7 @@ Route::get('/Posts', [ContenidoController::class, 'posts'])->name('Posts');
 
 Route::get('/showpost/{id}', [ContenidoController::class , 'verPost'])->name('showpost');
 
-Route::get('/Planes', function () {
-    return view('plans');
-})->name('Planes');
+Route::get('/Planes', [ContenidoController::class, 'planes'])->name('Planes');
 
 Route::get('/Contacto', [ContenidoController::class, 'infoContacto'])->name('Contacto');
 

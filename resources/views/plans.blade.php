@@ -21,7 +21,7 @@
 
         </div>
     </div>
-
+    <!-- AQUI EMPIEZA LA HOJA DEL PLAN -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -97,7 +97,7 @@
             </div>
         </div>
     </div>
-
+    <!-- termina el plan-->
     <div class="container-fluid planContenido2">
         <div class="row d-flex justify-content-center">
             <h1 class="text-center fw-bold fs-1 mt-3 titulo"> <span class="span1Contenido2">Nuestros </span> <span
@@ -106,10 +106,21 @@
 
             <div id="multi-item-example" class="carousel carousel-3" data-bs-interval="false" data-interval="false"
                 data-bs-ride="carousel">
-
                 <div class="carousel-inner">
-
-                    <div class="carousel-item active">
+                    @foreach ($planes as $plan)
+                    <div class="carousel-item">
+                        <div class="card mr-1 border border-dark">
+                            <img class="card-img-top" src="{{ asset($plan->imagen) }}" alt="Imagen representativa del programa">
+                            <div class="card-body ">
+                                <h1 class="card-title text-center">{{ $plan->titulo }}</h1>
+                                <p class="card-text fst-italic p-3">{{ $plan->descripcion }}</p>
+                                <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Leer más</button>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                   <!-- <div class="carousel-item active">
                         <div class="card mr-1 border border-dark">
                             <img class="card-img-top"
                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
@@ -259,7 +270,7 @@
                                     data-bs-target="#exampleModal" data-bs-whatever="@mdo">Leer más</button>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"

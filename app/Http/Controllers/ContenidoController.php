@@ -29,6 +29,12 @@ class ContenidoController extends Controller{
     }
 
 
+    public function planes(){
+        $planes = Plan::all();
+        return view('plans', compact('planes'));
+    }
+
+
     public function posts(){
         $destacado = Post::where(['destacado' => true])->latest()->take(1)->get()->first();
         $posts = Post::latest()->paginate(6);
