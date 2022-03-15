@@ -18,7 +18,7 @@ h1 {
 form{
     display: flex;
     justify-content: center;
-   
+
 }
 
 .form-group {
@@ -45,7 +45,7 @@ span{
     form{
         margin-bottom: 4em;
     }
-    
+
     span{
         padding: .2em;
     }
@@ -62,4 +62,25 @@ span{
         max-width: 80%;
         padding: 2em;
     }
+}
+
+div.destacado {
+    display:flex;
+    justify-content: center;
+}
+
+div.destacado  label {
+    margin-left: 1rem;
+}
+
+.agregarPostForm > label {
+   display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center;
+}
+
+.agregarPostForm > label input {
+    margin-left: 0.5rem;
+    min-width: 95%;
 }

@@ -15,18 +15,18 @@
 
 <form action="{{route('podcasts.store',['user_id'=>21])}}" method="post" enctype="multipart/form-data">
     @csrf
-    <div class="form-group">
+    <div class="form-group agregarPostForm">
         <label>Título:
-            <input type="text" name="titulo" value="{{old('titulo')}}">
+            <br><input type="text" name="titulo" value="{{old('titulo')}}">
         </label>
 
         <label>Tema:
-            <input type="text" name="tema" value="{{old('tema')}}">
+            <br><input type="text" name="tema" value="{{old('tema')}}">
         </label>
 
-        <div>
-            <p>Destacado</p>
-            <label>Si
+        <div class="destacado">
+            <p>Destacado:</p>
+            <label style="margin-left: 0.5rem">Si
                 <input type="radio" name="destacado" value="1" {{ (old('destacado') == 1 ? 'checked' : '') }} >
             </label>
             <label>No
