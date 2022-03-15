@@ -23,7 +23,7 @@
     </div>
     @foreach($planes as $plan)
     <!-- AQUI EMPIEZA LA HOJA DEL PLAN -->
-    <div class="modal fade" id="plan{{ $plan->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade visualizer" id="plan{{ $plan->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
