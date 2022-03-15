@@ -126,7 +126,7 @@
         @endfor
     </div>
     <div class="controls ocultarEscritorio">
-        <button>
+        <button class="retroceder">
             <
         </button>
 
