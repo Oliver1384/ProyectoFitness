@@ -123,5 +123,29 @@ span {
 }
 
 .carousel-control-prev, .carousel-control-next{
-    width: 8% !important;
+    width: 10% !important;
+}
+
+.visualizer{
+    max-width: 100%;
+}
+
+
+.carousel-control-next{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: 0;
+    background: no-repeat;
+    right: 1em;
+}
+.carousel-control-prev{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: 0;
+    background: no-repeat;
+    left: 1em;
 }
