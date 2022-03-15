@@ -36,7 +36,7 @@
 .article:nth-child(2) h1.article-title,
 .article:nth-child(5) h1.article-title,
 .article:nth-child(6) h1.article-title {
-    color:var(--main-black) !important; 
+    color:var(--main-black) !important;
 }
 
 .article:nth-child(3) h1.article-title,
@@ -54,7 +54,7 @@
         border-right: 0px !important;
     }
     .article:nth-child(even) h1.article-title {
-        color:var(--main-black) !important; 
+        color:var(--main-black) !important;
     }
     .article:nth-child(odd) h1.article-title {
         color: var(--main-black) !important;
@@ -175,7 +175,7 @@
     display: none !important;
     background-color: var(--main-black);
     height: 20vh;
-    
+
 }
 
 #paginator a{
@@ -247,3 +247,45 @@
 
 }
 
+@media (max-width:767px) {
+    .pagination li {
+        display: none;
+    }
+
+    ul.pagination {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        min-width: 100% !important;
+    }
+
+
+    .paginador  ul li:first-child, .paginador ul li:last-child {
+        display: flex;
+    }
+
+    span.paginador {
+        min-width: 95%;
+    }
+
+    .page-item {
+        background-color: var(--main-orange);
+        font-size: 120px;
+        margin: 1rem;
+        color: white;
+    }
+
+    .page-item.disabled span.page-link {
+        color:white !important;
+        background-color: var(--main-orange) !important;
+    }
+
+    a.page-link {
+        color:white !important;
+        background-color: var(--main-orange) !important;
+    }
+
+    .page-link  {
+        padding: 2rem 2rem !important;
+    }
+}

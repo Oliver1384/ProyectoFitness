@@ -63,14 +63,10 @@
         max-width: 100%;
     }
 
-
-    ul li:first-child {
+    .paginador  ul li:first-child, .paginador ul li:last-child {
         display: flex;
     }
 
-    ul li:last-child {
-        display: flex;
-    }
 
     span.paginador {
         min-width: 95%;

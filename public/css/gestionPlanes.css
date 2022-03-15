@@ -118,4 +118,45 @@ h1{
     border-color: #FFB20F !important;
   }
 
+@media (max-width:767px) {
+    .pagination li {
+        display: none;
+    }
 
+    .pagination {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        max-width: 100%;
+    }
+
+
+    .paginador  ul li:first-child, .paginador ul li:last-child {
+        display: flex;
+    }
+
+    span.paginador {
+        min-width: 95%;
+    }
+
+    .page-item {
+        background-color: var(--main-orange);
+        font-size: 120px;
+        margin: 1rem;
+        color: white;
+    }
+
+    .page-item.disabled span.page-link {
+        color:white !important;
+        background-color: var(--main-orange) !important;
+    }
+
+    a.page-link {
+        color:white !important;
+        background-color: var(--main-orange) !important;
+    }
+
+    .page-link  {
+        padding: 2rem 2rem !important;
+    }
+}

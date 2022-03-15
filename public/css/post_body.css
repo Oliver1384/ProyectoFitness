@@ -180,7 +180,7 @@ q:after  { content: "»" }
 
     .profile_avatar > img {
         max-width: 150px;
-        
+
     }
     /*
 
@@ -212,7 +212,7 @@ q:after  { content: "»" }
         z-index: 1;
     }
 
-    
+
 
     .profile_social_media {
         position: absolute;
@@ -228,7 +228,7 @@ q:after  { content: "»" }
 .profile{
     display: flex;
     flex-flow: column nowrap;
-    
+
 }
 
 .profile .contenido{

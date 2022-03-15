@@ -72,7 +72,7 @@
 
   </div>
   <div class="paginadorContainer">
-    <span class="paginador" style="display: flex; justify-content:center; margin: 1em;">
+    <span class="paginador">
         {{ $planes->links() }}
     </span>
   </div>

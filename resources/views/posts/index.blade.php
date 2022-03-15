@@ -64,11 +64,10 @@
    @endforeach
 
   </div>
-  <div class="paginadorContainer">
-    <span class="paginador" style="display: flex; justify-content:center; margin: 1em;">
-        {{ $posts->links() }}
+<div class="paginadorContainer">
+    <span class="paginador">
+        {{$posts->links()}}
     </span>
-  </div>
-
+</div>
 
 @endsection
