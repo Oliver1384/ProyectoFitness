@@ -164,6 +164,11 @@
         </figure>
         <div class="contenido-footer">
             <div class="iconosEscritorio">
+                <?php 
+                    use App\Models\Informacioncentro;
+                    $centro = Informacioncentro::find(1);
+                ?>
+               
                 <a href="{{ $centro->instagram }}" target="_blank">
                     <img src="{{ asset('images/footer/instagram.svg') }}" alt="Instagram" />
                 </a>
@@ -173,6 +178,7 @@
                 <a href="{{ $centro->youtube }}" target="_blank">
                     <img src="{{ asset('images/footer/youtube.svg') }}" alt="Youtube" />
                 </a>
+                
             </div>
             <div class="enlacesFooterEscritorio">
 

@@ -11,7 +11,7 @@ class InformacionCentroSeeder extends Seeder {
         'direccion' =>  'Cam. de la Cruz, 22, 35400 Arucas, Las Palmas',
         'correo' => '35013842@gobiernodecanarias.org',
         'telefono' => '928602844',
-        'youtube' => 'https://www.youtube.com/',
+        'youtube' => 'https://www.youtube.com',
         'instagram' => 'https://www.instagram.com/',
         'facebook' =>'https://es-es.facebook.com/',
         'descripcion'=>'Lorem ipsum dolor, sit amet consectetur adipisicing elit. '
