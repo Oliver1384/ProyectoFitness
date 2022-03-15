@@ -36,6 +36,15 @@
     flex-flow: column nowrap;
 }
 
+img{
+    width: 80%;
+}
+
+.col-md-4{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
 
 @media (min-width: 780px) {
 

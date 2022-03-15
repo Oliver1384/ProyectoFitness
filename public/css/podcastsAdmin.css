@@ -51,6 +51,52 @@
     padding: 1em;
 }
 
+@media (max-width:812px) {
+    .pagination li {
+        display: none;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        max-width: 100%;
+    }
+
+
+    ul li:first-child {
+        display: flex;
+    }
+
+    ul li:last-child {
+        display: flex;
+    }
+
+    span.paginador {
+        min-width: 95%;
+    }
+
+    .page-item {
+        background-color: var(--main-orange);
+        font-size: 120px;
+        margin: 1rem;
+        color: white;
+    }
+
+    .page-item.disabled span.page-link {
+        color:white !important;
+        background-color: var(--main-orange) !important;
+    }
+
+     a.page-link {
+         color:white !important;
+         background-color: var(--main-orange) !important;
+     }
+
+     .page-link  {
+         padding: 2rem 2rem !important;
+     }
+}
 
 
 img.card-img-top {
@@ -125,3 +171,6 @@ div.botonesPodcast {
     border-color: var(--basic-white) !important;
 }
 
+audio {
+    max-width: 100%;
+}
