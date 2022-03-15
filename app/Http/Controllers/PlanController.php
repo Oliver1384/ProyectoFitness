@@ -42,6 +42,7 @@ class PlanController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
             'titulo' => 'required|min:3|max:50',
             'descripcion' => 'required|min:50|max:10000',
@@ -55,7 +56,7 @@ class PlanController extends Controller
             $input['imagen'] = "{$imageDestinationPath}{$imagenPlan}";
         }
 
-        $input['user_id'] = 1; // Cambiar esto una vez implementado el login, esto deberá ser auth()->user()->id
+        $input['user_id'] = auth()->user()['id']; // Cambiar esto una vez implementado el login, esto deberá ser auth()->user()->id
         Plan::create($input);
         return redirect()->route('planes.index')->with('success','Plan creado correctamente.');
     }

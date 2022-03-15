@@ -65,7 +65,8 @@ class UserController extends Controller
             $image->move($imageDestinationPath, $imagenUsuario);
             $input['imagen'] = "{$imageDestinationPath}{$imagenUsuario}";
         }
-
+        $password = $input['password'];
+        $input['password'] = bcrypt($password);
         User::create($input);
         return redirect()->route('usuarios.index');
     }
@@ -125,6 +126,8 @@ class UserController extends Controller
             unset($input['imagen']);
         }
 
+        $password = $input['password'];
+        $input['password'] = bcrypt($password);
         $usuario->update($input);
 
         return redirect()->route('usuarios.index');
