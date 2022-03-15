@@ -68,6 +68,7 @@ span {
     width: 100%;
     background: var(--main-white);
     text-align: justify;
+    padding-bottom: 1em;
 
 }
 
@@ -121,3 +122,6 @@ span {
     text-decoration: none;
 }
 
+.carousel-control-prev, .carousel-control-next{
+    width: 8% !important;
+}

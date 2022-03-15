@@ -16,9 +16,9 @@ class PlanSeeder extends Seeder {
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
         for($i = 0; $i < 20; $i++) {
             DB::table('planes')->insert([
-                'titulo' => $faker->realText($maxNbChars = 10, $indexSize = 2),
-                'descripcion' => $faker->sentence($nbWords = 20, $variableNbWords = true),
-                'imagen' => $faker->imageUrl($width = 640, $height = 480),
+                'titulo' => "Titulo Plan {$i}"/*$faker->realText($maxNbChars = 10, $indexSize = 2)*/,
+                'descripcion' => $faker->sentence($nbWords = 500, $variableNbWords = true),
+                'imagen' => '/images/provisional-desarrollo/plan1.jpg' /*$faker->imageUrl($width = 640, $height = 480)*/,
                 'user_id' => $faker->randomElement($idUsuario),
             ]);
         }

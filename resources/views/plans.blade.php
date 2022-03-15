@@ -21,73 +21,53 @@
 
         </div>
     </div>
+    @foreach($planes as $plan)
     <!-- AQUI EMPIEZA LA HOJA DEL PLAN -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="plan{{ $plan->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title card-title text-center" id="exampleModalLabel">Programa 1</h1>
+                    <h1 class="modal-title card-title text-center" id="exampleModalLabel">{{ $plan->titulo }}</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row d-flex justify-content-between">
                         <div class="col-xl-8 col-md-7 col-sm-12 col-12 mb-3 ">
                             <img class="card-img-top border border-secondary"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                src="{{ asset($plan->imagen) }}"
                                 alt="Imagen representativa del programa">
                         </div>
                         <div class="col-xl-4 col-md-5  col-sm-12 col-12">
                             <div class="profile border border-secondary rounded">
                                 <div class="profile_info">
                                     <p class="profile_name">
-                                        Juan Antonio
+                                        {{ $plan->user->name }}
                                     </p>
                                     <div class="profile_avatar">
-                                        <img src="http://127.0.0.1:8000/images/provisional-desarrollo/avatar.png"
+                                        <img src="{{ $plan->user->imagen }}"
                                              alt="Imagen de perfil del entrenador">
                                     </div>
                                     <p class="profile_description">
-                                        Entrenador personal, experto en dietética
+                                        {{ $plan->user->titulacion }}
                                     </p>
                                 </div>
                                 <div class="profile_social_media">
-                                    <a href="#">
+                                    <a href="{{ $plan->user->instagram }}" target="_blank">
                                         <img src="{{ asset('images/iconos/trainer_instagram.svg') }}" alt="Instagram" />
                                     </a>
-                                    <a href="#">
+                                    <a href="{{ $plan->user->facebook }}" target="_blank">
                                         <img src="{{ asset('images/iconos/trainer_facebook.svg') }}" alt="Instagram" />
                                     </a>
-                                    <a href="#">
+                                    <a href="{{ $plan->user->linkedin }}" target="_blank">
                                         <img src="{{ asset('images/iconos/trainer_linkedin.svg') }}" alt="Instagram" />
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Eos ex
-                                ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis
-                                voluptas?
-                                Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat? Lorem
-                                ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequatur dolorem dolorum fugit
-                                itaque molestiae molestias mollitia
-                                nam nostrum numquam odit officia omnis quae quia repellendus, suscipit tempore.
-                                Consequuntur, quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque
-                                dignissimos doloribus expedita numquam quisquam, vitae. Animi beatae doloribus
-                                illo illum incidunt magnam nam perspiciatis, possimus praesentium repellendus repudiandae
-                                suscipit.</p>
-                            <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Eos ex
-                                ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat suscipit veritatis
-                                voluptas?
-                                Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur placeat? Lorem
-                                ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequatur dolorem dolorum fugit
-                                itaque molestiae molestias mollitia
-                                nam nostrum numquam odit officia omnis quae quia repellendus, suscipit tempore.
-                                Consequuntur, quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque
-                                dignissimos doloribus expedita numquam quisquam, vitae. Animi beatae doloribus
-                                illo illum incidunt magnam nam perspiciatis, possimus praesentium repellendus repudiandae
-                                suscipit.</p>
+                            <p class="card-text fst-italic p-3">
+                                {{ $plan->descripcion }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -97,6 +77,7 @@
             </div>
         </div>
     </div>
+    @endforeach
     <!-- termina el plan-->
     <div class="container-fluid planContenido2">
         <div class="row d-flex justify-content-center">
@@ -113,9 +94,9 @@
                             <img class="card-img-top" src="{{ asset($plan->imagen) }}" alt="Imagen representativa del programa">
                             <div class="card-body ">
                                 <h1 class="card-title text-center">{{ $plan->titulo }}</h1>
-                                <p class="card-text fst-italic p-3">{{ $plan->descripcion }}</p>
+                               <!-- <p class="card-text fst-italic p-3">{{ $plan->descripcion }}</p>-->
                                 <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Leer más</button>
+                                    data-bs-target="#plan{{ $plan->id }}" data-bs-whatever="@mdo">Leer más</button>
                             </div>
                         </div>
                     </div>
