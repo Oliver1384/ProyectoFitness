@@ -164,13 +164,13 @@
         </figure>
         <div class="contenido-footer">
             <div class="iconosEscritorio">
-                <a href="https://www.instagram.com" target="_blank">
+                <a href="{{ $centro->instagram }}" target="_blank">
                     <img src="{{ asset('images/footer/instagram.svg') }}" alt="Instagram" />
                 </a>
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="{{ $centro->facebook }}" target="_blank">
                     <img src="{{ asset('images/footer/facebook.svg') }}" alt="Facebook" />
                 </a>
-                <a href="https://www.youtube.com" target="_blank">
+                <a href="{{ $centro->youtube }}" target="_blank">
                     <img src="{{ asset('images/footer/youtube.svg') }}" alt="Youtube" />
                 </a>
             </div>
@@ -181,7 +181,6 @@
                         <b>Artículos</b>
                         <p><a href="{{ url('/Posts') }}">Ver nuestros artículos</a></p>
                     </div>
-
                 </section>
                 <section class="footer-derecho">
                     <div>
