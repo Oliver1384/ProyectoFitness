@@ -19,7 +19,7 @@ class PodcastSeeder extends Seeder {
                 'titulo' => $faker->realText($maxNbChars = 10, $indexSize = 2),
                 'tema' =>  $faker->sentence($nbWords = 3, $variableNbWords = true),
                 'audio' => '/audio/audio-prueba.mp3',
-                'imagen' => $faker->imageUrl($width = 640, $height = 480),
+                'imagen' => '/images/provisional-desarrollo/podcast.png',
                 'destacado' => $faker->boolean,
                 'user_id' => $faker->randomElement($idUsuario),
             ]);

@@ -9,19 +9,21 @@ class PostSeeder extends Seeder
 {
     
     public function run() {
+        
         $idUsuario = DB::table('users')->pluck('id');
         $faker = Faker::create();
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         DB::table('posts')->truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
-        for($i = 0; $i < 20; $i++) {
+        for($i = 1; $i <= 20; $i++) {
             DB::table('posts')->insert([
-                'titulo' => $faker->realText($maxNbChars = 10, $indexSize = 2),
-                'descripcion' =>  $faker->sentence($nbWords = 3, $variableNbWords = true),
-                'imagen' => $faker->imageUrl($width = 640, $height = 480),
+                'titulo' => "Artículo {$i}",
+                'descripcion' =>  $faker->sentence($nbWords = 100, $variableNbWords = true),
+                'imagen' => "/images/provisional-desarrollo/post2.jpg",
                 'user_id' => $faker->randomElement($idUsuario),
                 'destacado' => $faker->boolean,
             ]);
+           
         }
     }
 }
