@@ -105,12 +105,14 @@ q:after  { content: "»" }
     margin: 25px;
 }
 
+
+
 .profile_avatar {
-    margin: 25px 25px 10px;
+    margin: 1em auto;
 }
 
 .profile_avatar img {
-    width: 100%;
+    max-width: 150px;
     border: 5px solid var(--main-black);
     border-radius: 100%;
 }
@@ -164,7 +166,6 @@ q:after  { content: "»" }
         padding: 10px 20px !important;
         width: 100% !important;
     }
-
     .profile {
         display: flex;
         align-items: center;
@@ -172,6 +173,16 @@ q:after  { content: "»" }
         width: 100%;
         min-height: 200px;
     }
+
+    .profile_avatar{
+        margin: .5em auto;
+    }
+
+    .profile_avatar > img {
+        max-width: 150px;
+        
+    }
+    /*
 
     .profile_info {
         position: absolute;
@@ -201,15 +212,26 @@ q:after  { content: "»" }
         z-index: 1;
     }
 
-    .profile_avatar > img {
-        width: 150px;
-    }
+    
 
     .profile_social_media {
         position: absolute;
         bottom: 55px;
         right: 180px;
         text-align: right;
-    }
+    }*/
 
+}
+
+
+
+.profile{
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+.profile .contenido{
+    display: flex;
+    flex-flow: row wrap;
 }
