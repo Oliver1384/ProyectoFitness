@@ -57,7 +57,10 @@ h2 span {
 
 .podcast figure{
     max-width: 100%;
-    overflow: hidden;
+}
+
+.podcast figure img{
+    width: 100%;
 }
 
 .planes {
