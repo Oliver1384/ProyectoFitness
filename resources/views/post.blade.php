@@ -66,10 +66,6 @@
                         <hr />
                     </div>
                     <div class="profile">
-                        <div class="profile_avatar">
-                            <img src= "{{asset("{$post->user->imagen}")  }}"
-                                alt="Imagen de perfil del entrenador">
-                        </div>
                         <div class="profile_info">
                             <p class="profile_name">
                                 {{ $post->user->name }}
@@ -78,17 +74,24 @@
                                 {{ $post->user->titulacion }}
                             </p>
                         </div>
-                        <div class="profile_social_media">
-                            <a href="{{ $post->user->instagram }}" target="_blank">
-                                <img src="{{ asset('images/iconos/trainer_instagram.svg') }}" alt="Instagram" />
-                            </a>
-                            <a href="{{ $post->user->facebook }}" target="_blank">
-                                <img src="{{ asset('images/iconos/trainer_facebook.svg') }}" alt="Instagram" />
-                            </a>
-                            <a href="{{ $post->user->linkedin }}" target="_blank">
-                                <img src="{{ asset('images/iconos/trainer_linkedin.svg') }}" alt="Instagram" />
-                            </a>
-                        </div>
+                        
+                            <div class="profile_avatar">
+                                <img src= "{{asset("{$post->user->imagen}")  }}"
+                                    alt="Imagen de perfil del entrenador">
+                            </div>
+                            <div class="profile_social_media">
+                                <a href="{{ $post->user->instagram }}" target="_blank">
+                                    <img src="{{ asset('images/iconos/trainer_instagram.svg') }}" alt="Instagram" />
+                                </a>
+                                <a href="{{ $post->user->facebook }}" target="_blank">
+                                    <img src="{{ asset('images/iconos/trainer_facebook.svg') }}" alt="Instagram" />
+                                </a>
+                                <a href="{{ $post->user->linkedin }}" target="_blank">
+                                    <img src="{{ asset('images/iconos/trainer_linkedin.svg') }}" alt="Instagram" />
+                                </a>
+                            </div>
+
+                        
                     </div>
                 </div>
             </div>
