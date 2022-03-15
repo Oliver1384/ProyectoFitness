@@ -145,15 +145,19 @@
     </nav>
 
     @yield('content')
+        <?php 
+            use App\Models\Informacioncentro;
+            $centro = Informacioncentro::find(1);
+        ?>
     <footer class="footer-movil">
         <div>
-            <a href="https://www.instagram.com" target="_blank">
+            <a href="{{ $centro->instagram }}" target="_blank">
                 <img src="{{ asset('images/footer/instagram_movil.svg') }}" alt="Instagram" />
             </a>
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="{{ $centro->facebook }}" target="_blank">
                 <img src="{{ asset('images/footer/facebook_movil.svg') }}" alt="Facebook" />
             </a>
-            <a href="https://www.youtube.com" target="_blank">
+            <a href="{{ $centro->youtube }}" target="_blank">
                 <img src="{{ asset('images/footer/youtube_movil.svg') }}" alt="Youtube" />
             </a>
         </div>
@@ -164,10 +168,7 @@
         </figure>
         <div class="contenido-footer">
             <div class="iconosEscritorio">
-                <?php 
-                    use App\Models\Informacioncentro;
-                    $centro = Informacioncentro::find(1);
-                ?>
+                
                
                 <a href="{{ $centro->instagram }}" target="_blank">
                     <img src="{{ asset('images/footer/instagram.svg') }}" alt="Instagram" />
