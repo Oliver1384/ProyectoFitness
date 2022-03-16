@@ -22,7 +22,7 @@
             @foreach ($posts as $post)
             <div class="col-12 col-lg-6 col-xl-4 article">
                 <div class="text-main-white bg-main-black">
-                    <div class="article-effect" style="background:url('{{ asset($destacado->imagen) }}');"></div>
+                    <div class="article-effect" style="background:url('{{ asset($post->imagen) }}');"></div>
                     <div class="article-content">
                         <h1 class="article-title">
                             <span>{{ $post->titulo }}</span>
