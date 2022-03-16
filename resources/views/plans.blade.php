@@ -9,16 +9,15 @@
                 <span class="span2Contenido1">tu plan </span>
             </h1>
             <div class="col-lg-6 col-md-8 col-sm-10">
-                <p class="fst-italic pContenido1 ">Solicita a nuestros entrenadores un plan hecho a tu medida. <br>
+                <p class="fst-italic pContenido1 ">
+                    Solicita a nuestros entrenadores un plan hecho a tu medida. <br>
                     Rellena el formulario y selecciona al entrenador que deseas que cree tu plan.
                      <br>Pronto recibirás un correo con el plan personalizado creado por el entrenador seleccionado.
-
                  </p>
             </div>
             <div class="col-12 text-center">
                 <a href="{{ url('solicitar') }}" class="btn btn-light mb-3 ">Crea tu plan</a>
             </div>
-
         </div>
     </div>
     @foreach($planes as $plan)
@@ -90,168 +89,16 @@
                 <div class="carousel-inner">
                     @foreach ($planes as $plan)
                     <div class="carousel-item">
-                        <div class="card mr-1 border border-dark">
+                        <div class="card plan mr-1 border border-dark">
                             <img class="card-img-top" src="{{ asset($plan->imagen) }}" alt="Imagen representativa del programa">
                             <div class="card-body ">
                                 <h1 class="card-title text-center">{{ $plan->titulo }}</h1>
-                               <!-- <p class="card-text fst-italic p-3">{{ $plan->descripcion }}</p>-->
                                 <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal"
                                     data-bs-target="#plan{{ $plan->id }}" data-bs-whatever="@mdo">Leer más</button>
                             </div>
                         </div>
                     </div>
                     @endforeach
-                   <!-- <div class="carousel-item active">
-                        <div class="card mr-1 border border-dark">
-                            <img class="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Imagen representativa del programa">
-                            <div class="card-body ">
-                                <h1 class="card-title text-center">Programa 1</h1>
-                                <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Eos ex
-                                    ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat
-                                    suscipit veritatis voluptas?
-                                    Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur
-                                    placeat?</p>
-                                <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Leer más</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card mr-1 border border-dark">
-                            <img class="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Imagen representativa del programa">
-                            <div class="card-body ">
-                                <h1 class="card-title text-center">Programa 2</h1>
-                                <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Eos ex
-                                    ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat
-                                    suscipit veritatis voluptas?
-                                    Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur
-                                    placeat?</p>
-                                <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Leer más</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card mr-1 border border-dark">
-                            <img class="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Imagen representativa del programa">
-                            <div class="card-body ">
-                                <h1 class="card-title text-center">Programa 3</h1>
-                                <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Eos ex
-                                    ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat
-                                    suscipit veritatis voluptas?
-                                    Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur
-                                    placeat?</p>
-                                <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Leer más</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card mr-1 border border-dark">
-                            <img class="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Imagen representativa del programa">
-                            <div class="card-body ">
-                                <h1 class="card-title text-center">Programa 4</h1>
-                                <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Eos ex
-                                    ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat
-                                    suscipit veritatis voluptas?
-                                    Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur
-                                    placeat?</p>
-                                <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Leer más</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card mr-1 border border-dark">
-                            <img class="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Imagen representativa del programa">
-                            <div class="card-body ">
-                                <h1 class="card-title text-center">Programa 5</h1>
-                                <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Eos ex
-                                    ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat
-                                    suscipit veritatis voluptas?
-                                    Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur
-                                    placeat?</p>
-                                <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Leer más</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card mr-1 border border-dark">
-                            <img class="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Imagen representativa del programa">
-                            <div class="card-body ">
-                                <h1 class="card-title text-center">Programa 6</h1>
-                                <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Eos ex
-                                    ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat
-                                    suscipit veritatis voluptas?
-                                    Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur
-                                    placeat?</p>
-                                <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Leer más</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card mr-1 border border-dark">
-                            <img class="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Imagen representativa del programa">
-                            <div class="card-body ">
-                                <h1 class="card-title text-center">Programa 7</h1>
-                                <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Eos ex
-                                    ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat
-                                    suscipit veritatis voluptas?
-                                    Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur
-                                    placeat?</p>
-                                <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Leer más</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card mr-1 border border-dark">
-                            <img class="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Imagen representativa del programa">
-                            <div class="card-body ">
-                                <h1 class="card-title text-center">Programa 8</h1>
-                                <p class="card-text fst-italic p-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Eos ex
-                                    ercitationem ipsam magni molestiae necessitatibus nisi, placeat repellat
-                                    suscipit veritatis voluptas?
-                                    Ab, architecto at consequatur dolorem eligendi incidunt laborum pariatur
-                                    placeat?</p>
-                                <button onclick="" class="btn btn-dark  mb-3 float-end" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Leer más</button>
-                            </div>
-                        </div>
-                    </div>-->
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"

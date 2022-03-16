@@ -140,6 +140,7 @@ span {
     background: no-repeat;
     right: 1em;
 }
+
 .carousel-control-prev{
     display: inline-block;
     position: absolute;
@@ -149,3 +150,15 @@ span {
     background: no-repeat;
     left: 1em;
 }
+
+.plan{
+    height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.plan > img{
+    height: 330px;
+}
+
